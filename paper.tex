@@ -1,0 +1,468 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\C}{\mathbb C}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\A}{\mathbb A}
+\DeclareMathOperator{\trdeg}{trdeg}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\ord}{ord}
+\title{Identifying infection stages, infectivity weights,\\and initial states from incidence}
+\author{Tatsuhiko Takimoto\\Independent researcher}
+\date{Draft, 30 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+A staged SIR model with a common progression rate can assign a different infectivity weight to each infection stage. We prove that its incidence germ and total population determine the number of stages, both rates, all infectivity weights, and every initial state, provided the rates, weights, and initial states are strictly positive and the first weight is normalized to one. The true and competing stage numbers range over all finite positive integers. In particular, no exceptional positive true points remain in the equal-infectivity model. The proof establishes Zariski density of each positive trajectory after eliminating the removed compartment. A logarithmic first integral forces the algebraic closure to contain the equilibrium line; a boundary argument using relations among Jordan-chain invariants excludes every proper closure of dimension at least two. Polynomial chain consistency then connects the nonlinear incidence observation to a transfer-function identity, which determines the hidden chain. Exact finite checks supplement the proof.
+\end{abstract}
+
+\section{The question and the observation}
+Pant, Saucedo, and Pogudin introduce the model and observation used here in equation~(3.3) of version~2 of their preprint~\cite{PSP}. Their Conjecture~1 asks for global structural identifiability for each fixed stage number and known population. Their Definition~1 compares a generic true point with all real competing points of that fixed model. The preceding manuscript~\cite{Fixed} treats that fixed-order question. The present question is whether the observed incidence can also distinguish the stage number, and whether exceptional true points remain within the strictly positive region.
+
+The equal-infectivity corollary below allows every positive true point and every finite positive competing order. Its restriction to positive competitors is essential to the stated scope; it does not replace the all-real-competitor assertion in~\cite{Fixed} or in the definition of~\cite{PSP}. The Darboux approach to epidemiological identifiability already appears in Appendix~B of~\cite{PSP}, for a different model with staged latency. Here the additional issue is to control all positive orbit closures, including those of codimension greater than one.
+
+Fix $N_0>0$. For an integer $n\geq1$, let $J=\sum_{i=1}^n I_i$ and consider
+\begin{align}
+ \dot S&=-\beta SJ,& \dot I_1&=\beta SJ-\zeta I_1,\notag\\
+ \dot I_i&=\zeta(I_{i-1}-I_i)\quad(2\leq i\leq n),&
+ \dot R&=\zeta I_n, & y&=\beta SJ.\label{eq:physical}
+\end{align}
+The population constraint is $S+J+R=N_0$. The unknown rates $\beta,\zeta$ and all initial states $S(0),I_1(0),\ldots,I_n(0),R(0)$ are strictly positive. The observation is the complete analytic germ of $y$ at time zero, in the original physical time. Equality of germs means equality on some neighborhood of zero; the rates, states, and number of stages are not supplied with that germ.
+
+\begin{corollary}[Equal infectivity]\label{cor:equal}
+Let a true model~\eqref{eq:physical} have any finite order $n\geq1$ and strictly positive rates and initial states. Let a competing model of any finite order $m\geq1$ have strictly positive rates and initial states and the same known population $N_0$. If their incidence germs in the same physical time agree, then $m=n$, their transmission and progression rates agree, and all corresponding initial states agree.
+\end{corollary}
+
+The theorem concerns uniqueness from an exact germ. It supplies no error bound or sampling requirement for finite or noisy observations, and makes no assertion for unknown $N_0$, zero or negative states or rates, or a rescaling of the observed time. The corollary follows from the following weighted result.
+
+\subsection{Unknown stage-dependent infectivity}
+Replace $J$ in the incidence and susceptible equations by
+\[
+ J_w=\sum_{j=1}^n w_jI_j,\qquad w_1=1,\quad w_j>0.
+\]
+More explicitly, the weighted model is
+\begin{align}
+ \dot S&=-y,& \dot I_1&=y-\zeta I_1,\notag\\
+ \dot I_j&=\zeta(I_{j-1}-I_j)\ (2\leq j\leq n),&
+ \dot R&=\zeta I_n,& y&=\beta S J_w.\label{eq:weighted}
+\end{align}
+Population is still $N_0=S+\sum I_j+R$, using the unweighted sum. The weights $w_2,\ldots,w_n$ are unknown. The normalization $w_1=1$ removes the scale exchange between $\beta$ and all the weights.
+
+\begin{theorem}[Weighted identification]\label{thm:main}
+Fix a known $N_0>0$. For any finite $n\geq1$, take strictly positive rates, weights, and all initial states in~\eqref{eq:weighted}, with $w_1=1$ and total population $N_0$. If a competing model of any finite order $m\geq1$, with the same positivity, normalization, and population conditions, has the same incidence germ in the same physical time, then $m=n$, both rates agree, all corresponding weights agree, and every initial state agrees.
+\end{theorem}
+
+Linear-chain representations of Erlang and more general dwell-time distributions are established tools; Hurtado and Kirosingh~\cite{HK} develop their construction and generalization. The zero-state input-to-$J_w$ kernel here is
+\[
+ e^{-\zeta t}\sum_{j=1}^n w_j\frac{(\zeta t)^{j-1}}{(j-1)!}.
+\]
+Ritschel and Wyller~\cite{RW} estimate mixed-Erlang kernel weights and a common rate through a dynamical maximum-likelihood problem at a prescribed truncation order, with a constant initial history. Our initial infection states are free positive unknowns, so this kernel alone does not describe the full response. Nor is the kernel itself observed: only $y=\beta S J_w$ is observed, with $S(0)$ unknown. Section~\ref{sec:recovery} proves the step from that nonlinear observation to equality of transfer functions before using poles to identify the chain. We make no claim for arbitrary phase-type networks, unequal progression rates, parallel or branching chains, or nonpositive competitors.
+
+\paragraph{Proof and verification scope.}
+The theorem is supported by the prose proof below and by exact finite algebra checks described in Appendix~\ref{app:checks}. The component arguments have received staged review by a separate AI reviewer, with prior knowledge of earlier components disclosed. This is not human peer review or formal proof certification; priority has not been established. The accompanying \texttt{VERIFICATION-RECORD.md} records those reviews and the checks of this draft.
+
+\section{Algebraic closures and preliminary exclusions}\label{sec:prelim}
+Use the invertible changes
+\[
+ x=\frac{\beta S}{\zeta},\qquad u_i=\frac{\beta I_i}{\zeta},
+ \qquad \tau=\zeta t.
+\]
+Fix the positive weights and write $D=d/d\tau$ and, in these coordinates, $J=\sum_i w_i u_i$. The polynomial derivation becomes
+\begin{equation}\label{eq:D}
+ Dx=-xJ,\qquad Du_1=xJ-u_1,\qquad Du_i=u_{i-1}-u_i\quad(2\leq i\leq n).
+\end{equation}
+All algebraic varieties in the proof are over $\C$. For a positive real initial point $\theta$, let $Z_\theta\subset\A^{n+1}$ be the Zariski closure of its trajectory germ. Evaluation into analytic germs has integral-domain image, so its kernel is a prime ideal. That ideal is $D$-stable, since differentiating a vanishing germ gives another vanishing germ. Thus $Z_\theta$ is irreducible and invariant.
+
+Put
+\begin{equation}\label{eq:H}
+ A=\sum_{i=1}^n w_i,\qquad \ell_i=\sum_{j=i}^n w_j,\qquad K=\sum_{i=1}^n\ell_i u_i,\qquad z=K+Ax.
+\end{equation}
+Direct telescoping gives
+\begin{equation}\label{eq:basic}
+ DK=(Ax-1)J,\qquad Dz=-J=\frac{Dx}{x},\qquad D(z-\log x)=0,
+\end{equation}
+where the logarithm is used locally away from $x=0$.
+
+\begin{lemma}\label{lem:log}
+Let $V$ be an irreducible complex algebraic variety, and let $x,z\in\C(V)$ with $x$ nonconstant. No local branch of $z-\log x$ is constant on a nonempty relative complex analytic open set where it is defined.
+\end{lemma}
+\begin{proof}
+Such an identity gives $dz=dx/x$ as rational differentials: intersect the open set with the smooth locus, and use that a proper algebraic subset cannot contain a relative analytic open set. Extend $x$ to a transcendence basis $x,t_2,\ldots,t_d$ and set $k=\C(t_2,\ldots,t_d)$. The function field $L=\C(V)$ is finite separable over $k(x)$. The unique extension of $\partial_x$ to $L$ satisfies $\partial_xz=1/x$. Its normalized trace
+\[
+ w=\frac{1}{[L:k(x)]}\Tr_{L/k(x)}z\in k(x)
+\]
+would have $\partial_xw=1/x$. Trace commutes with the derivation through the embeddings in a normal closure. The derivative of a rational function has zero coefficient of $x^{-1}$ in its Laurent expansion at zero, a contradiction. This reasoning is in the function field and assumes no affine point above $x=0$.
+\end{proof}
+
+\begin{proposition}\label{prop:dim}
+For every positive $\theta$ and every $n\geq1$, $\dim Z_\theta\geq2$.
+\end{proposition}
+\begin{proof}
+The trajectory is nonconstant, since $Dx=-xJ<0$. If its closure were a curve, its nonzero derivation and~\eqref{eq:basic} would imply $dz=dx/x$ in its function field: the space of rational differentials on a curve has dimension one, and evaluation on a nonzero derivation is injective. The trace argument of Lemma~\ref{lem:log} again gives a contradiction.
+\end{proof}
+
+\begin{proposition}[Darboux classification]\label{prop:darboux}
+In the equal-infectivity case $w_1=\cdots=w_n=1$, for $n\geq2$, every nonzero polynomial $P$ satisfying $DP=cP$ with polynomial cofactor $c$ has the form $P=A x^k$, where $A\in\C^*$ and $k\geq0$. Its cofactor is $-kJ$.
+\end{proposition}
+\begin{proof}
+The degree of $c$ is at most one. Factor off the largest power of $x$, reducing to $x\nmid P$. Write
+\[
+ T=-\sum_i u_i\partial_{u_i}+N,\quad
+ N=\sum_{i=2}^n u_{i-1}\partial_{u_i},\quad
+ D=T-xJ\partial_x+xJ\partial_{u_1},\quad
+ P=\sum_{i=0}^s x^iP_i(u).
+\]
+Here $P_0\ne0$. The equation at $x=0$ is $TP_0=c(0,u)P_0$. Since $T$ preserves degree, $c(0,u)$ is constant. On the homogeneous degree-$r$ space, $T=-r+N$, with $N$ nilpotent. Thus $P_0$ is homogeneous of some degree $r\geq0$, $NP_0=0$, and $c=ax-r$ for a scalar $a$.
+
+The coefficient of $x^i$, for $i\geq1$, gives
+\begin{equation}\label{eq:adic}
+ (T+r-iJ)P_i=(a-J\partial_{u_1})P_{i-1}.
+\end{equation}
+For $i=1$ the right side is homogeneous of degree $r$ or is zero. If $P_1\ne0$ has highest degree $d$, the term $-J(P_1)_d$ forces $d\leq r-1$. But its lowest-degree component of degree $e\leq d$ then satisfies $(r-e+N)(P_1)_e=0$, impossible because $r-e>0$ and $N$ is nilpotent. If the right side is zero, the highest-degree term alone gives the contradiction. Hence $P_1=0$ and
+\[
+ J\partial_{u_1}P_0=aP_0.
+\]
+Regarding $J=u_1+\cdots+u_n$ as the first coordinate, polynomiality implies $a$ is a nonnegative integer and $P_0=J^a H(u_2,\ldots,u_n)$ for nonzero $H$. If $a>0$, use $NJ=J-u_n$ in $NP_0=0$, divide by $J^{a-1}$, and restrict to $J=0$. This gives $-a u_nH=0$, a contradiction for $n\geq2$. Thus $a=0$. Now $P_0$ is independent of $u_1$; comparing the coefficient of $u_1$ in $NP_0=0$ removes $u_2$, and successively removes every variable. Therefore $P_0$ is constant and $r=0$. Equation~\eqref{eq:adic} and highest-degree comparison give $P_i=0$ for all $i\geq2$. Restoring the factored power of $x$ proves the claim.
+\end{proof}
+
+For the equal-infectivity case $n=1$ there are also the factors $u_1^r$; this is a useful control on the restriction $n\geq2$. Proposition~\ref{prop:dim} already gives density for $n=1$. Still in the equal-infectivity setting, for $n=2$, a proper closure would be an invariant hypersurface, whose defining irreducible polynomial is Darboux. Proposition~\ref{prop:darboux} would make that hypersurface $x=0$, which contains no positive point. Higher dimensions require the additional argument below; hypersurface classification alone does not exclude a closure of higher codimension.
+
+\section{The equilibrium line belongs to every positive closure}\label{sec:EL}
+Let $L_{\rm eq}=\{(a,0,\ldots,0):a\in\C\}$.
+\begin{theorem}[Equilibrium line]\label{thm:EL}
+For every $n\geq1$ and every strictly positive real $\theta$, $L_{\rm eq}\subset Z_\theta$.
+\end{theorem}
+\begin{proof}
+The positive orthant is forward invariant. Each infection coordinate solves a linear decay equation with nonnegative input, and $x$ satisfies its exponential equation. Since $D(x+\sum_i u_i)=-u_n\leq0$, the state stays bounded and exists for all forward real time. The conserved quantity $H=z-\log x$ and $K,Ax\geq0$ imply $x\geq\exp(-H(\theta))>0$. Thus $x$ decreases to some $a>0$, and
+\[
+ \int_0^\infty J(\tau)\,d\tau=\log\frac{x(0)}a<\infty.
+\]
+The derivative $DJ$ is bounded on the bounded trajectory. Uniform continuity and nonnegativity of $J$ then give $J\to0$: a positive limsup would yield disjoint intervals of fixed width and positive integral. All $u_i$ and $K$ tend to zero because every $w_i$ is strictly positive. If $a\geq1/A$, the identity $DK=(Ax-1)J$ would make $K$ nondecreasing, contrary to $K(0)>0$ and $K\to0$. Hence
+\begin{equation}\label{eq:threshold}
+ 0<a<1/A.
+\end{equation}
+Analytic continuation of every polynomial vanishing on the trajectory germ shows that the limit $p_a=(a,0,\ldots,0)$ lies in $Z_\theta$.
+
+Write the infection equation as $Du=B_n(x)u$, where $B_n(x)=L-\mathrm{Id}+xe_1w^T$ and $L$ has ones on its subdiagonal and zeros elsewhere. The matrix $B_n(a)$ is Hurwitz. Indeed, if an eigenvalue had $\Re\lambda\geq0$, then $b=\lambda+1$ would have $|b|\geq1$. The eigenvector recurrence gives
+\[
+ 1=a\sum_{j=1}^n\frac{w_j}{b^j},\qquad
+ 1\leq a\sum_{j=1}^n\frac{w_j}{|b|^j}\leq aA<1,
+\]
+contrary to~\eqref{eq:threshold}. This includes $n=1$.
+
+Choose a holomorphic logarithm near the positive number $a$. Since $H_x(p_a)=A-1/a\ne0$, the implicit-function theorem gives ambient coordinates $(c,u)$ with $c=H$, $x=\chi(c,u)$, and
+\[
+ Dc=0,\qquad Du=B_n(\chi(c,u))u.
+\]
+Let $B_0=B_n(a)$. The positive Hermitian matrix
+\[
+ M=\int_0^\infty e^{B_0^*\tau}e^{B_0\tau}\,d\tau
+\]
+exists by the exponential decay of a Hurwitz matrix and satisfies $B_0^*M+MB_0=-\mathrm{Id}$. On a small complex neighborhood of $(H(p_a),0)$, continuity gives
+\[
+ B_n(\chi(c,u))^*M+M B_n(\chi(c,u))\leq-\tfrac12\mathrm{Id}.
+\]
+Take a small $c$-disk and an ellipsoid $u^*Mu<\varepsilon^2$ whose closure stays in this chart. Along real time with complex state,
+\[
+ \frac{d}{d\tau}(u^*Mu)\leq-\tfrac12\|u\|^2
+ \leq-\frac{u^*Mu}{2\lambda_{\max}(M)}.
+\]
+The solution therefore remains in the chart and converges exponentially to
+\begin{equation}\label{eq:projection}
+ \pi(c,u)=(\chi(c,0),0).
+\end{equation}
+The map $c\mapsto\chi(c,0)$ is locally injective. This construction takes place in the ambient space and does not require $Z_\theta$ to be smooth.
+
+Suppose $Z_\theta$ did not contain $L_{\rm eq}$. Its intersection with that line would be finite. Shrink the chart so that its limit map meets that intersection only at $p_a$. Every point $q\in Z_\theta$ in the chart remains in $Z_\theta$ under the flow: for finite generators $f_i$ of its $D$-stable ideal, equations $Df_i=\sum_j a_{ij}f_j$ give a homogeneous linear ODE for their values. Algebraic sets are closed in the complex Euclidean topology, so $\pi(q)\in Z_\theta$ and therefore $\pi(q)=p_a$. Local injectivity in~\eqref{eq:projection} makes $H(q)=H(p_a)$ throughout a nonempty relative analytic open subset of $Z_\theta$. But $x$ is nonconstant on $Z_\theta$, since it decreases along the positive trajectory. Lemma~\ref{lem:log} gives a contradiction.
+\end{proof}
+The real trajectory converges to $p_a$ with $a>0$. The theorem concerns its algebraic closure; it does not assert real convergence to $x=0$.
+
+\section{An algebraic obstruction at the boundary}\label{sec:boundary}
+The next theorem needs less than positive weights. In this section alone, fix any complex weights with $w_n\ne0$ and use~\eqref{eq:D} with $J=\sum_iw_i u_i$.
+\begin{theorem}[Affine-boundary exclusion]\label{thm:B}
+Let $n\geq2$. If $Z\subset\A^{n+1}$ is an irreducible closed invariant variety, $x$ is not identically zero on $Z$, and $2\leq d=\dim Z\leq n$, then $Z\cap\{x=0\}=\varnothing$.
+\end{theorem}
+The exclusions of dimension one and dimension $n+1$ are necessary: the equilibrium line and the whole ambient space both meet $x=0$.
+
+\subsection{A linear equation over a constant field}
+\begin{lemma}\label{lem:obstruction}
+Let $F$ be any field of characteristic zero, let $s,t$ be algebraically independent over $F$, and let $\delta=-s\partial_s+\partial_t$ on $F(s,t)$, with $\delta F=0$. For nonzero $P,R\in F[t]$ and nonzero $\lambda\in\Q$, the equations
+\begin{align}
+ (\delta-\lambda sP)c&=0,\label{eq:hom}\\
+ (\delta-sP)c&=R\label{eq:inhom}
+\end{align}
+have, respectively, no nonzero algebraic solution and no algebraic solution over $F(s,t)$. The one-variable statements on $F(s)$ with $\delta=-s\partial_s$ and nonzero constant $P,R$ hold as well.
+\end{lemma}
+\begin{proof}
+First classify the Darboux factors for $\delta$ on $F[s,t]$. If $\delta f=hf$, total degree makes $h$ constant. Writing $f=\sum_i s^if_i(t)$ gives $f_i'=(h+i)f_i$. A nonzero polynomial coefficient must be constant and have $h=-i$. Thus every nonconstant irreducible Darboux factor is $s$.
+
+If~\eqref{eq:hom} had a nonzero algebraic solution, its norm would give a rational function $v$ with $\delta v/v=e\lambda sP$, where $e$ is the finite extension degree. A numerator or denominator factor other than $s$ gives an uncancelled pole in this logarithmic derivative. Thus $v=a s^b$ for $a\in F^*$ and $b\in\mathbb Z$, and $\delta v/v=-b$, contrary to $e\lambda sP\ne0$.
+
+If~\eqref{eq:inhom} had an algebraic solution, normalized trace would give a rational solution $v$. A pole of order $q$ at an irreducible factor other than $s$ produces a pole of order $q+1$ in $\delta v$, which cannot be cancelled by $-sPv$ or $R$. Hence $v\in F[s,s^{-1},t]$. If its least $s$-exponent $b$ were negative, the coefficient of $s^b$ on the left would be $v_b'-b v_b\ne0$ for nonzero polynomial $v_b(t)$, whereas the right side has no negative $s$-power. Thus $v$ is polynomial. Its greatest $s$-exponent $d\geq0$ then produces the nonzero coefficient $-Pv_d$ at $s^{d+1}$, again impossible. The zero function is not a solution either.
+
+Derivations extend uniquely across separable algebraic extensions and commute with their embeddings, which justifies both norm and trace. The one-variable claim follows by the same argument, or by adjoining an independent $t$ with $\delta t=1$.
+\end{proof}
+
+\subsection{The residue field of a boundary component}
+Suppose that a variety $Z$ as in Theorem~\ref{thm:B} meets $x=0$, and choose an irreducible component $W$ of that intersection. Since $x$ is a nonzero nonunit on $Z$, the principal-divisor dimension formula gives $\dim W=d-1\geq1$. The local flow preserves the intersection and cannot permute its finitely many irreducible components near the identity, so $W$ is invariant under
+\[
+ D_0u_1=-u_1,\qquad D_0u_i=u_{i-1}-u_i.
+\]
+Let $k$ be the first index with $u_k$ not identically zero on $W$. If $k=n$, then $W$ is the last coordinate axis, $d=2$, and its function field is $\C(s)$ with $s=u_n$, $D_0s=-s$, and $J=w_n s$.
+
+For $k<n$, set $q=n-k$ and, on $W$, put
+\[
+ s=u_k,\qquad t=u_{k+1}/s,\qquad v_i=u_{k+i}/s\quad(0\leq i\leq q).
+\]
+Then $v_0=1$, $D_0s=-s$, $D_0t=1$, and $D_0v_i=v_{i-1}$ for $i\geq1$. Define
+\begin{equation}\label{eq:invariants}
+ c_i=\sum_{j=0}^i\frac{(-t)^j}{j!}v_{i-j},\qquad
+ v_i=\sum_{a=0}^i\frac{c_a t^{i-a}}{(i-a)!}.
+\end{equation}
+Here $c_0=1$, $c_1=0$, and $D_0c_i=0$. Set $F=\C(c_2,\ldots,c_q)\subset\C(W)$. These are constants for the boundary derivation, not for the full nonlinear system.
+
+The elements $s,t$ are algebraically independent over $F$. Algebraicity of $t$ over a constant field would force $D_0t=0$. If $s$ were algebraic over $F(t)$, its norm would yield a nonzero rational function $v(t)$ with $v'/v$ equal to minus the extension degree. A rational logarithmic derivative is $O(1/t)$ at infinity, so it cannot be a nonzero constant. Formula~\eqref{eq:invariants} recovers all state coordinates, proving
+\begin{equation}\label{eq:residue}
+ \C(W)=F(s,t),\qquad D_0=\delta=-s\partial_s+\partial_t,
+ \qquad r:=\trdeg_\C F=d-3.
+\end{equation}
+In particular $\dim W\geq2$. The residue of $J$ has the form $sP(t)$, where
+\begin{equation}\label{eq:leadingP}
+ P(t)=\sum_{i=0}^q w_{k+i}v_i\in F[t],\qquad
+ \deg P=q,\qquad [t^q]P=\frac{w_n}{q!}\ne0.
+\end{equation}
+
+\subsection{A valuation chart with moving parameters}\label{sec:valuation}
+Choose a prime divisor above $W$ in the normalization of $Z$, and normalize its valuation by $v(x)=1$. Finite normalization and the codimension-one local ring give a discrete valuation; its residue field can be a finite extension of $\C(W)$, which is allowed here. The standard local-ring and valuation facts used at this step are recorded in~\cite{Stacks}. All regular state coordinates have nonnegative valuation, and $s$ is a unit at this generic point.
+
+Choose a transcendence basis $a_1,\ldots,a_r$ of $F/\C$ from among the boundary $c_i$. Lift these elements, $s$, and $t$ to $\C(Z)$ using their actual rational expressions in the state coordinates, and retain the same notation. Their residues are algebraically independent. The elements $x,s,t,a_1,\ldots,a_r$ are therefore algebraically independent as well: after removing the least power of $x$ from a polynomial relation, reduction modulo the valuation would contradict independence of the other residues. There are $r+3=d$ elements, so $\C(Z)$ is finite separable over
+\[
+ E(x),\qquad E=\C(s,t,a_1,\ldots,a_r).
+\]
+The valuation is trivial on nonzero elements of $E$ and restricts to the $x$-adic valuation on $E(x)$. Complete at the chosen divisor and enlarge the coefficient field to an algebraic closure $\overline E$. The characteristic-zero Newton--Puiseux theorem embeds the finite extension, compatibly with the chosen valuation, in $\overline E((x^{1/e}))$ for some $e$. We use only this one-variable theorem, with a possibly transcendental coefficient field; see the characteristic-zero statement in~\cite{Poonen}. Both $\C(W)$ and the finite residue extension embed in $\overline E$. Thus the series coefficients are algebraic over $F(s,t)$.
+
+Identify the residue of $E$ with $E$ through the chosen lifts, and embed the residue field over this identification. The embedded boundary field $F$ is algebraic over $\C(a_1,\ldots,a_r)$. Thus the coefficient derivation $\delta=-s\partial_s+\partial_t$ annihilates this copy of $F$, although it need not annihilate general coefficients algebraic over $F(s,t)$. Actual lifts of the invariants need not be $D$-constant.
+
+Each coordinate partial derivation on $E(x)$ extends uniquely over a separable algebraic extension. The termwise coordinate partials on the Puiseux series agree, on the embedded algebraic function field, with these unique extensions. In the series embedding, the actual derivation is
+\begin{equation}\label{eq:fullD}
+ D=(Dx)\partial_x+(Ds)\partial_s+(Dt)\partial_t
+       +\sum_{j=1}^r(Da_j)\partial_{a_j}.
+\end{equation}
+The exact formulas below will give
+\begin{equation}\label{eq:leadingD}
+ Dx=-xsP+o(x),\quad Ds=-s+o(1),\quad Dt=1+o(1),
+ \quad Da_j=o(1),
+\end{equation}
+where the notation refers to valuation. The leading coefficient derivation is $\delta=-s\partial_s+\partial_t$. It kills elements algebraic over $\C(a_1,\ldots,a_r)$, in particular the embedded boundary field $F$, but not arbitrary algebraic coefficients over $E$. The actual $Da_j$ need not be zero.
+
+If $h=cx^\nu+$ higher terms is nonzero with $\nu=v(h)>0$, formula~\eqref{eq:fullD} gives
+\begin{equation}\label{eq:leadingh}
+ [x^\nu]Dh=(\delta-\nu sP)c\ne0.
+\end{equation}
+Indeed $\partial_x$ lowers exponents by one and the other coefficient partials do not lower them; all parameter-motion terms have strictly higher valuation. The coefficient is nonzero by~\eqref{eq:hom}, since $\nu$ is a positive rational number. Consequently $v(Dh)=v(h)$. This includes ramification, algebraic leading coefficients, and the finite extension of the boundary residue field. For $k=n$, use the basis $x,s$ instead; the same statements hold with $\delta=-s\partial_s$ and $P=w_n$.
+
+\subsection{Components whose first nonzero stage is later than the first}
+Let $k\geq2$ and define on $Z$
+\[
+ s=u_k,\qquad h=u_1/s,\qquad b=u_{k-1}/s,\qquad P^*=J/s.
+\]
+The residues of $h$ and $b$ are zero, and $P^*$ has the nonzero residue $P$ in~\eqref{eq:leadingP}, or $w_n$ on the last axis. Exact differentiation gives
+\begin{equation}\label{eq:later}
+ Ds=s(b-1),\qquad Dh=xP^*-hb,\qquad Dx=-xsP^*.
+\end{equation}
+For $k<n$, one also has $Dt=1-tb$ and $Dv_i=v_{i-1}-bv_i$ for $i\geq1$. The actual lifts of~\eqref{eq:invariants} satisfy
+\begin{equation}\label{eq:laterc}
+ Dc_i=bG_i,\qquad G_i=t c_{i-1}-c_i+\frac{(-t)^i}{i!}\quad(i\geq2).
+\end{equation}
+These formulas verify~\eqref{eq:leadingD}, even when $v(b)$ is fractional.
+
+If $h=0$, equation~\eqref{eq:later} would give $xP^*=0$, impossible. Thus $\nu=v(h)>0$. Since $v(hb)>\nu$ (with $v(0)=\infty$), equations~\eqref{eq:leadingh} and~\eqref{eq:later} force $\nu=1$. For $\nu<1$ both right-hand terms have higher valuation, while for $\nu>1$ their sum has valuation one. At valuation one the coefficient equation is
+\[
+ (\delta-sP)c=P,
+\]
+contrary to Lemma~\ref{lem:obstruction}. On the terminal axis it is $(\delta-sw_n)c=w_n$, with the same contradiction. This also covers $n=k=2$, where $h=b$.
+
+\subsection{Relations among boundary invariants}
+It remains to treat $k=1$. Here $s=u_1$, $t=u_2/u_1$, $P^*=J/s$, and the exact equations are
+\[
+ Ds=s(xP^*-1),\quad Dt=1-xtP^*,\quad
+ Dv_i=v_{i-1}-xP^*v_i\ (i\geq1),\quad Dv_0=0.
+\]
+Hold a formal variable $T$ constant and work modulo $T^n$. Put
+\[
+ V(T)=\sum_{i=0}^{n-1}v_iT^i,\qquad
+ C(T)=e^{-tT}V(T)=\sum_{i=0}^{n-1}c_iT^i.
+\]
+Then $DV=TV-xP^*(V-1)$ and
+\begin{equation}\label{eq:generating}
+ DC(T)=xP^*\bigl[(tT-1)C(T)+e^{-tT}\bigr].
+\end{equation}
+Coefficient comparison, for arbitrary $n$, yields
+\begin{equation}\label{eq:ci}
+ Dc_i=xP^*G_i,\qquad
+ G_i=t c_{i-1}-c_i+\frac{(-t)^i}{i!},\qquad 2\leq i\leq n-1.
+\end{equation}
+In particular the chosen parameter lifts satisfy~\eqref{eq:leadingD}.
+
+Let $\mathcal I$ be the kernel of the evaluation map
+$\C[C_2,\ldots,C_{n-1}]\longrightarrow F$ that sends $C_i$ to the boundary residue of $c_i$. It is a proper prime ideal. If $n=2$,~\eqref{eq:residue} already gives $\dim W\geq2$, incompatible with $d\leq2$. If $n\geq3$, then
+\[
+ \trdeg_\C F=d-3\leq n-3<n-2,
+\]
+so $\mathcal I$ must be nonzero.
+
+Take $f\in\mathcal I$ and its actual lift $h=f(c_2,\ldots,c_{n-1})$. Its residue is zero, and~\eqref{eq:ci} gives
+\begin{equation}\label{eq:relation}
+ Dh=xP^*R(t,c),\qquad R=\sum_{i=2}^{n-1}G_i\partial_i f.
+\end{equation}
+Suppose the residue $R_0\in F[t]$ were nonzero. If $h=0$, equation~\eqref{eq:relation} is already a contradiction. Otherwise~\eqref{eq:leadingh} forces $v(h)=1$ and gives
+\[
+ (\delta-sP)c=PR_0,
+\]
+contrary to~\eqref{eq:inhom}. Thus $R_0=0$ for every $f\in\mathcal I$.
+
+The variable $t$ is transcendental over $F$. For each $i\geq2$, the coefficient of $t^i$ in $R_0$ is exactly $(-1)^i(\partial_i f)(c)/i!$: all terms $t c_{j-1}-c_j$ have degree at most one, and the remaining term of $G_j$ has degree exactly $j$. Hence $\partial_i f\in\mathcal I$ for every $i$. In characteristic zero a proper polynomial ideal stable under all coordinate partial derivatives must be zero. To see this, choose a nonzero member of least total degree; if nonconstant, it has a nonzero partial derivative of lower degree, and if constant, it cannot belong to a proper ideal. This contradicts $\mathcal I\ne0$.
+
+All possible $W$ have been excluded, proving Theorem~\ref{thm:B}. The case of no relations would give $\dim W=2+(n-2)=n$ and $\dim Z=n+1$, exactly the ambient-space case deliberately excluded from the theorem.
+
+\section{Density of every positive trajectory}
+\begin{theorem}\label{thm:density}
+For every finite $n\geq1$, every fixed positive weight vector with $w_1=1$, and every positive real initial point of~\eqref{eq:D}, the trajectory is Zariski dense in $\A^{n+1}$.
+\end{theorem}
+\begin{proof}
+Theorem~\ref{thm:EL} puts the equilibrium line and its origin in $Z_\theta$. Since the closure is irreducible and also contains a positive point outside that line, its dimension is at least two, consistently with Proposition~\ref{prop:dim}. For $n=1$ this is already full dimension. For $n\geq2$, a proper closure would have dimension between two and $n$, and $x$ would not vanish identically on it. Theorem~\ref{thm:B} would make its intersection with $x=0$ empty, contradicting the origin supplied by Theorem~\ref{thm:EL}.
+\end{proof}
+The density assertion concerns the reduced state space after eliminating $R$. With $R$ included, the conserved population imposes its affine constraint. No density in an unconstrained space including $R$ is asserted.
+
+\section{Recovering the hidden chain in physical time}\label{sec:recovery}
+Return to~\eqref{eq:weighted}, and write $D=d/dt$ throughout this section. The invertible state scaling and the nonzero time scaling used earlier transfer density to the true trajectory in $\C[S,I_1,\ldots,I_n]$ at its fixed rates and weights. Both observations in the argument that follows use the same original physical time.
+
+For the linear infection chain define
+\begin{equation}\label{eq:Bn}
+ B_{n,w}(X,\zeta)=\sum_{j=1}^n w_j\zeta^{j-1}(X+\zeta)^{n-j}.
+\end{equation}
+The identities $(D+\zeta)I_1=y$ and $(D+\zeta)I_j=\zeta I_{j-1}$ imply
+\begin{equation}\label{eq:chain}
+ (D+\zeta)^nJ_w=B_{n,w}(D,\zeta)y.
+\end{equation}
+This holds with arbitrary initial infection states; no zero-state assumption is used.
+
+\subsection{The susceptible offset vanishes}
+Let a positive competing model have order $m$, rates $b,\eta$, and weights $v_1=1,v_2,\ldots,v_m>0$. Equality of incidence germs gives $S^*=S+\Delta$ for a constant $\Delta$. Set $q=S+\Delta$, so $Dq=-y$ and the competing pressure is $J^*=y/(bq)$. Division is valid near the initial time because both susceptible states are positive.
+
+Define polynomials, using differentiation along the true model, by
+\begin{equation}\label{eq:Pj}
+ P_0=y,\qquad P_{j+1}=qDP_j+(j+1)yP_j.
+\end{equation}
+The quotient rule gives $D^j(y/q)=P_j/q^{j+1}$. Substitute into the competing chain identity and clear denominators to obtain the state polynomial
+\begin{equation}\label{eq:Fm}
+ F_m=\sum_{j=0}^m\binom mj\eta^{m-j}q^{m-j}P_j
+       -bq^{m+1}B_{m,v}(D,\eta)y.
+\end{equation}
+It vanishes on the true trajectory. Theorem~\ref{thm:density} therefore makes it the zero polynomial. Reducing~\eqref{eq:Pj} modulo $q$ gives
+\begin{equation}\label{eq:remainder}
+ F_m\bmod q=m!y^{m+1}.
+\end{equation}
+If $\Delta\ne0$, substitution of $S=-\Delta$ gives $y=-\beta\Delta\sum w_j I_j$, a nonzero state polynomial. Equation~\eqref{eq:remainder} is then impossible. Hence $\Delta=0$ and $S^*=S$. The negative substitution is a test of a polynomial identity, not the introduction of negative competing physical states.
+
+\subsection{Rates, order, and weights}
+Now $J^*=\beta J_w/b$. Eliminating $J_w$ between the true and competing versions of~\eqref{eq:chain} gives $T(D)y=0$, where
+\begin{equation}\label{eq:T}
+ T(X)=\beta(X+\eta)^m B_{n,w}(X,\zeta)
+       -b(X+\zeta)^n B_{m,v}(X,\eta).
+\end{equation}
+We show that $T$ is the zero polynomial in $X$.
+
+The highest homogeneous part of the physical vector field, acting on functions of $S,J_w$, is
+\[
+ D_2=\beta S J_w(-\partial_S+\partial_{J_w}),
+\]
+because $w_1=1$. The highest degree of $D^k y$ is $k+2$, with nonzero coefficient $(-1)^k\beta^{k+1}$ on $S J_w^{k+1}$. Indeed, to obtain that monomial from $D_2^k(\beta S J_w)$ one must choose the $-\partial_S$ term at every step; choosing the other term increases the exponent of $S$, which subsequent steps cannot decrease. The linear part of the vector field cannot contribute to this highest degree. Since $S,J_w$ are algebraically independent, these leading polynomials are nonzero. Distinct $k$ give distinct degrees, so $y,Dy,\ldots$ are linearly independent over $\C$ as state polynomials. Density applied to $T(D)y=0$ proves $T=0$.
+
+The leading coefficient of $B_{n,w}$ is $w_1=1$ and its degree is $n-1$. The highest coefficient of~\eqref{eq:T} is therefore $\beta-b$, giving $b=\beta$. It follows that
+\begin{equation}\label{eq:transfer}
+ \frac{B_{n,w}(X,\zeta)}{(X+\zeta)^n}
+   =\frac{B_{m,v}(X,\eta)}{(X+\eta)^m}.
+\end{equation}
+There is no pole cancellation, since
+\[
+ B_{n,w}(-\zeta,\zeta)=w_n\zeta^{n-1}\ne0
+\]
+and the same holds for the competitor. The unique pole and its order give $\eta=\zeta$ and $m=n$. Equality of numerators in the basis $(X+\zeta)^{n-j}$, together with $\zeta\ne0$, gives $v_j=w_j$ for every $j$.
+
+Thus the transfer identity is derived from the nonlinear observation, through density and the independence of the derivatives of $y$. It is not assumed to be directly measured. Since the argument applies to each arbitrary finite $m$, it needs no common finite bound on competing orders and no additional generic restriction.
+
+\subsection{Every initial state}
+The common values of $S$ and $\beta$ give the common germ $J_w=y/(\beta S)$. Let $I$ be the infection column vector, $e=e_1$, $L$ the subdiagonal shift, and $A_\zeta=\zeta(L-\mathrm{Id})$. Then $DI=A_\zeta I+ey$. Repeated differentiation gives
+\begin{equation}\label{eq:observation}
+ D^rJ_w=w^TA_\zeta^r I+
+ \sum_{h=0}^{r-1}(w^TA_\zeta^{r-1-h}e)D^h y,
+ \qquad r\geq0,
+\end{equation}
+with an empty sum when $r=0$. For $r=0,\ldots,n-1$, subtract the known input terms. The coefficient matrix $\mathcal O$ has rows $w^TA_\zeta^r$. Unit lower-triangular binomial row operations change these rows to $w^T(A_\zeta+\zeta\mathrm{Id})^r=\zeta^r w^TL^r$. This matrix is triangular about its opposite diagonal, with opposite-diagonal entries $\zeta^r w_n$, so
+\begin{equation}\label{eq:obsdet}
+ \det\mathcal O=(-1)^{n(n-1)/2}\zeta^{n(n-1)/2}w_n^n\ne0.
+\end{equation}
+Equation~\eqref{eq:observation} uniquely recovers the full infection vector, in particular its initial value. Finally
+\[
+ R(0)=N_0-S(0)-\sum_{j=1}^n I_j(0).
+\]
+The population uses the unweighted infection sum, not $J_w$. This proves Theorem~\ref{thm:main}.
+
+For $w_j=1$, all the weighted formulas specialize to the equal-infectivity model: $A=n$, $\ell_j=n-j+1$, and
+\begin{equation}\label{eq:equalB}
+ B_{n,1}(X,\zeta)
+ =\sum_{a=0}^{n-1}\binom n{a+1}\zeta^{n-1-a}X^a
+ =\frac{(X+\zeta)^n-\zeta^n}{X}.
+\end{equation}
+The last expression denotes a polynomial identity, including at $X=0$. Restricting both models to these weights proves Corollary~\ref{cor:equal}. The weighted theorem also distinguishes an equal-infectivity true model from positive normalized weighted competitors.
+
+\paragraph{Use of AI.}
+AI assistance was used in developing the arguments, writing and running exact algebra checks, staged proof review, and preparation of the manuscript. The author retains responsibility for the mathematical claims, attribution, and any subsequent dissemination.
+
+\appendix
+\section{Exact finite checks}\label{app:checks}
+The accompanying Python package uses integer and rational arithmetic from the standard library. Its finite checks cover the displayed identities and representative specializations; the all-order results rest on the proofs above. The runner writes to a selected output directory and does not need the source repository history, network access, or earlier work directories.
+
+For equal infectivity, it checks $253$ small Darboux coefficient matrices: $125$ for $n=2$ at total degree at most four, $64$ for $n=3$ at degree at most three, and $64$ at $n=1$ as a control with the additional factors $u_1^r$. It also checks the contracting equilibrium calculation at $n=4$, including a threshold control, and $41$ groups of free-parameter Laurent polynomial identities for the $n=5$ boundary argument. In the latter, the $t^2,t^3,t^4$ coefficient matrix separating the invariant partial derivatives has determinant $-1/288$; the coordinate Jacobian is $1/u_1^4$. Free invariant parameters describe the whole boundary space, a necessary control on the dimension restriction.
+
+For the weighted model, separate finite checks include $25$ reconstruction identities for $n=2,\ldots,6$, $27$ characteristic-polynomial evaluations for $n=1,\ldots,6$, six checks each of~\eqref{eq:obsdet}, weight recovery, and the weighted conservation identity, and seven denominator-remainder checks through order six. Twelve tests recover arbitrary rational infection states after subtracting the input terms in~\eqref{eq:observation}, using both nonuniform and equal weights for $n=1,\ldots,6$. Another $21$ coefficient comparisons verify~\eqref{eq:equalB}. The input derivatives in the state-recovery tests are synthetic values for an exact linear identity, not simulated epidemic observations.
+
+The reproduction command is
+\begin{center}\texttt{python3 -B reproduce.py --output build/checks}\end{center}
+from the accompanying package directory. It checks file integrity, runs the included bounded checks, and compares their scientific output with frozen baselines while recording runtime and peak memory separately. The package also includes negative controls for a false moving-invariant identity and for tampering with a checked input. A passing finite run checks the listed algebra and packaging; it does not machine-certify complex convergence, normalization, or the valuation argument.
+
+\begin{thebibliography}{9}\small\raggedright
+\bibitem{PSP} B. Pant, O. Saucedo, and G. Pogudin.
+\emph{Uncovering identifiability of epidemiological models: basic reproduction number and complementary data streams}.
+medRxiv, version 2, 25 January 2026.
+\href{https://doi.org/10.64898/2026.01.16.26344284}{doi:10.64898/2026.01.16.26344284}.
+Definition 1, equation (3.3), Conjecture 1, and Appendix B.
+\bibitem{Fixed} T. Takimoto.
+\emph{Global identifiability for the staged-infection SIR model}.
+Companion manuscript, draft dated 29 October 2026. Same-author preceding work on each fixed known order; no external publication status is asserted.
+\bibitem{HK} P. J. Hurtado and A. S. Kirosingh.
+\emph{Generalizations of the `Linear Chain Trick': Incorporating more flexible dwell time distributions into mean field ODE models}.
+\href{https://arxiv.org/abs/1808.07571v1}{arXiv:1808.07571v1} (2018).
+\bibitem{RW} T. K. S. Ritschel and J. Wyller.
+\emph{An algorithm for distributed time delay identification without a priori knowledge of the kernel}.
+Automatica 178 (2025), 112382.
+\href{https://doi.org/10.1016/j.automatica.2025.112382}{doi:10.1016/j.automatica.2025.112382}.
+\bibitem{Poonen} B. Poonen.
+\emph{Maximally complete fields}.
+L'Enseignement Math\'ematique 39 (1993), 87--106.
+\href{https://math.mit.edu/~poonen/papers/amsval.pdf}{Author manuscript}, Introduction (characteristic-zero Puiseux statement).
+\bibitem{Stacks} The Stacks Project Authors.
+\emph{The Stacks Project}.
+\href{https://stacks.math.columbia.edu/tag/00PD}{Tag 00PD} (normal local rings of dimension one) and
+\href{https://stacks.math.columbia.edu/tag/0ASF}{Tag 0ASF} (finite extensions of discrete valuation fields).
+\end{thebibliography}
+\end{document}

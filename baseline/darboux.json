@@ -1,0 +1,1878 @@
+{
+  "arithmetic": "integer coefficient construction; rank over F_1000003",
+  "prime": 1000003,
+  "tests": [
+    {
+      "n": 1,
+      "degree_bound": 3,
+      "columns": 10,
+      "cofactor": "a*x-r-k*J",
+      "cases": 64,
+      "results": [
+        {
+          "a": 0,
+          "r": 0,
+          "k": 0,
+          "rank_mod_prime": 9,
+          "kernel_monomial_exponents": [
+            0,
+            0
+          ]
+        },
+        {
+          "a": 0,
+          "r": 0,
+          "k": 1,
+          "rank_mod_prime": 9,
+          "kernel_monomial_exponents": [
+            1,
+            0
+          ]
+        },
+        {
+          "a": 0,
+          "r": 0,
+          "k": 2,
+          "rank_mod_prime": 9,
+          "kernel_monomial_exponents": [
+            2,
+            0
+          ]
+        },
+        {
+          "a": 0,
+          "r": 0,
+          "k": 3,
+          "rank_mod_prime": 9,
+          "kernel_monomial_exponents": [
+            3,
+            0
+          ]
+        },
+        {
+          "a": 0,
+          "r": 1,
+          "k": 0,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 1,
+          "k": 1,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 1,
+          "k": 2,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 1,
+          "k": 3,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 2,
+          "k": 0,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 2,
+          "k": 1,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 2,
+          "k": 2,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 2,
+          "k": 3,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 3,
+          "k": 0,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 3,
+          "k": 1,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 3,
+          "k": 2,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 3,
+          "k": 3,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 0,
+          "k": 0,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 0,
+          "k": 1,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 0,
+          "k": 2,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 0,
+          "k": 3,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 1,
+          "k": 0,
+          "rank_mod_prime": 9,
+          "kernel_monomial_exponents": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": 1,
+          "r": 1,
+          "k": 1,
+          "rank_mod_prime": 9,
+          "kernel_monomial_exponents": [
+            1,
+            1
+          ]
+        },
+        {
+          "a": 1,
+          "r": 1,
+          "k": 2,
+          "rank_mod_prime": 9,
+          "kernel_monomial_exponents": [
+            2,
+            1
+          ]
+        },
+        {
+          "a": 1,
+          "r": 1,
+          "k": 3,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 2,
+          "k": 0,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 2,
+          "k": 1,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 2,
+          "k": 2,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 2,
+          "k": 3,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 3,
+          "k": 0,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 3,
+          "k": 1,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 3,
+          "k": 2,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 3,
+          "k": 3,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 0,
+          "k": 0,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 0,
+          "k": 1,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 0,
+          "k": 2,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 0,
+          "k": 3,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 1,
+          "k": 0,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 1,
+          "k": 1,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 1,
+          "k": 2,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 1,
+          "k": 3,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 2,
+          "k": 0,
+          "rank_mod_prime": 9,
+          "kernel_monomial_exponents": [
+            0,
+            2
+          ]
+        },
+        {
+          "a": 2,
+          "r": 2,
+          "k": 1,
+          "rank_mod_prime": 9,
+          "kernel_monomial_exponents": [
+            1,
+            2
+          ]
+        },
+        {
+          "a": 2,
+          "r": 2,
+          "k": 2,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 2,
+          "k": 3,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 3,
+          "k": 0,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 3,
+          "k": 1,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 3,
+          "k": 2,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 3,
+          "k": 3,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 0,
+          "k": 0,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 0,
+          "k": 1,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 0,
+          "k": 2,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 0,
+          "k": 3,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 1,
+          "k": 0,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 1,
+          "k": 1,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 1,
+          "k": 2,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 1,
+          "k": 3,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 2,
+          "k": 0,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 2,
+          "k": 1,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 2,
+          "k": 2,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 2,
+          "k": 3,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 3,
+          "k": 0,
+          "rank_mod_prime": 9,
+          "kernel_monomial_exponents": [
+            0,
+            3
+          ]
+        },
+        {
+          "a": 3,
+          "r": 3,
+          "k": 1,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 3,
+          "k": 2,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 3,
+          "k": 3,
+          "rank_mod_prime": 10,
+          "kernel_monomial_exponents": null
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "degree_bound": 4,
+      "columns": 35,
+      "cofactor": "a*x-r-k*J",
+      "cases": 125,
+      "results": [
+        {
+          "a": 0,
+          "r": 0,
+          "k": 0,
+          "rank_mod_prime": 34,
+          "kernel_monomial_exponents": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "a": 0,
+          "r": 0,
+          "k": 1,
+          "rank_mod_prime": 34,
+          "kernel_monomial_exponents": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "a": 0,
+          "r": 0,
+          "k": 2,
+          "rank_mod_prime": 34,
+          "kernel_monomial_exponents": [
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "a": 0,
+          "r": 0,
+          "k": 3,
+          "rank_mod_prime": 34,
+          "kernel_monomial_exponents": [
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "a": 0,
+          "r": 0,
+          "k": 4,
+          "rank_mod_prime": 34,
+          "kernel_monomial_exponents": [
+            4,
+            0,
+            0
+          ]
+        },
+        {
+          "a": 0,
+          "r": 1,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 1,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 1,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 1,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 1,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 2,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 2,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 2,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 2,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 2,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 3,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 3,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 3,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 3,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 3,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 4,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 4,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 4,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 4,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 4,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 0,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 0,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 0,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 0,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 0,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 1,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 1,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 1,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 1,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 1,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 2,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 2,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 2,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 2,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 2,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 3,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 3,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 3,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 3,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 3,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 4,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 4,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 4,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 4,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 4,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 0,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 0,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 0,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 0,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 0,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 1,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 1,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 1,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 1,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 1,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 2,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 2,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 2,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 2,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 2,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 3,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 3,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 3,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 3,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 3,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 4,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 4,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 4,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 4,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 4,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 0,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 0,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 0,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 0,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 0,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 1,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 1,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 1,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 1,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 1,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 2,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 2,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 2,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 2,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 2,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 3,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 3,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 3,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 3,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 3,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 4,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 4,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 4,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 4,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 4,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 0,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 0,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 0,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 0,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 0,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 1,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 1,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 1,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 1,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 1,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 2,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 2,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 2,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 2,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 2,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 3,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 3,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 3,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 3,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 3,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 4,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 4,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 4,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 4,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 4,
+          "r": 4,
+          "k": 4,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "degree_bound": 3,
+      "columns": 35,
+      "cofactor": "a*x-r-k*J",
+      "cases": 64,
+      "results": [
+        {
+          "a": 0,
+          "r": 0,
+          "k": 0,
+          "rank_mod_prime": 34,
+          "kernel_monomial_exponents": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "a": 0,
+          "r": 0,
+          "k": 1,
+          "rank_mod_prime": 34,
+          "kernel_monomial_exponents": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "a": 0,
+          "r": 0,
+          "k": 2,
+          "rank_mod_prime": 34,
+          "kernel_monomial_exponents": [
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "a": 0,
+          "r": 0,
+          "k": 3,
+          "rank_mod_prime": 34,
+          "kernel_monomial_exponents": [
+            3,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "a": 0,
+          "r": 1,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 1,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 1,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 1,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 2,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 2,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 2,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 2,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 3,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 3,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 3,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 0,
+          "r": 3,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 0,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 0,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 0,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 0,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 1,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 1,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 1,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 1,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 2,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 2,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 2,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 2,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 3,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 3,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 3,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 1,
+          "r": 3,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 0,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 0,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 0,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 0,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 1,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 1,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 1,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 1,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 2,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 2,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 2,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 2,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 3,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 3,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 3,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 2,
+          "r": 3,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 0,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 0,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 0,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 0,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 1,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 1,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 1,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 1,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 2,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 2,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 2,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 2,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 3,
+          "k": 0,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 3,
+          "k": 1,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 3,
+          "k": 2,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        },
+        {
+          "a": 3,
+          "r": 3,
+          "k": 3,
+          "rank_mod_prime": 35,
+          "kernel_monomial_exponents": null
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.025772291992325336,
+  "maxrss_bytes": 17154048,
+  "api_dollars": 0,
+  "passed": true
+}

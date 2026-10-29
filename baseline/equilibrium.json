@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "check_groups": 11,
+  "checks": [
+    "population without removed class: D(x+J)=-u4",
+    "weighted infection: DK=(4x-1)J",
+    "Dz=-J",
+    "logarithmic conservation after clearing x: x Dz-Dx=0",
+    "n4 characteristic polynomial, free a and lambda",
+    "rational Lyapunov solution is symmetric",
+    "all 16 Lyapunov residual entries vanish",
+    "all four leading principal minors are strictly positive",
+    "a=1/4 has zero eigenvector (1,1,1,1)",
+    "a=1/4 also makes H_x zero",
+    "a=1/8 has nonzero H_x"
+  ],
+  "lyapunov_control": {
+    "a": "1/8",
+    "P": [
+      [
+        "12588/6553",
+        "7738/6553",
+        "4168/6553",
+        "1718/6553"
+      ],
+      [
+        "7738/6553",
+        "35069/26212",
+        "9047/13106",
+        "6591/26212"
+      ],
+      [
+        "4168/6553",
+        "9047/13106",
+        "5911/6553",
+        "4227/13106"
+      ],
+      [
+        "1718/6553",
+        "6591/26212",
+        "4227/13106",
+        "13965/26212"
+      ]
+    ],
+    "leading_principal_minors": [
+      "12588/6553",
+      "50485499/42941809",
+      "27517250/42941809",
+      "11456681/42941809"
+    ],
+    "threshold_control_a": "1/4",
+    "threshold_control": "zero infection eigenvalue and H_x=0"
+  },
+  "arithmetic": "exact rational polynomial identities and linear algebra",
+  "elapsed_seconds": 0.0036081669968552887,
+  "peak_rss_bytes": 21594112,
+  "cpu_limit_seconds": 60,
+  "rss_limit_enforced": false,
+  "cost_usd": 0,
+  "limitations": "Identity and control checks only; no numerical orbit evidence or formal/independent certification of EL/U4."
+}

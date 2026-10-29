@@ -1,0 +1,68 @@
+{
+  "state_recovery_cases": [
+    {
+      "n": 1,
+      "weighted": false,
+      "initial_state_recovered": true
+    },
+    {
+      "n": 1,
+      "weighted": true,
+      "initial_state_recovered": true
+    },
+    {
+      "n": 2,
+      "weighted": false,
+      "initial_state_recovered": true
+    },
+    {
+      "n": 2,
+      "weighted": true,
+      "initial_state_recovered": true
+    },
+    {
+      "n": 3,
+      "weighted": false,
+      "initial_state_recovered": true
+    },
+    {
+      "n": 3,
+      "weighted": true,
+      "initial_state_recovered": true
+    },
+    {
+      "n": 4,
+      "weighted": false,
+      "initial_state_recovered": true
+    },
+    {
+      "n": 4,
+      "weighted": true,
+      "initial_state_recovered": true
+    },
+    {
+      "n": 5,
+      "weighted": false,
+      "initial_state_recovered": true
+    },
+    {
+      "n": 5,
+      "weighted": true,
+      "initial_state_recovered": true
+    },
+    {
+      "n": 6,
+      "weighted": false,
+      "initial_state_recovered": true
+    },
+    {
+      "n": 6,
+      "weighted": true,
+      "initial_state_recovered": true
+    }
+  ],
+  "unit_weight_Q_coefficients_checked": 21,
+  "elapsed_seconds": 0.0022945829550735652,
+  "ru_maxrss_platform_units": 16285696,
+  "limit": "synthetic input jets test the linear recovery identity, not epidemic simulation"
+}

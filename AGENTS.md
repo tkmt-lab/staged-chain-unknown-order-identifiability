@@ -1,0 +1,1 @@
+Read README.md, claims.json, and VERIFICATION-RECORD.md. Keep the positive-competitor, w1=1, common-rate, known-population and complete-germ conditions. Run the three README checks. Do not claim finite-data inference, formal certification or human review.

@@ -1,0 +1,57 @@
+{
+  "status": "v1.0.0_local_release_candidate",
+  "main_theorem": "W",
+  "claims": [
+    {
+      "id": "W",
+      "statement": "All finite positive normalized weighted chains are identified against all finite positive normalized weighted competitors from a complete physical-time incidence germ and known population.",
+      "recovers": [
+        "stage number",
+        "transmission rate",
+        "common progression rate",
+        "all infectivity weights",
+        "all initial states"
+      ],
+      "proof": "paper.tex sections 2-6",
+      "component_review": "R044 check-1 at 966d92fb3"
+    },
+    {
+      "id": "SInR",
+      "statement": "Equal-weight SInR is the motivating corollary for all finite true and competing orders and all positive points.",
+      "proof": "Corollary 1.1 and end of section 6",
+      "component_review": "R043 check-4 pinned in 51cc27588"
+    },
+    {
+      "id": "B",
+      "statement": "For fixed complex weights with terminal weight nonzero, every irreducible invariant variety of dimensions 2 through n with x not identically zero avoids x=0.",
+      "proof": "paper.tex section 4"
+    },
+    {
+      "id": "EL_P",
+      "statement": "For positive fixed weights, every positive orbit closure contains the equilibrium line and is the full reduced state space.",
+      "proof": "paper.tex sections 3 and 5"
+    },
+    {
+      "id": "Darboux",
+      "statement": "For equal weights and n>=2 only nonzero scalar multiples of x^k are Darboux polynomials.",
+      "proof": "paper.tex Proposition 2.3",
+      "component_review": "R043 check-1 alternative proof"
+    }
+  ],
+  "limitations": [
+    "strict positivity in both physical models",
+    "w1=1 normalization",
+    "single chain and common progression rate",
+    "known N0",
+    "same original physical time",
+    "complete noiseless analytic germ",
+    "no arbitrary-real-competitor claim",
+    "no finite-data or noise-stability guarantee"
+  ],
+  "formal_certification": false,
+  "human_peer_review": false,
+  "priority_established": false,
+  "fresh_reader_of_integrated_draft": "MINOR at d3a842293; both requested expository corrections applied; post-revision referee review not claimed",
+  "checks": "five unchanged programs; finite algebra only",
+  "publication": "local only; not published or pushed"
+}
