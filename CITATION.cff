@@ -2,7 +2,7 @@
   "cff-version": "1.2.0",
   "type": "software",
   "message": "Cite the article and exact supporting-code version.",
-  "title": "Infection stages, infectivity weights, and initial states from incidence",
+  "title": "Identifying infection stages, infectivity weights, and initial states from incidence",
   "version": "1.0.0",
   "authors": [
     {
@@ -14,7 +14,7 @@
   "license": "Apache-2.0",
   "preferred-citation": {
     "type": "article",
-    "title": "Infection stages, infectivity weights, and initial states from incidence",
+    "title": "Identifying infection stages, infectivity weights, and initial states from incidence",
     "authors": [
       {
         "family-names": "Takimoto",

@@ -1,4 +1,4 @@
-# Infection stages, infectivity weights, and initial states from incidence
+# Identifying infection stages, infectivity weights, and initial states from incidence
 
 Version 1.0.0, local release candidate. Read [the paper](paper.pdf), [source](paper.tex), [claims](claims.json), and [verification record](VERIFICATION-RECORD.md).
 
