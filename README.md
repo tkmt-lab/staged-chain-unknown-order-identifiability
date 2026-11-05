@@ -1,6 +1,16 @@
 # Identifying infection stages, infectivity weights, and initial states from incidence
 
-Version 1.0.0, local release candidate. Read [the paper](paper.pdf), [source](paper.tex), [claims](claims.json), and [verification record](VERIFICATION-RECORD.md).
+Version 1.0.0 — release date: 2026-11-16. Read [the paper](paper.pdf), [source](paper.tex), [claims](claims.json), and [verification record](VERIFICATION-RECORD.md).
+
+## First run
+
+With Python 3.10+ (standard library only), run from this directory:
+
+```sh
+python3 -B reproduce.py --output build/checks
+```
+
+Expected: JSON with `"status": "PASS"`, `"manifest_entries": 29`, and five `"baseline_match": true` results (`darboux`, `equilibrium`, `boundary`, `weighted`, `recovery`). Timing and peak memory vary. The same result is saved to `build/checks/summary.json`. No network or installation is needed for this check.
 
 For a single staged SIR chain with positive rates and initial states, common progression rate, positive infectivity weights normalized by w1=1, and known total population N0, the complete noiseless incidence germ in the same physical time identifies the finite stage number, both rates, all weights, and all initial states against every finite positive competing order. No extra generic condition or upper order bound is imposed. Equal weights give the SInR corollary.
 
@@ -18,11 +28,12 @@ python3 -B publication_privacy.py
 
 Five checks run serially with 60-second CPU and wall limits per child. Memory is measured, not capped. They compare scientific fields against frozen exact baselines, excluding timing and memory from equality. These finite checks do not certify the all-order analytic and valuation proofs. Outputs remain under ignored build/.
 
-The PDF is included. With Tectonic and its TeX resources already cached:
+The PDF is included. Optional offline rebuild with pdfLaTeX (TeX Live with the `lmodern`, AMS, `booktabs`, `geometry` and `hyperref` packages installed). Run twice to resolve cross-references:
 
 ```sh
 mkdir -p build/pdf
-tectonic --only-cached --untrusted --outdir build/pdf paper.tex
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error -output-directory=build/pdf paper.tex
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error -output-directory=build/pdf paper.tex
 ```
 
 ## Attribution
@@ -34,6 +45,16 @@ The preceding same-author work [Global identifiability for the staged-infection 
 Hurtado–Kirosingh provide linear-chain background; Ritschel–Wyller provide a comparison for mixed-Erlang kernel estimation. Full references are in the article. Priority is not asserted.
 
 ## 日本語
+
+版 1.0.0 — 公開日：2026-11-16。
+
+最初の実行例（Python 3.10 以上、標準ライブラリのみ。一式のディレクトリで実行）：
+
+```sh
+python3 -B reproduce.py --output build/checks
+```
+
+期待する出力は JSON の `"status": "PASS"`、`"manifest_entries": 29` と、5 件（`darboux`、`equilibrium`、`boundary`、`weighted`、`recovery`）すべての `"baseline_match": true` です。時間・メモリ値は実行ごとに変わり、同じ結果が `build/checks/summary.json` に保存されます。この計算に通信や追加インストールは不要です。続けて上の Reproduce 節の残りの二つの検査を実行してください。
 
 正の一列の段階感染モデルについて、総人口が既知で、遷移率が全段で共通、感染力の重みが正で先頭の重みが1の場合を扱います。同じ物理時間の完全な無雑音の罹患率関数から、段数・二つの率・全重み・全初期状態が、任意の有限段数の正の競合の中で一意に決まります。全重み1ではSInRの結果に戻ります。
 

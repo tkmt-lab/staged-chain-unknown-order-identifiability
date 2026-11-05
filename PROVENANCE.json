@@ -4,13 +4,17 @@
   "inputs": [
     {
       "copy": "paper.pdf",
-      "bytes": 125280,
-      "sha256": "14a7ab8278e739e4c443132d0b5a2ee84f67086a6af422581e2b7ab3dee7c567"
+      "bytes": 351678,
+      "sha256": "09849751ce5fa9589ed4087760cc74b98ef418402406bbb3fef892f5b2a25a93",
+      "previous_package_sha256": "14a7ab8278e739e4c443132d0b5a2ee84f67086a6af422581e2b7ab3dee7c567",
+      "previous_package_bytes": 125280
     },
     {
       "copy": "paper.tex",
-      "bytes": 39813,
-      "sha256": "791bae8e5182cd0c470bbbb4ee04f27b1a88be0ccf0a531a7bb8c1c078ffef1e"
+      "bytes": 39874,
+      "sha256": "2b66913d03b414cc775ecc9ab0fb655ad12b96a6ea5740ca9d6ac596d853939c",
+      "previous_package_sha256": "791bae8e5182cd0c470bbbb4ee04f27b1a88be0ccf0a531a7bb8c1c078ffef1e",
+      "previous_package_bytes": 39813
     },
     {
       "copy": "reproduce.py",
@@ -24,9 +28,11 @@
     },
     {
       "copy": "claims.json",
-      "bytes": 2299,
-      "sha256": "3c45ddb8b8fe673b9abb5e0f01232bdd521ee58484eb29d7c527d7538e973e64",
-      "source_sha256": "9770d6bb594f80cbfab9fa9dae573d794e0c1401a768151513f706116684ad41"
+      "bytes": 2384,
+      "sha256": "589829a6ce6c5149b57b148daedd6ea889895cb772a82717f6b6aa0f87090e32",
+      "source_sha256": "9770d6bb594f80cbfab9fa9dae573d794e0c1401a768151513f706116684ad41",
+      "previous_package_sha256": "3c45ddb8b8fe673b9abb5e0f01232bdd521ee58484eb29d7c527d7538e973e64",
+      "previous_package_bytes": 2299
     },
     {
       "copy": "checks/darboux.py",
@@ -78,5 +84,13 @@
       "bytes": 1331,
       "sha256": "72bf6e60a418ef54c14e2b11323fa66c88ab52203609a41c2b5a1cf7feedc61d"
     }
-  ]
+  ],
+  "release_update": {
+    "base_package_commit": "a69bdb50b7f6e408bc63dab33df4d4b0750a6c5c",
+    "version": "1.0.0",
+    "release_date": "2026-11-16",
+    "changes": "Editorial metadata, release wording, article date, preceding fixed-order citation, and PDF rebuild; mathematical statements, numerical claims, programs and baselines unchanged.",
+    "pdf_build": "pdfLaTeX (TeX Live 2025/dev/Debian), two passes; see README.md",
+    "hash_fields": "bytes and sha256 identify current copies; previous_package_* identify the base-package copies; source_sha256, where present, identifies the original upstream source."
+  }
 }

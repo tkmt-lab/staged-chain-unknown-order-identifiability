@@ -1,6 +1,6 @@
 # Verification record
 
-Version 1.0.0. The paper PDF/TeX and five computational programs are preserved byte-for-byte from the corrected integrated manuscript. Public copies and baseline hashes are recorded in PROVENANCE.json and MANIFEST.sha256.
+Version 1.0.0 — 16 November 2026. The five computational programs and exact baselines are preserved byte-for-byte from the corrected integrated manuscript. The article date, review-description wording and preceding fixed-order article citation have been updated for this version, and the PDF has been regenerated; mathematical statements and numerical claims are unchanged. Current public-copy and baseline hashes are recorded in PROVENANCE.json and MANIFEST.sha256. Original source hashes for edited inputs are retained there separately from current hashes.
 
 The proof components received staged statement-first AI checks: equal-weight algebraic exclusions, equilibrium-line inclusion, arbitrary-order boundary exclusion, and the weighted extension including physical-time recovery. The reviewer retained earlier knowledge and reused its own arithmetic tools. These are cumulative component checks, not five unrelated fresh human reviews. The integrated manuscript then received a fresh AI reading with two expository MINOR requests, both applied in the supplied revision. No post-revision referee verdict or formal certification is claimed.
 
@@ -8,4 +8,4 @@ The five unchanged programs check small Darboux matrices, equilibrium contractio
 
 This public packaging step uses the existing component evidence, not a new independent proof review. Internal instructions, candidate rankings and goal documents are excluded. The companion fixed-order result is same-author work. Model and question attribution remains Pant–Saucedo–Pogudin; linear-chain and kernel-identification context is credited in the paper.
 
-Local release preparation does not establish GitHub CI, a public release, a DOI, human peer review, or novelty. The coordinator must perform external release checks on the exact published commit.
+At the 5 November 2026 local packaging check, no external release checks were performed. Local checks do not establish GitHub CI results, DOI registration, human peer review, or novelty. External release checks must concern the exact published commit; this record makes no claim that those checks have passed.

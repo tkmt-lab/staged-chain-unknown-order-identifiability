@@ -1,5 +1,5 @@
 {
-  "status": "v1.0.0_local_release_candidate",
+  "status": "v1.0.0",
   "main_theorem": "W",
   "claims": [
     {
@@ -53,5 +53,9 @@
   "priority_established": false,
   "fresh_reader_of_integrated_draft": "MINOR at d3a842293; both requested expository corrections applied; post-revision referee review not claimed",
   "checks": "five unchanged programs; finite algebra only",
-  "publication": "local only; not published or pushed"
+  "publication": {
+    "version": "1.0.0",
+    "date": "2026-11-16",
+    "repository": "https://github.com/tkmt-lab/staged-chain-unknown-order-identifiability"
+  }
 }

@@ -22,6 +22,12 @@
       }
     ],
     "version": "1.0.0",
-    "license": "CC-BY-4.0"
-  }
+    "license": "CC-BY-4.0",
+    "date-released": "2026-11-16",
+    "year": 2026,
+    "month": 11,
+    "url": "https://github.com/tkmt-lab/staged-chain-unknown-order-identifiability"
+  },
+  "date-released": "2026-11-16",
+  "repository-code": "https://github.com/tkmt-lab/staged-chain-unknown-order-identifiability"
 }

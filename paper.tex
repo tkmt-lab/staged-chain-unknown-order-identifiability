@@ -17,7 +17,7 @@
 \DeclareMathOperator{\ord}{ord}
 \title{Identifying infection stages, infectivity weights,\\and initial states from incidence}
 \author{Tatsuhiko Takimoto\\Independent researcher}
-\date{Draft, 30 October 2026}
+\date{Version 1.0.0 --- 16 November 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -67,7 +67,7 @@ Linear-chain representations of Erlang and more general dwell-time distributions
 Ritschel and Wyller~\cite{RW} estimate mixed-Erlang kernel weights and a common rate through a dynamical maximum-likelihood problem at a prescribed truncation order, with a constant initial history. Our initial infection states are free positive unknowns, so this kernel alone does not describe the full response. Nor is the kernel itself observed: only $y=\beta S J_w$ is observed, with $S(0)$ unknown. Section~\ref{sec:recovery} proves the step from that nonlinear observation to equality of transfer functions before using poles to identify the chain. We make no claim for arbitrary phase-type networks, unequal progression rates, parallel or branching chains, or nonpositive competitors.
 
 \paragraph{Proof and verification scope.}
-The theorem is supported by the prose proof below and by exact finite algebra checks described in Appendix~\ref{app:checks}. The component arguments have received staged review by a separate AI reviewer, with prior knowledge of earlier components disclosed. This is not human peer review or formal proof certification; priority has not been established. The accompanying \texttt{VERIFICATION-RECORD.md} records those reviews and the checks of this draft.
+The theorem is supported by the prose proof below and by exact finite algebra checks described in Appendix~\ref{app:checks}. The component arguments have received staged review by a separate AI reviewer, with prior knowledge of earlier components disclosed. This is not human peer review or formal proof certification; priority has not been established. The accompanying \texttt{VERIFICATION-RECORD.md} records those manuscript reviews and finite checks.
 
 \section{Algebraic closures and preliminary exclusions}\label{sec:prelim}
 Use the invertible changes
@@ -448,7 +448,9 @@ medRxiv, version 2, 25 January 2026.
 Definition 1, equation (3.3), Conjecture 1, and Appendix B.
 \bibitem{Fixed} T. Takimoto.
 \emph{Global identifiability for the staged-infection SIR model}.
-Companion manuscript, draft dated 29 October 2026. Same-author preceding work on each fixed known order; no external publication status is asserted.
+Version 1.0.0, 3 November 2026.
+\href{https://doi.org/10.5281/zenodo.23900995}{doi:10.5281/zenodo.23900995}.
+Same-author preceding work on each fixed known order; not external independent evidence.
 \bibitem{HK} P. J. Hurtado and A. S. Kirosingh.
 \emph{Generalizations of the `Linear Chain Trick': Incorporating more flexible dwell time distributions into mean field ODE models}.
 \href{https://arxiv.org/abs/1808.07571v1}{arXiv:1808.07571v1} (2018).

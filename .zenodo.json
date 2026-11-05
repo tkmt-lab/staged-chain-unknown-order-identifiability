@@ -1,0 +1,22 @@
+{
+  "title": "Identifying infection stages, infectivity weights, and initial states from incidence",
+  "upload_type": "publication",
+  "publication_type": "article",
+  "publication_date": "2026-11-16",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Takimoto, Tatsuhiko",
+      "affiliation": "Independent researcher"
+    }
+  ],
+  "description": "Article and exact finite checks for positive staged-chain identifiability from a complete noiseless incidence germ and known population. Article, text and generated data: CC BY 4.0; code and CI: Apache-2.0. Finite checks are not formal proof certification or human peer review.",
+  "license": "cc-by-4.0",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/tkmt-lab/staged-chain-unknown-order-identifiability",
+      "relation": "isSupplementedBy",
+      "resource_type": "software"
+    }
+  ]
+}
