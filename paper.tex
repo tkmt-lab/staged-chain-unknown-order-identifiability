@@ -21,7 +21,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-A staged SIR model with a common progression rate can assign a different infectivity weight to each infection stage. We prove that its incidence germ and total population determine the number of stages, both rates, all infectivity weights, and every initial state, provided the rates, weights, and initial states are strictly positive and the first weight is normalized to one. The true and competing stage numbers range over all finite positive integers. In particular, no exceptional positive true points remain in the equal-infectivity model. The proof establishes Zariski density of each positive trajectory after eliminating the removed compartment. A logarithmic first integral forces the algebraic closure to contain the equilibrium line; a boundary argument using relations among Jordan-chain invariants excludes every proper closure of dimension at least two. Polynomial chain consistency then connects the nonlinear incidence observation to a transfer-function identity, which determines the hidden chain. Exact finite checks supplement the proof.
+A staged SIR model with a common progression rate can assign a different infectivity weight to each infection stage. We prove that its complete noiseless incidence germ in the same physical time and the known total population determine the number of stages, both rates, all infectivity weights, and every initial state, provided both true and competing models have strictly positive rates, weights, and initial states, with the first weight normalized to one. The true and competing stage numbers range over all finite positive integers. In particular, no exceptional positive true points remain in the equal-infectivity model. The proof establishes Zariski density of each positive trajectory after eliminating the removed compartment. A logarithmic first integral forces the algebraic closure to contain the equilibrium line; a boundary argument using relations among Jordan-chain invariants excludes every proper closure of dimension at least two. Polynomial chain consistency then connects the nonlinear incidence observation to a transfer-function identity, which determines the hidden chain. Exact finite checks supplement the proof.
 \end{abstract}
 
 \section{The question and the observation}
@@ -67,7 +67,7 @@ Linear-chain representations of Erlang and more general dwell-time distributions
 Ritschel and Wyller~\cite{RW} estimate mixed-Erlang kernel weights and a common rate through a dynamical maximum-likelihood problem at a prescribed truncation order, with a constant initial history. Our initial infection states are free positive unknowns, so this kernel alone does not describe the full response. Nor is the kernel itself observed: only $y=\beta S J_w$ is observed, with $S(0)$ unknown. Section~\ref{sec:recovery} proves the step from that nonlinear observation to equality of transfer functions before using poles to identify the chain. We make no claim for arbitrary phase-type networks, unequal progression rates, parallel or branching chains, or nonpositive competitors.
 
 \paragraph{Proof and verification scope.}
-The theorem is supported by the prose proof below and by exact finite algebra checks described in Appendix~\ref{app:checks}. The component arguments have received staged review by a separate AI reviewer, with prior knowledge of earlier components disclosed. This is not human peer review or formal proof certification; priority has not been established. The accompanying \texttt{VERIFICATION-RECORD.md} records those manuscript reviews and finite checks.
+The theorem is supported by the prose proof below and by exact finite algebra checks described in Appendix~\ref{app:checks}. The accompanying \texttt{VERIFICATION-RECORD.md} describes the scope and dependencies of the AI reviews and finite checks. The article has not received human peer review or formal proof certification; priority has not been established.
 
 \section{Algebraic closures and preliminary exclusions}\label{sec:prelim}
 Use the invertible changes
@@ -437,7 +437,7 @@ For equal infectivity, it checks $253$ small Darboux coefficient matrices: $125$
 For the weighted model, separate finite checks include $25$ reconstruction identities for $n=2,\ldots,6$, $27$ characteristic-polynomial evaluations for $n=1,\ldots,6$, six checks each of~\eqref{eq:obsdet}, weight recovery, and the weighted conservation identity, and seven denominator-remainder checks through order six. Twelve tests recover arbitrary rational infection states after subtracting the input terms in~\eqref{eq:observation}, using both nonuniform and equal weights for $n=1,\ldots,6$. Another $21$ coefficient comparisons verify~\eqref{eq:equalB}. The input derivatives in the state-recovery tests are synthetic values for an exact linear identity, not simulated epidemic observations.
 
 The reproduction command is
-\begin{center}\texttt{python3 -B reproduce.py --output build/checks}\end{center}
+\begin{center}\texttt{python3 -B reproduce.py -{}-output build/checks}\end{center}
 from the accompanying package directory. It checks file integrity, runs the included bounded checks, and compares their scientific output with frozen baselines while recording runtime and peak memory separately. The package also includes negative controls for a false moving-invariant identity and for tampering with a checked input. A passing finite run checks the listed algebra and packaging; it does not machine-certify complex convergence, normalization, or the valuation argument.
 
 \begin{thebibliography}{9}\small\raggedright
@@ -450,7 +450,7 @@ Definition 1, equation (3.3), Conjecture 1, and Appendix B.
 \emph{Global identifiability for the staged-infection SIR model}.
 Version 1.0.0, 3 November 2026.
 \href{https://doi.org/10.5281/zenodo.23900995}{doi:10.5281/zenodo.23900995}.
-Same-author preceding work on each fixed known order; not external independent evidence.
+Same-author preceding work on each fixed known order.
 \bibitem{HK} P. J. Hurtado and A. S. Kirosingh.
 \emph{Generalizations of the `Linear Chain Trick': Incorporating more flexible dwell time distributions into mean field ODE models}.
 \href{https://arxiv.org/abs/1808.07571v1}{arXiv:1808.07571v1} (2018).

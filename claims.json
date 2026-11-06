@@ -13,13 +13,13 @@
         "all initial states"
       ],
       "proof": "paper.tex sections 2-6",
-      "component_review": "R044 check-1 at 966d92fb3"
+      "component_review": "Weighted-extension component review at 966d92fb3"
     },
     {
       "id": "SInR",
       "statement": "Equal-weight SInR is the motivating corollary for all finite true and competing orders and all positive points.",
       "proof": "Corollary 1.1 and end of section 6",
-      "component_review": "R043 check-4 pinned in 51cc27588"
+      "component_review": "All-order equal-infectivity review pinned in 51cc27588"
     },
     {
       "id": "B",
@@ -35,7 +35,7 @@
       "id": "Darboux",
       "statement": "For equal weights and n>=2 only nonzero scalar multiples of x^k are Darboux polynomials.",
       "proof": "paper.tex Proposition 2.3",
-      "component_review": "R043 check-1 alternative proof"
+      "component_review": "Equal-infectivity Darboux alternative proof review"
     }
   ],
   "limitations": [

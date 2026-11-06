@@ -4,17 +4,21 @@
   "inputs": [
     {
       "copy": "paper.pdf",
-      "bytes": 351678,
-      "sha256": "09849751ce5fa9589ed4087760cc74b98ef418402406bbb3fef892f5b2a25a93",
+      "bytes": 351532,
+      "sha256": "1cd7cdb360080aa72360ebec9a7f30509e12dac9eb5ecc0a9bb56f33a6188cde",
       "previous_package_sha256": "14a7ab8278e739e4c443132d0b5a2ee84f67086a6af422581e2b7ab3dee7c567",
-      "previous_package_bytes": 125280
+      "previous_package_bytes": 125280,
+      "before_text_revision_sha256": "09849751ce5fa9589ed4087760cc74b98ef418402406bbb3fef892f5b2a25a93",
+      "before_text_revision_bytes": 351678
     },
     {
       "copy": "paper.tex",
-      "bytes": 39874,
-      "sha256": "2b66913d03b414cc775ecc9ab0fb655ad12b96a6ea5740ca9d6ac596d853939c",
+      "bytes": 39829,
+      "sha256": "c70d841616ac2a010b98e481931e548a12251eb2da25002cc2c4b8ee0583d6b1",
       "previous_package_sha256": "791bae8e5182cd0c470bbbb4ee04f27b1a88be0ccf0a531a7bb8c1c078ffef1e",
-      "previous_package_bytes": 39813
+      "previous_package_bytes": 39813,
+      "before_text_revision_sha256": "2b66913d03b414cc775ecc9ab0fb655ad12b96a6ea5740ca9d6ac596d853939c",
+      "before_text_revision_bytes": 39874
     },
     {
       "copy": "reproduce.py",
@@ -28,11 +32,13 @@
     },
     {
       "copy": "claims.json",
-      "bytes": 2384,
-      "sha256": "589829a6ce6c5149b57b148daedd6ea889895cb772a82717f6b6aa0f87090e32",
+      "bytes": 2449,
+      "sha256": "17a85dacd34405cf3ef2bb498a7d341b4b80b849d67c0ddf6f314d7a7400423f",
       "source_sha256": "9770d6bb594f80cbfab9fa9dae573d794e0c1401a768151513f706116684ad41",
       "previous_package_sha256": "3c45ddb8b8fe673b9abb5e0f01232bdd521ee58484eb29d7c527d7538e973e64",
-      "previous_package_bytes": 2299
+      "previous_package_bytes": 2299,
+      "before_text_revision_sha256": "589829a6ce6c5149b57b148daedd6ea889895cb772a82717f6b6aa0f87090e32",
+      "before_text_revision_bytes": 2384
     },
     {
       "copy": "checks/darboux.py",
@@ -92,5 +98,12 @@
     "changes": "Editorial metadata, release wording, article date, preceding fixed-order citation, and PDF rebuild; mathematical statements, numerical claims, programs and baselines unchanged.",
     "pdf_build": "pdfLaTeX (TeX Live 2025/dev/Debian), two passes; see README.md",
     "hash_fields": "bytes and sha256 identify current copies; previous_package_* identify the base-package copies; source_sha256, where present, identifies the original upstream source."
+  },
+  "text_revision": {
+    "base_package_commit": "32ae6b4fe22dc8419df96faf122ef84ebdb2bc59",
+    "date": "2026-11-06",
+    "changes": "Reader-facing order, attribution, contact and scope; review dependencies retained in verification record; PDF command typography; internal review labels replaced with descriptive labels. Mathematical statements, numerical claims, programs and baselines unchanged.",
+    "pdf_build": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian); two passes with README commands",
+    "hash_fields": "bytes and sha256 identify current files; before_text_revision_* identify copies at base_package_commit; other historical hash fields retain their original meanings."
   }
 }
