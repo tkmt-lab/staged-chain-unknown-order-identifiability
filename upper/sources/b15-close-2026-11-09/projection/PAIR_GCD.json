@@ -1,0 +1,170 @@
+{
+  "records": [
+    {
+      "prime": 104729,
+      "branch": 82,
+      "pairs": [
+        "02",
+        "03"
+      ],
+      "gcd_degree": 50,
+      "squarefree_degree": 30
+    },
+    {
+      "prime": 104729,
+      "branch": 82,
+      "pairs": [
+        "02",
+        "12"
+      ],
+      "gcd_degree": 3016,
+      "squarefree_degree": 2966
+    },
+    {
+      "prime": 104729,
+      "branch": 82,
+      "pairs": [
+        "03",
+        "12"
+      ],
+      "gcd_degree": 50,
+      "squarefree_degree": 30
+    },
+    {
+      "prime": 104729,
+      "branch": 82,
+      "pairs": [
+        "02",
+        "03",
+        "12"
+      ],
+      "gcd_degree": 50,
+      "squarefree_degree": 30
+    },
+    {
+      "prime": 104729,
+      "branch": 99,
+      "pairs": [
+        "02",
+        "03"
+      ],
+      "gcd_degree": 0,
+      "squarefree_degree": 0
+    },
+    {
+      "prime": 104729,
+      "branch": 99,
+      "pairs": [
+        "02",
+        "12"
+      ],
+      "gcd_degree": 4346,
+      "squarefree_degree": 4346
+    },
+    {
+      "prime": 104729,
+      "branch": 99,
+      "pairs": [
+        "03",
+        "12"
+      ],
+      "gcd_degree": 0,
+      "squarefree_degree": 0
+    },
+    {
+      "prime": 104729,
+      "branch": 99,
+      "pairs": [
+        "02",
+        "03",
+        "12"
+      ],
+      "gcd_degree": 0,
+      "squarefree_degree": 0
+    },
+    {
+      "prime": 131071,
+      "branch": 82,
+      "pairs": [
+        "02",
+        "03"
+      ],
+      "gcd_degree": 50,
+      "squarefree_degree": 30
+    },
+    {
+      "prime": 131071,
+      "branch": 82,
+      "pairs": [
+        "02",
+        "12"
+      ],
+      "gcd_degree": 3016,
+      "squarefree_degree": 2966
+    },
+    {
+      "prime": 131071,
+      "branch": 82,
+      "pairs": [
+        "03",
+        "12"
+      ],
+      "gcd_degree": 50,
+      "squarefree_degree": 30
+    },
+    {
+      "prime": 131071,
+      "branch": 82,
+      "pairs": [
+        "02",
+        "03",
+        "12"
+      ],
+      "gcd_degree": 50,
+      "squarefree_degree": 30
+    },
+    {
+      "prime": 131071,
+      "branch": 99,
+      "pairs": [
+        "02",
+        "03"
+      ],
+      "gcd_degree": 0,
+      "squarefree_degree": 0
+    },
+    {
+      "prime": 131071,
+      "branch": 99,
+      "pairs": [
+        "02",
+        "12"
+      ],
+      "gcd_degree": 4346,
+      "squarefree_degree": 4346
+    },
+    {
+      "prime": 131071,
+      "branch": 99,
+      "pairs": [
+        "03",
+        "12"
+      ],
+      "gcd_degree": 0,
+      "squarefree_degree": 0
+    },
+    {
+      "prime": 131071,
+      "branch": 99,
+      "pairs": [
+        "02",
+        "03",
+        "12"
+      ],
+      "gcd_degree": 0,
+      "squarefree_degree": 0
+    }
+  ],
+  "seconds": 8.559942406999994,
+  "rss_KiB": 79732
+}

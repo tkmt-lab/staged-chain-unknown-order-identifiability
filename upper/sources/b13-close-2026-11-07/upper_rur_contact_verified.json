@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "source_sha256": "3171434c69b8d49cbf66efd65c889f06dd88fbbe0968b95c65f77ae15eb91b08",
+  "source": "lower_RUR_CANDIDATE.json",
+  "H_squarefree_and_common_denominator_coprime": true,
+  "checks": {
+    "F": {
+      "status": "PASS",
+      "numerator_degree": 4621,
+      "quotient_degree": 4332,
+      "homogenizing_exponent_k_plus_t": 16,
+      "seconds": 5.8801165499999115
+    },
+    "WF": {
+      "status": "PASS",
+      "numerator_degree": 4622,
+      "quotient_degree": 4333,
+      "homogenizing_exponent_k_plus_t": 16,
+      "seconds": 11.105492789999971
+    },
+    "W2F": {
+      "status": "PASS",
+      "numerator_degree": 4623,
+      "quotient_degree": 4334,
+      "homogenizing_exponent_k_plus_t": 16,
+      "seconds": 16.438598087999708
+    }
+  },
+  "seconds": 16.439356040999883
+}

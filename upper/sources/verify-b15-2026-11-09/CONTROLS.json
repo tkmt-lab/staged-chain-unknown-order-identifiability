@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "R01_exact_factor_product": true,
+  "H50_degree": 50,
+  "H30_degree": 30,
+  "H80_degree": 80,
+  "factors_pairwise_coprime": true,
+  "domain_boundary_disjoint": true,
+  "changed_section_rejected": true,
+  "CRT_controls": [
+    {
+      "pair": "01",
+      "same_residue_mutation_rejected": true
+    },
+    {
+      "pair": "02",
+      "same_residue_mutation_rejected": true
+    },
+    {
+      "pair": "03",
+      "same_residue_mutation_rejected": true
+    }
+  ],
+  "seconds": 2.7468718389999367,
+  "rss_KiB": 120924
+}

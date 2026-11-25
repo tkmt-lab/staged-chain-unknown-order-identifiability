@@ -1,0 +1,157 @@
+{
+  "schema": "r044-QQ-hensel-cluster-setup-v1",
+  "input_sha256": {
+    "studies/R044/b15-close-2026-11-09/audit/G99.json.gz": "8e3afa838696810f1fd55e82bf62477bf1494ad16b3d4f5899bcedda8d2adcfd",
+    "studies/R044/b15-close-2026-11-09/audit/CRT_R02.json.gz": "1b1c70383ea024f9dac8110df8a191d31de7713411557041e35e0e0dd12cb988"
+  },
+  "point_h": -1,
+  "precision": 38,
+  "mobius_c": 1,
+  "initial_content_valuations": [
+    0,
+    0
+  ],
+  "initial_valuation_contribution": 0,
+  "clusters": [
+    {
+      "index": 0,
+      "factor_coefficients": [
+        "0",
+        "1"
+      ],
+      "multiplicity": 4,
+      "common_with_G0": true,
+      "cluster_degree": 4,
+      "remainder_nominal_degree": 3,
+      "product_identity_mod_qN": true,
+      "F_path": "upper/sources/b15-close-2026-11-09/projection/cluster_G99_0_F.json",
+      "G_path": "upper/sources/b15-close-2026-11-09/projection/cluster_G99_0_G.json"
+    },
+    {
+      "index": 1,
+      "factor_coefficients": [
+        "171/9384296905",
+        "713601/187685938100",
+        "44658147/187685938100",
+        "1174792217/187685938100",
+        "15377723943/187685938100",
+        "4256928423/7507437524",
+        "78061102421/37537187620",
+        "722288099427/187685938100",
+        "122422718973/37537187620",
+        "1"
+      ],
+      "multiplicity": 1,
+      "common_with_G0": true,
+      "cluster_degree": 9,
+      "remainder_nominal_degree": 8,
+      "product_identity_mod_qN": true,
+      "F_path": "upper/sources/b15-close-2026-11-09/projection/cluster_G99_1_F.json",
+      "G_path": "upper/sources/b15-close-2026-11-09/projection/cluster_G99_1_G.json"
+    },
+    {
+      "index": 2,
+      "factor_coefficients": [
+        "-9/39083683",
+        "-231/78167366",
+        "-5479/39083683",
+        "-51504/39083683",
+        "3856/39083683",
+        "1904173/39083683",
+        "9335100/39083683",
+        "19888292/39083683",
+        "27159809/39083683",
+        "80798373/78167366",
+        "1"
+      ],
+      "multiplicity": 1,
+      "common_with_G0": true,
+      "cluster_degree": 10,
+      "remainder_nominal_degree": 9,
+      "product_identity_mod_qN": true,
+      "F_path": "upper/sources/b15-close-2026-11-09/projection/cluster_G99_2_F.json",
+      "G_path": "upper/sources/b15-close-2026-11-09/projection/cluster_G99_2_G.json"
+    },
+    {
+      "index": 3,
+      "factor_coefficients": [
+        "-15/43467091",
+        "-3943/173868364",
+        "-340253/1043210184",
+        "584983/521605092",
+        "61988831/1043210184",
+        "268343509/521605092",
+        "2064820505/1043210184",
+        "1911739045/521605092",
+        "3294289165/1043210184",
+        "1"
+      ],
+      "multiplicity": 2,
+      "common_with_G0": true,
+      "cluster_degree": 18,
+      "remainder_nominal_degree": 17,
+      "product_identity_mod_qN": true,
+      "F_path": "upper/sources/b15-close-2026-11-09/projection/cluster_G99_3_F.json",
+      "G_path": "upper/sources/b15-close-2026-11-09/projection/cluster_G99_3_G.json"
+    },
+    {
+      "index": 4,
+      "factor_coefficients": [
+        "1",
+        "1"
+      ],
+      "multiplicity": 3,
+      "common_with_G0": true,
+      "cluster_degree": 3,
+      "remainder_nominal_degree": 2,
+      "product_identity_mod_qN": true,
+      "F_path": "upper/sources/b15-close-2026-11-09/projection/cluster_G99_4_F.json",
+      "G_path": "upper/sources/b15-close-2026-11-09/projection/cluster_G99_4_G.json"
+    },
+    {
+      "index": 5,
+      "factor_coefficients": [
+        "9/2203547",
+        "2991/11017735",
+        "802243/132212820",
+        "143452/2203547",
+        "17242387/44070940",
+        "198477/139465",
+        "141254187/44070940",
+        "47864667/11017735",
+        "85244923/26442564",
+        "1"
+      ],
+      "multiplicity": 3,
+      "common_with_G0": true,
+      "cluster_degree": 27,
+      "remainder_nominal_degree": 26,
+      "product_identity_mod_qN": true,
+      "F_path": "upper/sources/b15-close-2026-11-09/projection/cluster_G99_5_F.json",
+      "G_path": "upper/sources/b15-close-2026-11-09/projection/cluster_G99_5_G.json"
+    },
+    {
+      "index": 6,
+      "factor_coefficients": [
+        "51/125818",
+        "4327/377454",
+        "453041/3774540",
+        "598033/943635",
+        "1762559/943635",
+        "5883221/1887270",
+        "2079109/754908",
+        "1"
+      ],
+      "multiplicity": 4,
+      "common_with_G0": true,
+      "cluster_degree": 28,
+      "remainder_nominal_degree": 27,
+      "product_identity_mod_qN": true,
+      "F_path": "upper/sources/b15-close-2026-11-09/projection/cluster_G99_6_F.json",
+      "G_path": "upper/sources/b15-close-2026-11-09/projection/cluster_G99_6_G.json"
+    }
+  ],
+  "scope": "QQ factorization and Hensel product identities only; cluster resultant valuations not yet computed",
+  "seconds": 109.43251699299981,
+  "rss_KiB": 96540
+}

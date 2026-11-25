@@ -93,6 +93,7 @@ def run(output):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--extensions', action='store_true')
     args = parser.parse_args()
     dest = args.output.resolve()
     # Avoid accidental replacement of shipped files or protected directories.
@@ -101,6 +102,8 @@ if __name__ == '__main__':
         parser.error('choose a separate output directory, e.g. build/checks')
     try:
         print(json.dumps(run(dest), indent=2))
+        if args.extensions:
+            sys.stdout.flush(); os.execv(sys.executable, [sys.executable, '-B', str(ROOT/'extensions/reproduce.py'), '--output', str(dest/'extensions')])
     except (ValueError, AssertionError, RuntimeError, subprocess.TimeoutExpired) as exc:
         print('FAIL:', exc, file=sys.stderr)
         raise SystemExit(1)

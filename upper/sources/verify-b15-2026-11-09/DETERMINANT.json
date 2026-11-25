@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "F4_terms": 2754,
+  "F4_degrees": [
+    25,
+    16,
+    12
+  ],
+  "W_degrees": [
+    [
+      26,
+      16,
+      12
+    ],
+    [
+      27,
+      16,
+      12
+    ],
+    [
+      28,
+      16,
+      12
+    ],
+    [
+      29,
+      16,
+      12
+    ]
+  ],
+  "method": "time derivative numerator recurrence; x derivative before specialization; exact fraction-free determinant",
+  "seconds": 2.029925560999999,
+  "rss_KiB": 40268
+}

@@ -17,11 +17,11 @@
 \DeclareMathOperator{\ord}{ord}
 \title{Identifying infection stages, infectivity weights,\\and initial states from incidence}
 \author{Tatsuhiko Takimoto\\Independent researcher}
-\date{Version 1.0.0 --- 16 November 2026}
+\date{Version 1.1.0 --- 2026-11-26}
 \begin{document}
 \maketitle
 \begin{abstract}
-A staged SIR model with a common progression rate can assign a different infectivity weight to each infection stage. We prove that its complete noiseless incidence germ in the same physical time and the known total population determine the number of stages, both rates, all infectivity weights, and every initial state, provided both true and competing models have strictly positive rates, weights, and initial states, with the first weight normalized to one. The true and competing stage numbers range over all finite positive integers. In particular, no exceptional positive true points remain in the equal-infectivity model. The proof establishes Zariski density of each positive trajectory after eliminating the removed compartment. A logarithmic first integral forces the algebraic closure to contain the equilibrium line; a boundary argument using relations among Jordan-chain invariants excludes every proper closure of dimension at least two. Polynomial chain consistency then connects the nonlinear incidence observation to a transfer-function identity, which determines the hidden chain. Exact finite checks supplement the proof.
+A staged SIR model with a common progression rate can assign a different infectivity weight to each infection stage. We prove that its complete noiseless incidence germ in the same physical time and the known total population determine the number of stages, both rates, all infectivity weights, and every initial state, provided both true and competing models have strictly positive rates, weights, and initial states, with the first weight normalized to one. The true and competing stage numbers range over all finite positive integers. In particular, no exceptional positive true points remain in the equal-infectivity model. The proof establishes Zariski density of each positive trajectory after eliminating the removed compartment. A logarithmic first integral forces the algebraic closure to contain the equilibrium line; a boundary argument using relations among Jordan-chain invariants excludes every proper closure of dimension at least two. Polynomial chain consistency then connects the nonlinear incidence observation to a transfer-function identity, which determines the hidden chain. Exact finite checks supplement the proof. For a broader positive compartment feedback class, we also give sharp output-germ jet orders 4, 8, 11, and 15 when one infectious order is one and the other ranges from one to four.
 \end{abstract}
 
 \section{The question and the observation}
@@ -425,12 +425,352 @@ For $w_j=1$, all the weighted formulas specialize to the equal-infectivity model
 \end{equation}
 The last expression denotes a polynomial identity, including at $X=0$. Restricting both models to these weights proves Corollary~\ref{cor:equal}. The weighted theorem also distinguishes an equal-infectivity true model from positive normalized weighted competitors.
 
+\section{Sharp finite jets against one infectious compartment}\label{sec:finitejet}
+The identification theorem uses a complete analytic germ and allows every
+finite competing order. For a fixed pair of small orders, a finite list of
+exact derivatives already determines the output germ. We give sharp bounds
+in a larger compartment class, and then restrict the upper bounds to the
+weighted chains of Theorem~\ref{thm:main}.
+
+\subsection{Model class and quantifiers}
+Fix a real population $N>0$. Let $\mathcal M_d(N)$ consist of systems
+\begin{equation}\label{eq:fjmodel}
+ \dot S=-y,\qquad \dot X=KX+e_1y,\qquad
+ \dot R=-\mathbf1^TKX,\qquad y=\beta SCX,
+\end{equation}
+where $X\in\R^d$, $K$ is a real Hurwitz Metzler matrix with
+$\mathbf1^TK\leq0$ entrywise, $\beta>0$, $C$ is a strictly positive row,
+and $Ce_1=1$. All initial components, including $S(0)$ and $R(0)$,
+are strictly positive and $S(0)+\mathbf1^TX(0)+R(0)=N$.
+Every parameter and initial state may differ between the two models.
+The index $d$ counts infectious states; $S$ and $R$ are additional states.
+The polynomial equations have analytic local solutions. Outputs are
+compared at zero in the same physical time.
+
+Write $j^b y=(y(0),y'(0),\ldots,y^{(b)}(0))$. Define $B_N(1,m)$ as the
+least nonnegative integer $b$ such that
+\begin{equation}\label{eq:fjquantifier}
+ \text{for every }M_L\in\mathcal M_1(N),\ M_R\in\mathcal M_m(N),\quad
+ j^by_L=j^by_R\ \Longrightarrow\ [y_L]_0=[y_R]_0.
+\end{equation}
+Here $[y]_0$ denotes an analytic germ, and $b$ is the highest derivative
+order, so the jet has $b+1$ entries. No controllability or observability
+assumption enters this definition. A realization is called minimal when
+$(K,e_1)$ is controllable and $(C,K)$ is observable. This separate use of
+``minimal'' concerns linear realization dimension, not the least $b$.
+
+\begin{theorem}[Sharp output-germ bounds]\label{thm:fjsharp}
+For every real $N>0$,
+\[
+ B_N(1,1)=4,\qquad B_N(1,2)=8,\qquad
+ B_N(1,3)=11,\qquad B_N(1,4)=15.
+\]
+The upper bounds hold for all pairs in the indicated classes, including
+nonminimal realizations. For each entry $b$, there is a pair with both
+realizations minimal for which $j^{b-1}y_L=j^{b-1}y_R$ and
+$y_L^{(b)}(0)\ne y_R^{(b)}(0)$.
+\end{theorem}
+
+The proof below separates analytic reductions from finite algebraic
+certificates. The certificate dependencies and replay entry points are
+listed in \texttt{FINITE-JET-REPRODUCE.md}; the numerical values alone are
+not a proof of the universal upper bounds.
+
+\subsection{Two reductions}
+\begin{lemma}[Changing population without changing time]\label{lem:fjscale}
+If $a>0$, the map
+\[
+ (S,X,R,\beta,K,C,y)\longmapsto
+ (aS,aX,aR,\beta/a,K,C,ay)
+\]
+is a bijection from $\mathcal M_d(N)$ to $\mathcal M_d(aN)$.
+It preserves minimality and the first derivative order at which two
+outputs differ, when applied to both models with the same $a$.
+\end{lemma}
+\begin{proof}
+The observation transforms as $(\beta/a)(aS)C(aX)=ay$.
+Each differential equation and the population sum is multiplied by $a$.
+Positivity is preserved. The matrices $K,C$, and $e_1$ are unchanged,
+so their sign, stability, normalization, and rank conditions are preserved.
+For every $j\geq0$, $\widehat y^{(j)}=a y^{(j)}$ in the original time.
+The inverse uses $1/a$.
+\end{proof}
+
+For the next reduction let $\partial=d/dt$, let $T$ denote the competing
+susceptible state, and put $h=T(0)-S(0)$, $q=S+h$, $z=y/q$ on the left
+trajectory. Write
+\[
+ D(s)=\det(sI-K_R),\qquad P(s)=C_R\operatorname{adj}(sI-K_R)e_1.
+\]
+Then $D$ is monic of degree $m$ and $P$ is monic of degree $m-1$.
+Cayley--Hamilton gives
+\[
+ D(\partial)z_R=\beta_R P(\partial)y_R,
+ \qquad z_R=\beta_R C_RX_R=y_R/T,
+\]
+with arbitrary initial infection states; no cancellation of $D$ is made.
+
+\begin{lemma}[Contact and feedback]\label{lem:fjcontact}
+If $b\geq m-1$ and $j^by=j^by_R$, the residual
+\[
+ \mathcal R=D(\partial)z-\beta_R P(\partial)y
+\]
+has order at least $b+1-m$. Conversely, if $q(0)=T(0)$ and
+$z^{(j)}(0)=z_R^{(j)}(0)$ for $0\leq j<m$, and, for a nonnegative integer $\ell$,
+$\mathcal R^{(j)}(0)=0$ for $0\leq j\leq\ell$, then the outputs agree
+through order $m+\ell$. Their next difference is
+\begin{equation}\label{eq:fjnext}
+ y^{(m+\ell+1)}(0)-y_R^{(m+\ell+1)}(0)
+   =q(0)\mathcal R^{(\ell+1)}(0).
+\end{equation}
+If $\mathcal R$ vanishes identically and these initial values agree, the
+output germs agree.
+\end{lemma}
+\begin{proof}
+The forward implication follows from $y-y_R=O(t^{b+1})$,
+$q-T=O(t^{b+2})$, and $z-z_R=O(t^{b+1})$, since $q(0)=T(0)>0$.
+Differentiating at most $m$ times gives the asserted residual order.
+For the converse, use $q'=-qz$ and the monic equation for $z^{(m)}$.
+Its right side uses only $z$ derivatives through $m-1$ and $y=qz$
+derivatives through $m-1$. Induction on the residual derivative index
+therefore gives equality of $z$ and $y$ through $m+\ell$, and of $q$
+through $m+\ell+1$. Subtract the next equations to obtain
+\eqref{eq:fjnext}. With identically zero residual the variables
+$(q,z,z',\ldots,z^{(m-1)})$ solve the same polynomial differential
+system with the same initial value; local uniqueness proves the last claim.
+\end{proof}
+
+\subsection{Upper bounds and their algebraic certificates}
+For $m=1$, let $p_j=\partial^j(y_L-y_R)$ in the polynomial ring in both
+sets of rates and states, with differentiation along the product system.
+An exact polynomial certificate gives
+\begin{equation}\label{eq:fjideal}
+ p_5=\sum_{j=0}^4 a_jp_j.
+\end{equation}
+Its five coefficient polynomials have respectively $593,311,127,29,8$
+terms. Checking every coefficient establishes an identity for all parameter
+values. Along any solution, $(p_0,\ldots,p_4)$ satisfies a homogeneous
+linear system with continuous coefficients. Its zero initial value forces
+it to vanish, proving the upper bound four.
+
+For $m=2,3,4$, a common positive change of state and time units makes
+$\beta_L=S_L(0)=1$, $X_L(0)=r>0$, and $K_L=k<0$.
+Explicitly, with $s_0=S_L(0)$ and $c=\beta_Ls_0$, divide all states
+by $s_0$ and use $\tau=ct$ on both sides. Then
+$\widetilde K=K/c$, $\widetilde\beta=\beta/\beta_L$, and
+$\widetilde y=y/(s_0c)$. A $j$th derivative difference is multiplied by
+$1/(s_0c^{j+1})$, a nonzero number. This common normalization preserves
+contact order; it does not allow a separate time change for each model.
+The left first integral is
+\[
+ X=r+1-S-k\log S.
+\]
+In these normalized coordinates $h=T(0)-1>-1$ and $q=S+h$.
+The polynomial residual $F=q^{m+1}\mathcal R/y$ is an exponential
+polynomial in $x=\log S$. Its order is the same as that of
+$\mathcal R$, since $q(0),y(0)>0$ and $x'(0)=-r\ne0$.
+
+\begin{lemma}[Certified small-order elimination]\label{lem:fjelim}
+Under the preceding positivity conditions, the residuals for
+$m=2,3,4$ cannot have, respectively, orders at least $7,9,12$ when
+$h\ne0$. When $h=0$, those orders force $F$ to vanish identically.
+No minimality assumption on the right realization is needed.
+\end{lemma}
+\begin{proof}[Proof by algebraic certificates]
+For $h=0$ the residual spaces have dimensions $4,7,11$.
+They are spanned by exponential monomials with nonzero confluent
+Vandermonde determinant at the initial point, and are invariant under
+$d/dx$. Vanishing to at least the stated orders therefore gives $F=0$.
+For $m=3,4$ the computed initial jet determinants in the chosen bases are
+$192$ and $1146617856$. Lemma~\ref{lem:fjcontact} returns to the germ.
+
+For $m=2$, $F$ lies in the eleven-dimensional space with basis
+\[
+ 1,x,x^2,e^x,xe^x,x^2e^x,e^{2x},xe^{2x},e^{3x},xe^{3x},e^{4x}.
+\]
+The order-seven subspace has dimension four. Write
+$F=\lambda p(d/dx)W_0$, where $W_0$ is the solution of order ten,
+$p(0)=1$, and $\deg p\leq3$, and put $a=p(1)$ and $b=p(2)$.
+Coefficient comparison
+reduces the general branch to two polynomial equations in two variables.
+Their resultant has the factors $(12a+1)^7$, a cubic, and a degree-twelve
+polynomial. The first factor gives $h=-1$; on the cubic the original
+polynomials drop degree and a B\'ezout identity excludes a finite solution.
+The degree-twelve factor has exactly four real roots. Their unique lifts
+violate, in order, positivity of the infection-rate ratio, positivity of
+the coefficient $d_1$ of $D$, positivity of $d_1$, and $r>0$.
+The ratio-one branch must be checked in all coefficients: its remaining
+residual is $3791k^2S/972-10013k^2/8748$, which is nonzero.
+The zero denominators are thus handled before any division is used.
+
+For $m=3$, the nine residual equations have a common kernel with last
+coordinate one. A zero leading six-row pivot forces four determinant
+conditions, already excluded by an all-rank certificate. On the remaining
+branch, exact substitution and projection certificates give a squarefree
+degree-289 polynomial in $h$ with unique finite lifts in the other two
+coordinates. They cover all candidates, including the component
+intersections. There are exactly 28 roots with $h>-1$. Thirteen violate
+$r>0$, five violate $k<0$, two violate the positive rate ratio, one violates
+$d_2>0$, six violate $d_2^2-3d_1\geq0$, and the last violates positivity
+of the constant coefficient of the free-response Laplace numerator.
+These are necessary conditions for every positive Hurwitz Metzler
+realization: in particular that last coefficient equals
+$d_0C(-K)^{-1}X(0)>0$. The trace inequality follows by writing
+$d_2=-\operatorname{tr}K$ and
+$d_1=((\operatorname{tr}K)^2-\operatorname{tr}(K^2))/2$ and using
+$K_{ij}K_{ji}\geq0$. Failure to find a particular realization would
+not suffice for this exclusion.
+
+For $m=4$, twelve contact rows have a common nonzero kernel.
+The determinant of the first nine rows and its first three derivatives
+vanish at all ranks. After removing units and putting $u=r/(1+h)$,
+this gives $F_4=WF_4=W^2F_4=W^3F_4=0$, where
+\[
+ W=-h(1+h)\partial_h-k(1+h)\partial_k-(u+1+k)\partial_u.
+\]
+Here $u$ is an auxiliary coordinate, not physical time.
+The normalized $F_4$ has 2754 terms and multidegree $(25,16,12)$.
+Integer resultant identities split the projection into factors of
+$k$-degrees 82 and 99. Exact divisibility, degree preservation modulo a
+good prime, and coprimality of the residual projections cover all possible
+$h$ by $h=0,-1$ and seven factors of total squarefree degree 30.
+The corresponding number-field fibers have a unique $k$ and polynomial
+gcd $u$ in the last coordinate. Thus $u=r=0$ on every remaining fiber,
+contrary to positivity. The 16 real roots of the seven factors include
+10 with $h>-1$; all are excluded by the same fiber result.
+
+The integer resultant identities are certified by coefficient bounds
+$B,C$ for the raw resultant and the candidate after multiplication back,
+a prime product $M>B+C$, and congruence of all raw coefficients.
+The divisibility factors are proved over the rationals, including the
+required $H_{50}\operatorname{rad}(H_{50})$ factor, where $H_{50}$
+is the degree-fifty boundary polynomial with squarefree part of degree
+thirty, and the local
+$(h+1)$ valuations 479 and 500. Coprimality over a finite field is used
+only after these divisibilities and preservation of the degree of one
+projection have been checked. Neither a nonzero leading contact pivot
+nor a nonzero leading coefficient in $u$ is assumed. These certificate
+obligations, not modular root counts alone, justify the global exclusion.
+\end{proof}
+
+Lemma~\ref{lem:fjcontact} converts output orders $8,11,15$ to residual
+orders $7,9,12$. Lemma~\ref{lem:fjelim} and the polynomial identity
+\eqref{eq:fjideal} prove the four upper bounds.
+
+\subsection{Witnesses and sharpness}
+For $m=1$, the two tuples $(\beta,k,S(0),X(0),R(0))$ are
+\[
+ (1,-1,1,2,1),\qquad (3/2,-4,2,2/3,4/3).
+\]
+Both have population four. Their derivatives through order four are
+$(2,-4,4,24,-192)$ and $(2,-4,4,24,-208)$.
+For the other cases the witnesses are specified by exact algebraic
+numbers or unique roots in rational boxes, not rounded displayed values.
+The certificates verify positivity, population, and controllability and
+observability in addition to contact.
+
+\begin{center}
+\begin{tabular}{@{}rrrrl@{}}\toprule
+$m$&base $N$&equal through&first difference&certificate type\\\midrule
+1&4&3&4&rational pair and polynomial identity\\
+2&12&7&8&cubic number field\\
+3&100&10&11&isolated root of eight equations\\
+4&100&14&15&isolated root of three equations\\\bottomrule
+\end{tabular}
+\end{center}
+For $m=2$ the real embedding is the unique real root of
+\[
+ 110119472\kappa^3+2679399000\kappa^2+20959796655\kappa
+   +51676380000=0.
+\]
+Exact quotient-field recursion gives equality through order seven and
+$55078505<y_R^{(8)}(0)-y_L^{(8)}(0)<55078506$.
+For $m=3$ an interval contraction proves the existence of the common
+root of eight residual equations. Positive realization and initial
+moment matching, followed by Lemma~\ref{lem:fjcontact}, give equality
+through order ten and a strictly positive eleventh difference.
+
+For $m=4$, solve the first eight residual equations for
+$(d_3,d_2,d_1,d_0,g,b_2,b_1,b_0)$ as functions of $(h,k,r)$.
+All elimination pivots exclude zero on the rational box.
+The three remaining equations $\mathcal R_8=\mathcal R_9=
+\mathcal R_{10}=0$ have a unique root there: an outward-rounded
+integer interval calculation maps the box strictly into itself with
+contraction bound less than $5.2\cdot10^{-25}$.
+At this same root, $D$ has four distinct negative real roots. They define
+a lower bidiagonal $K$ with subdiagonal entries one. The first four
+Markov coefficients define $C$, and the first four free-response moments
+define $X(0)$. The certificates give $C>0$, $Ce_1=1$, $X(0)>0$,
+negative column sums, and nonzero controllability and observability
+determinants. Both removed initial states are positive at population 100.
+Lemma~\ref{lem:fjcontact} proves exact equality through order fourteen;
+the certified next difference is
+\[
+ 128995100000000000<y_L^{(15)}(0)-y_R^{(15)}(0)
+       <128995200000000000.
+\]
+Zero containment of interval differences is only a consistency check.
+Exact equality follows from the root equations and the feedback induction.
+A single such root suffices; a classification of every solution of the
+eleven-contact equations is unnecessary for the lower bound.
+
+Finally Lemma~\ref{lem:fjscale}, with $a=N/N_{\rm base}$, transports
+each witness to every real $N>0$. Together with the upper bounds this
+proves Theorem~\ref{thm:fjsharp}.
+
+\subsection{What the bounds imply for weighted chains}
+\begin{corollary}[A bounded-order comparison within the weighted class]\label{cor:fjW}
+Let the true model in Theorem~\ref{thm:main} have one infectious stage,
+and restrict the competing stage number to $m\in\{1,2,3,4\}$.
+For a fixed $m$, equality of the output derivatives through
+$b_m=4,8,11,15$, respectively, implies $m=1$ and equality of both rates,
+all weights, and every initial state. In particular, derivatives through
+order fifteen suffice uniformly over this restricted set of competitors.
+\end{corollary}
+\begin{proof}
+For a weighted chain, $K=\zeta(L-I)$ and $C=(w_1,\ldots,w_m)$.
+It is Hurwitz Metzler, its column sums are zero except for the last
+sum $-\zeta$, and $Ce_1=w_1=1$. Thus both models belong to the classes
+of Theorem~\ref{thm:fjsharp}. The appropriate jet equality first gives
+germ equality. Theorem~\ref{thm:main} then gives the conclusion, with
+$R(0)$ recovered from the common population and the unweighted state sum.
+\end{proof}
+
+For the larger class~\eqref{eq:fjmodel}, equality of germs alone does not
+assert recovery of every entry of $K,C$ or every physical state. Conversely,
+the lower-bound witnesses above need not be common-rate weighted chains.
+Their sharpness therefore does not establish sharpness within that smaller
+class for $m=2,3,4$. The rational $m=1$ witness is already in the weighted
+class and gives sharpness four for that comparison. The table also supplies
+no bound for all pairs whose two orders are at most four, nor a uniform
+finite bound over unrestricted competing orders. These are statements
+about exact derivatives, not a sampling prescription or a noise estimate.
+
+\subsection{Relation to established methods}
+Finite Taylor reduction for generic structural identifiability is
+established in Hong, Ovchinnikov, Pogudin, and Yap~\cite{FJHOPY}.
+General multiplicity estimates along polynomial vector fields, such as
+those of Gabrielov~\cite{FJGAB} and Binyamini~\cite{FJBIN}, give uniform
+finite contact bounds after passing to the product of two fixed-order
+systems. Positivity makes that vector field nonsingular at the initial
+point because $S'=-y<0$. Thus existence of a finite bound and the use
+of polynomial elimination are not new general methods here.
+Ovchinnikov, Pogudin, and Thompson~\cite{FJOPT} also distinguish
+input-output identifiability from single-experiment identifiability;
+an input-output equation by itself is not enough to identify its
+coefficients from one trajectory.
+The contribution asserted in this section is the sharp list for the
+specified feedback class and its restricted implication for weighted
+chains. The existing literature comparisons do not establish priority
+for the new sharp list; model-specific improvements and a new general
+method are separate questions.
+
 \paragraph{Use of AI.}
-AI assistance was used in developing the arguments, writing and running exact algebra checks, staged proof review, and preparation of the manuscript. The author retains responsibility for the mathematical claims, attribution, and any subsequent dissemination.
+Codex also assisted with the finite-jet synthesis and certificate replay. AI assistance was used in developing the arguments, writing and running exact algebra checks, staged proof review, and preparation of the manuscript. The author retains responsibility for the mathematical claims, attribution, and any subsequent dissemination.
 
 \appendix
 \section{Exact finite checks}\label{app:checks}
-The accompanying Python package uses integer and rational arithmetic from the standard library. Its finite checks cover the displayed identities and representative specializations; the all-order results rest on the proofs above. The runner writes to a selected output directory and does not need the source repository history, network access, or earlier work directories.
+The five original checks described in this appendix use integer and rational arithmetic from the standard library. The separate finite-jet certificate replays and the additional global-elimination dependencies are described in \texttt{FINITE-JET-REPRODUCE.md}. Its finite checks cover the displayed identities and representative specializations; the all-order results rest on the proofs above. The runner writes to a selected output directory and does not need the source repository history, network access, or earlier work directories.
 
 For equal infectivity, it checks $253$ small Darboux coefficient matrices: $125$ for $n=2$ at total degree at most four, $64$ for $n=3$ at degree at most three, and $64$ at $n=1$ as a control with the additional factors $u_1^r$. It also checks the contracting equilibrium calculation at $n=4$, including a threshold control, and $41$ groups of free-parameter Laurent polynomial identities for the $n=5$ boundary argument. In the latter, the $t^2,t^3,t^4$ coefficient matrix separating the invariant partial derivatives has determinant $-1/288$; the coordinate Jacobian is $1/u_1^4$. Free invariant parameters describe the whole boundary space, a necessary control on the dimension restriction.
 
@@ -439,6 +779,8 @@ For the weighted model, separate finite checks include $25$ reconstruction ident
 The reproduction command is
 \begin{center}\texttt{python3 -B reproduce.py -{}-output build/checks}\end{center}
 from the accompanying package directory. It checks file integrity, runs the included bounded checks, and compares their scientific output with frozen baselines while recording runtime and peak memory separately. The package also includes negative controls for a false moving-invariant identity and for tampering with a checked input. A passing finite run checks the listed algebra and packaging; it does not machine-certify complex convergence, normalization, or the valuation argument.
+
+\input{extensions/paper-extension.tex}
 
 \begin{thebibliography}{9}\small\raggedright
 \bibitem{PSP} B. Pant, O. Saucedo, and G. Pogudin.
@@ -466,5 +808,22 @@ L'Enseignement Math\'ematique 39 (1993), 87--106.
 \emph{The Stacks Project}.
 \href{https://stacks.math.columbia.edu/tag/00PD}{Tag 00PD} (normal local rings of dimension one) and
 \href{https://stacks.math.columbia.edu/tag/0ASF}{Tag 0ASF} (finite extensions of discrete valuation fields).
+\bibitem{FJHOPY} H. Hong, A. Ovchinnikov, G. Pogudin, and C. Yap.
+\emph{Global Identifiability of Differential Models}.
+Communications on Pure and Applied Mathematics (2020).
+\href{https://arxiv.org/abs/1801.08112v5}{arXiv:1801.08112v5} (2023),
+Theorem 3.16 and Corollary 3.21; the version indicated is the comparison text.
+\bibitem{FJGAB} A. Gabrielov.
+\emph{Multiplicity of a zero of an analytic function on a trajectory of a vector field}.
+\href{https://arxiv.org/abs/math/9702229v1}{arXiv:math/9702229v1} (1997), Theorem 3.
+\bibitem{FJBIN} G. Binyamini.
+\emph{Multiplicity Estimates: a Morse-theoretic approach}.
+Duke Mathematical Journal (2016).
+\href{https://arxiv.org/abs/1406.1858v2}{arXiv:1406.1858v2} (2015), Corollary 1.
+\bibitem{FJOPT} A. Ovchinnikov, G. Pogudin, and P. Thompson.
+\emph{Parameter identifiability and input-output equations}.
+\href{https://arxiv.org/abs/2007.14787v2}{arXiv:2007.14787v2} (2020),
+Theorems 4.2 and 4.7 and Lemma 4.6.
+
 \end{thebibliography}
 \end{document}

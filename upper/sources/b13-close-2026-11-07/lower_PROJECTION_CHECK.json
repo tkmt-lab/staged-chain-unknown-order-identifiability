@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "normalization_constants": {
+    "normalization": "1",
+    "W0_to_1": "1",
+    "W1_to_2": "1"
+  },
+  "checks": {
+    "01": {
+      "resultant_recomputed_equal": true,
+      "factor_product_equal": true,
+      "degree": [
+        179,
+        76,
+        0
+      ]
+    },
+    "02": {
+      "resultant_recomputed_equal": true,
+      "factor_product_equal": true,
+      "degree": [
+        186,
+        76,
+        0
+      ]
+    },
+    "12": {
+      "resultant_recomputed_equal": true,
+      "factor_product_equal": true,
+      "degree": [
+        193,
+        76,
+        0
+      ]
+    }
+  },
+  "inputs": {
+    "studies/R044/b13-lower3-2026-11-07/elim_general.json": "1e14696d0086ea0ab546db3b39c28828292495259c4ab36e4dbe9fd715f44a27",
+    "studies/R044/b13-close-2026-11-07/lower_projection.json": "7ec57266dc4d6a4d5cd44459620011ec7c55943cf37931bff635a5995ee226c7"
+  }
+}

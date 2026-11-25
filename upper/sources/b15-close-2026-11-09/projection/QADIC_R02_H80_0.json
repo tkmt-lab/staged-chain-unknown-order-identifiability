@@ -1,0 +1,54 @@
+{
+  "schema": "r044-common-section-qadic-v1",
+  "factor_index": 0,
+  "label": "R02",
+  "q_coefficients": [
+    "5",
+    "3"
+  ],
+  "multiplicity": 5,
+  "extra_power": 1,
+  "G_path": "studies/R044/b15-close-2026-11-09/audit/G82.json.gz",
+  "G_sha256": "99872b93167ccd30b9cb9779491c98fdce62ffa3fd1e417ee421ece114994a7a",
+  "R_path": "studies/R044/b15-close-2026-11-09/audit/CRT_R02.json.gz",
+  "R_sha256": "1b1c70383ea024f9dac8110df8a191d31de7713411557041e35e0e0dd12cb988",
+  "section_coefficients": [
+    "0",
+    "9/10"
+  ],
+  "G_at_section_zero": true,
+  "R_at_section_zero": true,
+  "R_remainder_coefficients": [],
+  "resultant_divisibility_certified": true,
+  "lifting_steps": [
+    {
+      "precision": 2,
+      "G_at_section_zero": true,
+      "Gk_unit": true,
+      "section_coefficients": [
+        "0",
+        "9/10"
+      ]
+    },
+    {
+      "precision": 4,
+      "G_at_section_zero": true,
+      "Gk_unit": true,
+      "section_coefficients": [
+        "0",
+        "9/10"
+      ]
+    },
+    {
+      "precision": 5,
+      "G_at_section_zero": true,
+      "Gk_unit": true,
+      "section_coefficients": [
+        "0",
+        "9/10"
+      ]
+    }
+  ],
+  "seconds": 0.8995254359997489,
+  "rss_KiB": 91720
+}

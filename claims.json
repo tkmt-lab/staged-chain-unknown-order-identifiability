@@ -1,5 +1,5 @@
 {
-  "status": "v1.0.0",
+  "status": "v1.1.0",
   "main_theorem": "W",
   "claims": [
     {
@@ -36,6 +36,29 @@
       "statement": "For equal weights and n>=2 only nonzero scalar multiples of x^k are Darboux polynomials.",
       "proof": "paper.tex Proposition 2.3",
       "component_review": "Equal-infectivity Darboux alternative proof review"
+    },
+    {
+      "id": "FJ",
+      "statement": "For every real N>0, output-germ B_N(1,m) equals 4,8,11,15 for m=1,2,3,4 in the positive Hurwitz Metzler compartment feedback class; upper bounds include nonminimal realizations and lower witnesses are minimal.",
+      "proof": "paper.tex section 7; finite-jet elimination certificates",
+      "integration_review": {
+        "status": "accepted",
+        "scope": "seven-item nonblind integration review; inherited global certificates, not a new full global recomputation",
+        "record": "INTEGRATION-REVIEW.md",
+        "source_report_sha256": "6c87f2d425a4bcf2864b326ec8ebc39e5774600e676956676760b48e3e776c24"
+      }
+    },
+    {
+      "id": "FJ_W",
+      "statement": "For a one-stage true common-rate positive normalized weighted chain, competitors of fixed order m=1,2,3,4 are identified by exact output derivatives through 4,8,11,15 respectively; order 15 suffices over this restricted union.",
+      "proof": "finite-jet upper bounds plus W",
+      "sharpness_in_weighted_subclass": "only the m=1 value four is established here",
+      "integration_review": {
+        "status": "accepted",
+        "scope": "seven-item nonblind integration review; inherited global certificates, not a new full global recomputation",
+        "record": "INTEGRATION-REVIEW.md",
+        "source_report_sha256": "6c87f2d425a4bcf2864b326ec8ebc39e5774600e676956676760b48e3e776c24"
+      }
     }
   ],
   "limitations": [
@@ -54,8 +77,64 @@
   "fresh_reader_of_integrated_draft": "MINOR at d3a842293; both requested expository corrections applied; post-revision referee review not claimed",
   "checks": "five unchanged programs; finite algebra only",
   "publication": {
-    "version": "1.0.0",
-    "date": "2026-11-16",
+    "version": "1.1.0",
+    "date": "2026-11-26",
     "repository": "https://github.com/tkmt-lab/staged-chain-unknown-order-identifiability"
-  }
+  },
+  "finite_jet_scope": {
+    "conditions": [
+      "same physical time",
+      "known common real N>0",
+      "strict positive initial S,X,R and beta",
+      "C>0, Ce1=1",
+      "K Hurwitz Metzler with nonpositive column sums"
+    ],
+    "does_not_recover": "arbitrary physical realizations in the larger class",
+    "not_claimed": [
+      "uniform bound for unbounded competitor order",
+      "sharpness for weighted-chain m=2,3,4",
+      "finite samples or noisy estimation"
+    ],
+    "quick_replay": "upper4 and lower4/8/11/15 only",
+    "global_certificate_packaging": "Bundled adopted U8/U11/U15 proof routes, certificate inputs and checkers: upper/README.md; SHA256 manifest. Full recomputation was not performed during packaging."
+  },
+  "finite_jet_extensions": [
+    {
+      "pair": [
+        1,
+        5
+      ],
+      "lower": 18,
+      "upper": 42,
+      "optimal": false,
+      "N": "every real N>0",
+      "verification": "lower: first-stage separate witness implementation with prior-summary exposure, then nonblind comparison; upper: established in nonblind second stage, first stage undecided; resource-procedure reservation recorded",
+      "evidence": "extensions/README.md"
+    },
+    {
+      "pair": [
+        2,
+        2
+      ],
+      "lower": 10,
+      "upper": 75,
+      "optimal": false,
+      "N": "every real N>0",
+      "verification": "both nonblind; upper final germ bridge read, not recalculated",
+      "evidence": "extensions/README.md"
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "lower": null,
+      "upper": 278,
+      "common_S0_sufficient_order": 30,
+      "optimal": false,
+      "N": "every real N>0",
+      "verification": "nonblind; some analytic branches read, not recalculated; older lower 10 not rechecked or accepted here",
+      "evidence": "extensions/README.md"
+    }
+  ]
 }

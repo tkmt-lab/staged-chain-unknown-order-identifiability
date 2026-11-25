@@ -1,0 +1,35 @@
+{
+  "schema": "r044-b15-close-input-v1",
+  "input_commit": "10775d3514f110cb9aab72b1d057cfe37c102ff1",
+  "pair": [
+    1,
+    4
+  ],
+  "B_definition": "Highest derivative order B: equality of y derivatives 0 through B at one positive point must imply equality of analytic output germs.",
+  "model": "S'=-y, X'=K X+e1 y, y=beta S C X; beta>0, C>0, C e1=1, positive initial states, K Hurwitz Metzler with nonpositive column sums, common physical time and known population.",
+  "upper_bound_scope": "All positive realizations, including nonminimal ones. No recovery claim for all rates or states.",
+  "normalization": {
+    "left_beta": 1,
+    "left_S0": 1,
+    "left_X0": "r>0",
+    "left_K": "k<0",
+    "right_S0": "1+h>0",
+    "auxiliary_t": "r/(1+h)>0; not physical time"
+  },
+  "target": "Exclude unequal-germ output contact through B=15; h=0 may yield equal germs and is handled separately.",
+  "four_equations": "F4=W F4=W^2 F4=W^3 F4=0",
+  "W": "-h(1+h)d_h-k(1+h)d_k-(t+1+k)d_t",
+  "prior_interval": [
+    13,
+    28
+  ],
+  "requested_positive_filters": [
+    "r>0,k<0,h>-1,t>0,g>0",
+    "quartic Hurwitz conditions",
+    "3*d3^2-8*d2>=0 for Metzler K",
+    "all transfer numerator coefficients positive",
+    "all free-response Laplace numerator coefficients positive",
+    "C exp(K tau) Z0>0 for tau>=0"
+  ],
+  "independence": "Research-team calculations with shared source artifacts and internal cross-checks; not blind verification, formal proof assistant verification, or human peer review."
+}

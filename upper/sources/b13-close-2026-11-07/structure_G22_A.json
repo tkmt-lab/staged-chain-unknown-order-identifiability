@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "A_t_degree": 4,
+  "gcd_a_G22": "1",
+  "homogeneous_A_divisible_by_G22": true,
+  "homogeneous_A_degree": [
+    435,
+    170
+  ],
+  "quotient_degree": [
+    396,
+    148
+  ],
+  "quotient_terms": 52062,
+  "quotient_sha256": "ae01f883afdad7fa1b2da19a8e16676eb313605d76a5e18d8c151a53d3108537",
+  "G22_multiplicity_in_F_WF_resultant": 1,
+  "seconds": 75.84470314999999
+}

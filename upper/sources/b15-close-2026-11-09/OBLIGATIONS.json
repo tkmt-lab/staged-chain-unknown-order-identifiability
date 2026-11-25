@@ -1,0 +1,105 @@
+{
+  "schema": "r044-b15-proof-obligations-v1",
+  "input_commit": "10775d3514f110cb9aab72b1d057cfe37c102ff1",
+  "claim_target": "For the stated positive (1,4) class, output jets 0..15 equal imply equal analytic germs; no minimal-realization assumption.",
+  "status": "PROOF_DRAFT_COMPLETE_PENDING_INDEPENDENT_VERIFICATION",
+  "steps": [
+    {
+      "id": "P01",
+      "claim": "B=15 implies residual contact order at least 12 and four determinant Lie equations at every rank",
+      "evidence": [
+        "degenerate/PROOF.md",
+        "degenerate/CHECK.json",
+        "audit/CHECK.json"
+      ],
+      "status": "checked_in_research_team"
+    },
+    {
+      "id": "P02",
+      "claim": "h=0 implies identical germs; h=-1,k=0,t=0 violate domain as applicable",
+      "evidence": [
+        "degenerate/PROOF.md",
+        "degenerate/CHECK.json"
+      ],
+      "status": "checked_in_research_team"
+    },
+    {
+      "id": "P03",
+      "claim": "Exact integer F4 and W1..W4 match the original determinant",
+      "evidence": [
+        "exact/build.py",
+        "exact/F4.json",
+        "audit/CHECK.json"
+      ],
+      "status": "checked_in_research_team"
+    },
+    {
+      "id": "P04",
+      "claim": "R01,R02,R03 are certified integer t-resultants after specified unit factors; R01=unit*G82*G99",
+      "evidence": [
+        "audit/CRT_R01_CERT.json",
+        "audit/CRT_R02_CERT.json",
+        "audit/CRT_R03_CERT.json",
+        "audit/FACTOR_CRT_CERT.json"
+      ],
+      "status": "checked_in_research_team"
+    },
+    {
+      "id": "P05",
+      "claim": "For U_b=Res_k(G_b,R02), degrees and leading coefficients survive reduction; h^v(h+1)^w and H80 where b=82 divide U_b exactly",
+      "evidence": [
+        "exact/COVERAGE_SUPPORT.json",
+        "projection/QADIC_R02_H80_0.json",
+        "projection/QADIC_R02_H80_1.json",
+        "projection/QADIC_R02_H80_2.json",
+        "projection/QADIC_R02_H80_3.json",
+        "projection/QADIC_R02_H80_4.json",
+        "projection/QADIC_R02_H80_5.json",
+        "projection/QADIC_R02_H80_6.json",
+        "projection/CLUSTER_CERT_G82.json",
+        "projection/CLUSTER_CERT_G99.json"
+      ],
+      "status": "checked_in_research_team"
+    },
+    {
+      "id": "P06",
+      "claim": "Modular gcd with Res_k(G_b,R03) after the certified division gives complete characteristic-zero h coverage",
+      "evidence": [
+        "projection/PAIR_GCD.json",
+        "projection/QADIC_DIAGNOSIS.json",
+        "exact/COVERAGE_SUPPORT.json",
+        "audit/REPLAY_SUMMARY.json"
+      ],
+      "status": "checked_in_research_team"
+    },
+    {
+      "id": "P07",
+      "claim": "For every H30 factor, every possible k equals the specified number-field k; original Fi have common t-gcd t",
+      "evidence": [
+        "projection/QQ_FIBER_0.json",
+        "projection/QQ_FIBER_1.json",
+        "projection/QQ_FIBER_2.json",
+        "projection/QQ_FIBER_3.json",
+        "projection/QQ_FIBER_4.json",
+        "projection/QQ_FIBER_5.json",
+        "projection/QQ_FIBER_6.json",
+        "projection/FIBER_BRIDGE_104729.json"
+      ],
+      "status": "checked_in_research_team"
+    },
+    {
+      "id": "P08",
+      "claim": "All covered real candidates fail t>0; no candidate remains for Hurwitz/Metzler/free-response filters",
+      "evidence": [
+        "projection/REAL_ROOTS.json"
+      ],
+      "status": "checked_in_research_team"
+    }
+  ],
+  "verdict": "a",
+  "draft_interval": [
+    13,
+    15
+  ],
+  "independent_verification": false
+}

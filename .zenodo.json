@@ -2,15 +2,15 @@
   "title": "Identifying infection stages, infectivity weights, and initial states from incidence",
   "upload_type": "publication",
   "publication_type": "article",
-  "publication_date": "2026-11-16",
-  "version": "1.0.0",
+  "publication_date": "2026-11-26",
+  "version": "1.1.0",
   "creators": [
     {
       "name": "Takimoto, Tatsuhiko",
       "affiliation": "Independent researcher"
     }
   ],
-  "description": "For a single staged SIR chain with a common progression rate, a complete noiseless incidence germ in the same physical time and known population uniquely determine the unknown finite stage number, both rates, normalized infectivity weights, and all initial states among strictly positive models with w1=1. Article, text and generated data: CC BY 4.0; code and CI: Apache-2.0. Finite checks are not formal proof certification or human peer review.",
+  "description": "For a single staged SIR chain with a common progression rate, a complete noiseless incidence germ in the same physical time and known population uniquely determine the unknown finite stage number, both rates, normalized infectivity weights, and all initial states among strictly positive models with w1=1. In the positive compartment feedback class, fix the two compartment counts and any common known population N > 0. Then B_min is the least B such that, for every such pair, agreement of output derivatives of orders 0 through B at one time implies agreement of the analytic output germs in the same physical time. For the compartment counts (1,1), (1,2), (1,3) and (1,4), B_min is 4, 8, 11 and 15, respectively. The intervals are 18 ≤ B_min(1,5) ≤ 42 and 10 ≤ B_min(2,2) ≤ 75. For (2,3), B_min ≤ 278, and order 30 suffices when the models share the same initial susceptible population. For a one-stage weighted chain compared with a weighted chain of at most four stages, the sharp general-class orders suffice for identification by the germ theorem. Finite samples and noisy observations are outside the scope of these exact derivative results. Article, text and generated data: CC BY 4.0; code and CI: Apache-2.0. Finite checks are not formal proof certification or human peer review.",
   "license": "cc-by-4.0",
   "related_identifiers": [
     {

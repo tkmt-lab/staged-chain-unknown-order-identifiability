@@ -1,0 +1,311 @@
+{
+  "schema": "r044-fiber-specialization-bridge-v1",
+  "prime": 104729,
+  "exact_inputs": [
+    {
+      "path": "studies/R044/b15-close-2026-11-09/audit/CRT_R01.json.gz",
+      "sha256": "4329f9b9fd78f93fba6c64303dd31228c5c5ae016fdf37e87e51989482fe49f0",
+      "primitive_degree_k_modp": 181,
+      "matches_saved_modular_Rij": true
+    },
+    {
+      "path": "studies/R044/b15-close-2026-11-09/audit/CRT_R02.json.gz",
+      "sha256": "1b1c70383ea024f9dac8110df8a191d31de7713411557041e35e0e0dd12cb988",
+      "primitive_degree_k_modp": 181,
+      "matches_saved_modular_Rij": true
+    },
+    {
+      "path": "studies/R044/b15-close-2026-11-09/audit/CRT_R03.json.gz",
+      "sha256": "9f075f691b1780f14e726ae89db12c57013ae69dbcd2bde6201ee4527a29d9de",
+      "primitive_degree_k_modp": 181,
+      "matches_saved_modular_Rij": true
+    }
+  ],
+  "good_prime_checks": [
+    {
+      "QQ_factor_index": 0,
+      "lc_q_nonzero_modp": true,
+      "q_modp_squarefree": true,
+      "known_k_denominators_nonzero_modp": true
+    },
+    {
+      "QQ_factor_index": 1,
+      "lc_q_nonzero_modp": true,
+      "q_modp_squarefree": true,
+      "known_k_denominators_nonzero_modp": true
+    },
+    {
+      "QQ_factor_index": 2,
+      "lc_q_nonzero_modp": true,
+      "q_modp_squarefree": true,
+      "known_k_denominators_nonzero_modp": true
+    },
+    {
+      "QQ_factor_index": 3,
+      "lc_q_nonzero_modp": true,
+      "q_modp_squarefree": true,
+      "known_k_denominators_nonzero_modp": true
+    },
+    {
+      "QQ_factor_index": 4,
+      "lc_q_nonzero_modp": true,
+      "q_modp_squarefree": true,
+      "known_k_denominators_nonzero_modp": true
+    },
+    {
+      "QQ_factor_index": 5,
+      "lc_q_nonzero_modp": true,
+      "q_modp_squarefree": true,
+      "known_k_denominators_nonzero_modp": true
+    },
+    {
+      "QQ_factor_index": 6,
+      "lc_q_nonzero_modp": true,
+      "q_modp_squarefree": true,
+      "known_k_denominators_nonzero_modp": true
+    }
+  ],
+  "fibers": [
+    {
+      "QQ_factor_index": 0,
+      "modular_h_factor_coefficients": [
+        69821,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    },
+    {
+      "QQ_factor_index": 1,
+      "modular_h_factor_coefficients": [
+        22444,
+        59848,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    },
+    {
+      "QQ_factor_index": 2,
+      "modular_h_factor_coefficients": [
+        70736,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    },
+    {
+      "QQ_factor_index": 2,
+      "modular_h_factor_coefficients": [
+        103815,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    },
+    {
+      "QQ_factor_index": 3,
+      "modular_h_factor_coefficients": [
+        16301,
+        99683,
+        81834,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    },
+    {
+      "QQ_factor_index": 4,
+      "modular_h_factor_coefficients": [
+        39554,
+        90443,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    },
+    {
+      "QQ_factor_index": 4,
+      "modular_h_factor_coefficients": [
+        15190,
+        34990,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    },
+    {
+      "QQ_factor_index": 5,
+      "modular_h_factor_coefficients": [
+        41296,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    },
+    {
+      "QQ_factor_index": 5,
+      "modular_h_factor_coefficients": [
+        65115,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    },
+    {
+      "QQ_factor_index": 5,
+      "modular_h_factor_coefficients": [
+        17720,
+        34031,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    },
+    {
+      "QQ_factor_index": 5,
+      "modular_h_factor_coefficients": [
+        4731,
+        72198,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    },
+    {
+      "QQ_factor_index": 6,
+      "modular_h_factor_coefficients": [
+        21087,
+        82469,
+        87195,
+        96624,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    },
+    {
+      "QQ_factor_index": 6,
+      "modular_h_factor_coefficients": [
+        59640,
+        104290,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    },
+    {
+      "QQ_factor_index": 6,
+      "modular_h_factor_coefficients": [
+        10411,
+        36485,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    },
+    {
+      "QQ_factor_index": 6,
+      "modular_h_factor_coefficients": [
+        55173,
+        30316,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    },
+    {
+      "QQ_factor_index": 6,
+      "modular_h_factor_coefficients": [
+        26955,
+        18405,
+        1
+      ],
+      "R_k_degrees": [
+        181,
+        181,
+        181
+      ],
+      "gcd_degree": 1,
+      "known_QQ_k_reduces_to_unique_modular_k": true
+    }
+  ],
+  "QQ_consequence": "Over each Q[h]/q_i, gcd_k(R01,R02,R03) has degree at most one by specialization with R01 degree retained. The exact t=0 common root supplies degree at least one. Therefore k is unique. QQ_FIBER_i then gives gcd_t=t.",
+  "seconds": 8.133687608999935,
+  "rss_KiB": 159496
+}

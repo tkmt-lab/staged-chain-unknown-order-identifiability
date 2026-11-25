@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "prime": 32003,
+  "prime_trial_divisor_limit": 178,
+  "k_degree_preservation": {
+    "27:02": [
+      27,
+      49
+    ],
+    "27:03": [
+      27,
+      49
+    ],
+    "22:02": [
+      22,
+      49
+    ],
+    "22:03": [
+      22,
+      49
+    ]
+  },
+  "assignment_certificates": {
+    "27:02": {
+      "degree": 6155,
+      "h": 90
+    },
+    "27:03": {
+      "degree": 6344,
+      "h": 90
+    },
+    "22:02": {
+      "degree": 4113,
+      "h": 62
+    },
+    "22:03": {
+      "degree": 4267,
+      "h": 62
+    }
+  },
+  "tangent_derivative_identity": true,
+  "seconds": 0.18479017500021655
+}

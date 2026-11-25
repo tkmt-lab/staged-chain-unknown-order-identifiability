@@ -1,0 +1,48 @@
+\section{Further fixed-order bounds}\label{sec:fjextension}
+For the same positive compartment class and the same physical time used
+in Section~7, the following bounds hold for every common real population
+$N>0$:
+\[
+18\le B_{\min}(1,5)\le42,\qquad
+10\le B_{\min}(2,2)\le75,\qquad B_{\min}(2,3)\le278.
+\]
+On the $(2,3)$ branch where the two initial susceptible states coincide,
+order $30$ suffices. These statements are bounds, not optimal values.
+The previously proposed lower bound $10$ for $(2,3)$ has not been
+rechecked in this extension and is not adopted here as a verified bound.
+The upper bounds cover nonminimal realizations; the two adopted lower
+witnesses are minimal on both sides. The object recovered is the output
+germ, not an arbitrary physical realization in the larger class.
+
+The lower bound $18$ uses a certified root of three contact equations,
+a positive five-state realization with a cyclic three-state block,
+exact agreement through derivative $17$, and a nonzero derivative-$18$
+difference. The upper bound $42$ returns to the original five-order
+Cayley--Hamilton residual: contact gives order at least $38$ in a
+$50$-dimensional exponential-polynomial space. Degree-$11$
+interpolation leaves two free coefficients. The next two logarithmic
+layers give necessary equations without discarding degenerate pivots;
+three certified integer resultants have common gcd $1$ over $\mathbb Q$.
+The remaining equal-susceptibility branch yields a closed analytic ODE.
+The complete argument, three certificates and both exact checkers are
+bundled under \texttt{extensions/u42/}.
+
+For $(2,2)$, the lower witness agrees through order $9$ and differs at
+order $10$. The upper bound uses a universal residual resultant in an
+$82$-dimensional space, degree-$8$ interpolation, and exact elimination
+with real-root exclusion. For $(2,3)$, the nonzero residual resultant
+has a $275$-dimensional support envelope after universal coefficient
+cancellations. The three-order residual transfers this bound to order
+$278$; the equal-susceptibility branch is treated separately at order
+$30$. Full proof excerpts, the universal-identity calculations and
+bounded reproduction commands are in \texttt{extensions/README.md}.
+These are adopted results with their supporting proofs, rather than new
+claims of optimality or a new general method.
+
+\paragraph{Verification scope.}
+The bounds combine prose analytic arguments, exact algebraic
+certificates and staged, nonblind checks. Finite replay certifies the
+stated algebraic and witness obligations; the analytic implications
+remain prose proofs. The per-claim verification scope, prior exposure,
+and procedural qualifications are recorded in
+\texttt{extensions/README.md}.

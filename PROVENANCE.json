@@ -4,26 +4,34 @@
   "inputs": [
     {
       "copy": "paper.pdf",
-      "bytes": 351532,
-      "sha256": "1cd7cdb360080aa72360ebec9a7f30509e12dac9eb5ecc0a9bb56f33a6188cde",
+      "bytes": 389505,
+      "sha256": "b5c8c46c1de3b70783f85247d5a48b7f4d52346e9ea7e094cc4547f95adc80d9",
       "previous_package_sha256": "14a7ab8278e739e4c443132d0b5a2ee84f67086a6af422581e2b7ab3dee7c567",
       "previous_package_bytes": 125280,
       "before_text_revision_sha256": "09849751ce5fa9589ed4087760cc74b98ef418402406bbb3fef892f5b2a25a93",
-      "before_text_revision_bytes": 351678
+      "before_text_revision_bytes": 351678,
+      "before_finite_jet_sha256": "1cd7cdb360080aa72360ebec9a7f30509e12dac9eb5ecc0a9bb56f33a6188cde",
+      "before_finite_jet_bytes": 351532,
+      "before_v110_release_sha256": "7d517dcfce1d507938a4c3357e4f1cdf46def3db718345dba09e91dae905b6df",
+      "before_v110_release_bytes": 389438
     },
     {
       "copy": "paper.tex",
-      "bytes": 39829,
-      "sha256": "c70d841616ac2a010b98e481931e548a12251eb2da25002cc2c4b8ee0583d6b1",
+      "bytes": 58391,
+      "sha256": "b6637180c96c6d2d528d54426c1a040d3b673193e3b4dec47e739d6ce837fe3f",
       "previous_package_sha256": "791bae8e5182cd0c470bbbb4ee04f27b1a88be0ccf0a531a7bb8c1c078ffef1e",
       "previous_package_bytes": 39813,
       "before_text_revision_sha256": "2b66913d03b414cc775ecc9ab0fb655ad12b96a6ea5740ca9d6ac596d853939c",
-      "before_text_revision_bytes": 39874
+      "before_text_revision_bytes": 39874,
+      "before_finite_jet_sha256": "c70d841616ac2a010b98e481931e548a12251eb2da25002cc2c4b8ee0583d6b1",
+      "before_finite_jet_bytes": 39829,
+      "before_v110_release_sha256": "ff6c13735c7bec44cfa48b5ff913f75804fc47c4ee8f2ef9d11365cab9c0d33e",
+      "before_v110_release_bytes": 58403
     },
     {
       "copy": "reproduce.py",
-      "bytes": 4378,
-      "sha256": "84abe22b67f142d42f84abe188df5d2e56af0e07de79912803702e0954a93fbd"
+      "bytes": 4621,
+      "sha256": "fe3a9354651fc452719326d76a1985c6fd578c1b3feec88908a7961ddcc0fd15"
     },
     {
       "copy": "check_packet.py",
@@ -32,13 +40,19 @@
     },
     {
       "copy": "claims.json",
-      "bytes": 2449,
-      "sha256": "17a85dacd34405cf3ef2bb498a7d341b4b80b849d67c0ddf6f314d7a7400423f",
+      "bytes": 5725,
+      "sha256": "6bc43ed419bbba3a93b7af3d0003015b39bfbfc107acaa53b252cb0fd43f5775",
       "source_sha256": "9770d6bb594f80cbfab9fa9dae573d794e0c1401a768151513f706116684ad41",
       "previous_package_sha256": "3c45ddb8b8fe673b9abb5e0f01232bdd521ee58484eb29d7c527d7538e973e64",
       "previous_package_bytes": 2299,
       "before_text_revision_sha256": "589829a6ce6c5149b57b148daedd6ea889895cb772a82717f6b6aa0f87090e32",
-      "before_text_revision_bytes": 2384
+      "before_text_revision_bytes": 2384,
+      "before_finite_jet_sha256": "17a85dacd34405cf3ef2bb498a7d341b4b80b849d67c0ddf6f314d7a7400423f",
+      "before_finite_jet_bytes": 2449,
+      "before_public_evidence_sha256": "e28f62affb99fbbecc458614fc11f1dad77716464b3d96c747a1a873cb557600",
+      "before_public_evidence_bytes": 3993,
+      "before_v110_release_sha256": "2d98d077040185caa6283d6526b18aaa64fbe8e5ae2680cd6070f106eced02a5",
+      "before_v110_release_bytes": 5742
     },
     {
       "copy": "checks/darboux.py",
@@ -89,6 +103,117 @@
       "copy": "baseline/recovery.json",
       "bytes": 1331,
       "sha256": "72bf6e60a418ef54c14e2b11323fa66c88ab52203609a41c2b5a1cf7feedc61d"
+    },
+    {
+      "copy": "INTEGRATION-ACCEPTANCE.md",
+      "bytes": 852,
+      "sha256": "da5c98c66130d52df4cbb5063c6ed5ae26a0865a37875316e5036e92a4e2675d"
+    },
+    {
+      "copy": "INTEGRATION-REVIEW-EXCERPT.md",
+      "bytes": 9674,
+      "sha256": "e4439b05e2ec74f2bede846822b22e40424c0708d5b6266e8048382ccc6fe24b"
+    },
+    {
+      "copy": "INTEGRATION-REVIEW.md",
+      "bytes": 4751,
+      "sha256": "b72bacd4051a1c9e017fa1adc4040e6835207a175d98d2c4fc0b8b84c9080e50",
+      "before_v110_release_sha256": "a838238b0d17fa702192d37c092f253eb563bcaac305e7310905300832b8f819",
+      "before_v110_release_bytes": 4774
+    },
+    {
+      "copy": "README.md",
+      "bytes": 11646,
+      "sha256": "29758735a6d5f7ecf80c531a82a59814ce1ea529bba98367c3c68a71485cc729",
+      "before_v110_release_sha256": "9455d4ecb60915ef37045a0094e357e3b62745a660ce8d07e27628c6ca49f89d",
+      "before_v110_release_bytes": 11636
+    },
+    {
+      "copy": "REPAIR-RECORD.json",
+      "bytes": 4291,
+      "sha256": "67c52c905e3141e48c4bfaadf29162b3040f1806e7c66008bd05de8f75021877",
+      "before_v110_release_sha256": "70ba976e468707512e60dcfa945e61c5f0df40eb1c851393fb48aa6a48bc0690",
+      "before_v110_release_bytes": 4290
+    },
+    {
+      "copy": "publication_privacy.py",
+      "bytes": 2047,
+      "sha256": "6f070d9eb80fa434c8221043139fb226cd44ca027260a3b7126c912a5ce8bbbb"
+    },
+    {
+      "copy": "upper/HISTORICAL-REFERENCES.md",
+      "bytes": 7358,
+      "sha256": "94e97f715cc965bf55e8d5a62eb5beb0f1c5792c3cbf86a5882337e405e98560"
+    },
+    {
+      "copy": "upper/README.md",
+      "bytes": 5178,
+      "sha256": "9ba5a88bb05cef505afb30640a4d27aee46e2f3598262cfecc03630198d1914f"
+    },
+    {
+      "copy": "upper/SOURCE-MAP.json",
+      "bytes": 64281,
+      "sha256": "21beacf5e5c9fb10d6d364aa487362c6a7843f10fe95e8fb0c79a1567e01ebae"
+    },
+    {
+      "copy": "upper/sources/b15-close-2026-11-09/INPUT.json",
+      "bytes": 1504,
+      "sha256": "ca886bbe8658c6e1cd475aef4e09f4cde996e6d576c829ec4814cf52a167c15b"
+    },
+    {
+      "copy": "upper/sources/b15-close-2026-11-09/degenerate/PROOF.md",
+      "bytes": 7180,
+      "sha256": "c60c9a5dfc23c900c47119122a9c0a85a57a424a0374aa536b5bee1398aeabd2"
+    },
+    {
+      "copy": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_CERT_G82.json",
+      "bytes": 3553,
+      "sha256": "879adb76db93cb9ac883f728f4a382037acb61f59d5e83b4df6dee56f7cb0b6f"
+    },
+    {
+      "copy": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_CERT_G99.json",
+      "bytes": 2403,
+      "sha256": "cab3cabd9dff79b2487279b6037eae1312d67438570ee94ffc5d6330786a8beb"
+    },
+    {
+      "copy": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_G82.json",
+      "bytes": 6037,
+      "sha256": "e0a1e9556bfb0c2b27795a81ec0c164d051815ad7b41a8ae5ad564b1715cff9f"
+    },
+    {
+      "copy": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_G99.json",
+      "bytes": 4835,
+      "sha256": "5e9782e942b80a0b12be1f828f5f2b513fec0e09aa3ca943edaa8959d8935271"
+    },
+    {
+      "copy": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_QQ_G82_5.json",
+      "bytes": 3534,
+      "sha256": "78cd5dad96ae1c89227b6c53d1a1194222224d4f76f7aea67f2888b65fae079f"
+    },
+    {
+      "copy": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_QQ_G99_6.json",
+      "bytes": 4922,
+      "sha256": "5717eaf12d634fbb11e0b97eb4d6c1b8ee3d71f36e8d830d1b4eacf8671fd5d8"
+    },
+    {
+      "copy": "upper/sources/next16-lower8/verify_ALGEBRAIC_PROOF.md",
+      "bytes": 6090,
+      "sha256": "8eda88a3fcaa6538901d40429d94f86b92970ea50ab2dc8cfd2f0e5dbee82a3f"
+    },
+    {
+      "copy": "upper/sources/next16-upper8/PROOF.md",
+      "bytes": 9065,
+      "sha256": "1db0b5c58d376fbb89a9cf9a1da22e55a2593538fda9c6754dc62654ee8f89d3"
+    },
+    {
+      "copy": "upper/sources/verify-b13-blind-2026-11-09/lower_proof.md",
+      "bytes": 8232,
+      "sha256": "b8b4e688ed269715bf3d6ef2070927bd8b9e6fd1559e55077dcca918832917b5"
+    },
+    {
+      "copy": "upper/sources/verify-b13-blind-2026-11-09/stage2/coverage/AUDIT.md",
+      "bytes": 8695,
+      "sha256": "a9de6c110dad7e77f68bfbeab4ff779690a6b87ef70d55f3db4045f3dd2f0b15"
     }
   ],
   "release_update": {
@@ -105,5 +230,33 @@
     "changes": "Reader-facing order, attribution, contact and scope; review dependencies retained in verification record; PDF command typography; internal review labels replaced with descriptive labels. Mathematical statements, numerical claims, programs and baselines unchanged.",
     "pdf_build": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian); two passes with README commands",
     "hash_fields": "bytes and sha256 identify current files; before_text_revision_* identify copies at base_package_commit; other historical hash fields retain their original meanings."
+  },
+  "finite_jet_revision": {
+    "base_package_commit": "5222b16e47ad75b5936b2911018c361024f41169",
+    "date": "2026-11-10",
+    "scope": "mathematical synthesis and bounded replay subset; inherited component verification and pending integration review distinguished",
+    "full_upper_certificate_archives_included": false,
+    "author_tool": "Codex"
+  },
+  "upper_evidence": {
+    "source_map": "upper/SOURCE-MAP.json",
+    "jobs": "upper/JOBS.json",
+    "review": "INTEGRATION-REVIEW.md"
+  },
+  "public_repair": {
+    "record": "REPAIR-RECORD.json",
+    "receipt": "INTEGRATION-ACCEPTANCE.md",
+    "source_snapshot": "84f6a857a90ad4e7cd103dc4006357da8b9f191a",
+    "receipt_commit": "aefd3e513ddefaee6c513e9cf65717b017ff61ae",
+    "receipt_note_sha256": "dc929bceaf8df15b7041a2dc92b64e2c4e61acceb42805589ff694aa0b103a7f",
+    "historical_fields": "finite_jet_revision describes the earlier integration patch; upper_evidence describes the bundled adopted evidence and public_repair this edition."
+  },
+  "v110_release": {
+    "version": "1.1.0",
+    "release_date": "2026-11-26",
+    "base_tree": "59a66489cc6d69a1e40b3931c325f776e0b45dec",
+    "changes": "Release wording, version, date, DOI placeholder and citation metadata. The article source differs from the base tree only on its date line.",
+    "pdf_build": "pdfLaTeX (TeX Live 2025/dev/Debian), two passes with SOURCE_DATE_EPOCH=1795651200, FORCE_SOURCE_DATE=1, TZ=UTC, -no-shell-escape -interaction=nonstopmode -halt-on-error -jobname=paper and '\\pdftrailerid{}\\input{paper.tex}'.",
+    "hash_fields": "For inputs, bytes and sha256 identify the distributed copies. The before_v110_release fields identify the corresponding files in the base tree."
   }
 }

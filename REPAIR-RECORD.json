@@ -1,0 +1,64 @@
+{
+  "source_archive_sha256": "c9aa1d12abc6aa75ba00a87506d723e3fe61600496aea172c9178acd3638f4cf",
+  "source_snapshot": "84f6a857a90ad4e7cd103dc4006357da8b9f191a",
+  "receipt_commit": "aefd3e513ddefaee6c513e9cf65717b017ff61ae",
+  "receipt_note_sha256": "dc929bceaf8df15b7041a2dc92b64e2c4e61acceb42805589ff694aa0b103a7f",
+  "changes": [
+    {
+      "path": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_CERT_G82.json",
+      "before_sha256": "7ae9a37c4988f29def00f956004707f49ac0ee54dfde2e34abc490101a9cbf45",
+      "sha256": "879adb76db93cb9ac883f728f4a382037acb61f59d5e83b4df6dee56f7cb0b6f",
+      "changes": "Only stored path strings/keys replaced; local package-root paths where bundled, historical-output labels otherwise. All numbers and non-path strings retained.",
+      "path_fields_changed": 12
+    },
+    {
+      "path": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_CERT_G99.json",
+      "before_sha256": "deac1b556733119f6db0cbc729ffa8c2fc082506f0bd176e3283d9cbd1166d97",
+      "sha256": "cab3cabd9dff79b2487279b6037eae1312d67438570ee94ffc5d6330786a8beb",
+      "changes": "Only stored path strings/keys replaced; local package-root paths where bundled, historical-output labels otherwise. All numbers and non-path strings retained.",
+      "path_fields_changed": 8
+    },
+    {
+      "path": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_G82.json",
+      "before_sha256": "fa9e9bc5d3d8a4501d6475d9207e830148d34c7c9282a81685b8cdb6c6a5f9e9",
+      "sha256": "e0a1e9556bfb0c2b27795a81ec0c164d051815ad7b41a8ae5ad564b1715cff9f",
+      "changes": "Only stored path strings/keys replaced; local package-root paths where bundled, historical-output labels otherwise. All numbers and non-path strings retained.",
+      "path_fields_changed": 22
+    },
+    {
+      "path": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_G99.json",
+      "before_sha256": "6d7937fde4859a14edec9fe5865351597db730cfb56fa3e78933475fb39557f9",
+      "sha256": "5e9782e942b80a0b12be1f828f5f2b513fec0e09aa3ca943edaa8959d8935271",
+      "changes": "Only stored path strings/keys replaced; local package-root paths where bundled, historical-output labels otherwise. All numbers and non-path strings retained.",
+      "path_fields_changed": 14
+    },
+    {
+      "path": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_QQ_G82_5.json",
+      "before_sha256": "4cdf88213a4e304f7e2500f43d079684489c6d63726c2c179125c759edb07135",
+      "sha256": "78cd5dad96ae1c89227b6c53d1a1194222224d4f76f7aea67f2888b65fae079f",
+      "changes": "Only stored path strings/keys replaced; local package-root paths where bundled, historical-output labels otherwise. All numbers and non-path strings retained.",
+      "path_fields_changed": 2
+    },
+    {
+      "path": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_QQ_G99_6.json",
+      "before_sha256": "98ae98535bf05501186ca41358016d4938f3570c5b74da0d8cec847ed7eba880",
+      "sha256": "5717eaf12d634fbb11e0b97eb4d6c1b8ee3d71f36e8d830d1b4eacf8671fd5d8",
+      "changes": "Only stored path strings/keys replaced; local package-root paths where bundled, historical-output labels otherwise. All numbers and non-path strings retained.",
+      "path_fields_changed": 2
+    },
+    {
+      "path": "upper/sources/b15-close-2026-11-09/INPUT.json",
+      "before_sha256": "daa3092e03155b1ce83f7dd350be8b9d80da7a801e75e954dad2ac4ad788b006",
+      "sha256": "ca886bbe8658c6e1cd475aef4e09f4cde996e6d576c829ec4814cf52a167c15b",
+      "removed_keys": [
+        "limits",
+        "writes",
+        "external_contact"
+      ],
+      "changes": "Removed historical resource, writable-scope and contact envelope; every remaining mathematical definition and value is unchanged."
+    }
+  ],
+  "scope": "F1 receipt identity; F2 non-arithmetic metadata; F3 manifest count; F4 restricted finite-jet scope; F5 historical-reference navigation.",
+  "arithmetic": "Mathematical programs, numerical coefficients, claims and paper TeX/PDF retained. Only designated path metadata and operational envelope fields changed in source JSON.",
+  "replay": "36/39 upper jobs were run on the preceding evidence package; this edition inherits those logs after preservation audit. Three raw CRT jobs remain inherited from the component review. No claim of 39/39 new replay."
+}

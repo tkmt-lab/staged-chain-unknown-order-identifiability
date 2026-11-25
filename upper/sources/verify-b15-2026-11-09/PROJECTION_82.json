@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "method": "deterministic full finite-field evaluation at more than degree-bound points using geometric chirp convolution",
+  "prime": 104729,
+  "records": [
+    {
+      "pair": "02",
+      "degree_bound": 55479,
+      "candidate_degree": 55479,
+      "matching_points": 104723,
+      "scalar": 3587,
+      "h_valuation_bound": 856
+    },
+    {
+      "pair": "03",
+      "degree_bound": 56463,
+      "candidate_degree": 56463,
+      "matching_points": 104725,
+      "scalar": 61580,
+      "h_valuation_bound": 856
+    }
+  ],
+  "degree_upper": 55479,
+  "degree_actual": 55479,
+  "h_valuation_bound": 856,
+  "hplus1_divisor": 479,
+  "U_quotient_degree": 54064,
+  "gcd_degree": 0,
+  "seconds": 44.061619615999916,
+  "rss_KiB": 561688
+}

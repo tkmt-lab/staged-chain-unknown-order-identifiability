@@ -1,0 +1,14 @@
+# q進Sylvester計算の数学的レビュー
+
+対象は同一研究チーム内の`lower_qadic_certificate.py`。証拠ファイル・算法を見た後のレビューであり独立盲検ではない。数学的判定に浮動小数を使っていない。
+
+1. 初期行列はG,Hの固定k次数から作る通常のSylvester行列。各h^iを(q−1)^iへ展開した係数を二項係数の整数和で厳密に計算し、q^N未満だけを保持する。従って保存行列は真の行列とq^Nを法として一致する。
+2. 不変量は、元のdeterminantが非零q進単位とq^totalを除いて現在行列のdeterminantに等しく、現在行列が真の行列のmod q^precisionを表すこと。
+3. 現在全entryの最小valuationがv>0なら各行からq^vを引き出せる。行列の次元をdとするとtotalはd v増える。entryの精度はvだけ低下する。実装はこの二つを混同していない。
+4. 定数項非零のpivotを選ぶ行列の行・列の交換はdetの符号しか変えない。pivotの逆元は有理級数上のNewton式で生成し、pivot×inverse=1 mod q^precisionをassertしている。Schur補行列へ移る際の除去因子は単位なのでdetのvaluationを変えない。
+5. 残りd×d行列の全entryが保存精度で零なら、真の全entryはq^precisionで割れる。detはq^(d precision)で割れるためtotalへこの値を加えてよい。係数が見えないことを真の零と判定していない。
+6. totalが目標98/92以上に達した時点で停止するのは、必要なdivisibilityだけを証明するため十分。正確なvaluationや非零先頭係数をこの計算単独からは主張しない。
+
+Pythonの同一zero polynomialへの参照は使われるが、FLINT polynomial値を破壊的に書き換えていない。各Schur更新・右shiftは新しい値を作り、行列のlist要素を代入するため、この参照共有は行の相互変更を起こさない。
+
+この証明で得るq冪の下界を、別の整数割当て証明によるh冪・次数上限、mod pにおける次数一致とgcdに結びつける必要がある。q進計算のPASSだけで有理数体上の共通零点がないとは結論しない。

@@ -1,0 +1,88 @@
+{
+  "input_commit": "aa75df62e5c0ad26f4dfcfe945c02bd778377785",
+  "claim": "B_min(1,4)<=15",
+  "verdict": "成立",
+  "inherited_lower_bound": 13,
+  "lower_bound_reverified": false,
+  "non_blind": true,
+  "steps": [
+    {
+      "id": "P01",
+      "status": "成立",
+      "reason": "接触から残差、全 rank の行列式微分、単位による三角変換が成立。A4≠0を用いない。",
+      "evidence": [
+        "THEORY.md",
+        "DETERMINANT.json"
+      ]
+    },
+    {
+      "id": "P02",
+      "status": "成立",
+      "reason": "h=0 の11関数支持・jet行列式を再生成。初期整合とODE一意性でgerm一致。境界不等式も確認。",
+      "evidence": [
+        "THEORY.md",
+        "DEGENERATE.json"
+      ]
+    },
+    {
+      "id": "P03",
+      "status": "成立",
+      "reason": "元時間ODEからP4を独立生成。正規化F4の2754係数とW1..W4全係数が一致。",
+      "evidence": [
+        "DETERMINANT.json"
+      ]
+    },
+    {
+      "id": "P04",
+      "status": "成立",
+      "reason": "raw上界B、掛け戻し候補界C、M>B+C、全192素数計算の全係数一致、およびR01=G82*G99を再計算。",
+      "evidence": [
+        "CRT_01.json",
+        "CRT_02.json",
+        "CRT_03.json",
+        "CONTROLS.json"
+      ]
+    },
+    {
+      "id": "P05",
+      "status": "成立",
+      "reason": "整数支持から次数・h付値を再計算。QQ Hensel因子と残精度を検査してq付値479/500を認証。全q_i冪でH80整除を直接確認。",
+      "evidence": [
+        "LOCAL_82.json",
+        "LOCAL_99.json",
+        "PROJECTION_82.json",
+        "PROJECTION_99.json",
+        "FIBERS.json",
+        "CONTROLS.json"
+      ]
+    },
+    {
+      "id": "P06",
+      "status": "成立",
+      "reason": "次数上界を超える相異なる点で四本の有限体終結式を決定的に認証。U/Dのgcdは1、h=0,-1でも非零。片側次数保持の持上げ論法が成立。",
+      "evidence": [
+        "PROJECTION_82.json",
+        "PROJECTION_99.json",
+        "THEORY.md"
+      ]
+    },
+    {
+      "id": "P07",
+      "status": "成立",
+      "reason": "全7数体・全16有限体因子を再計算。kは一意で、元四式の数体t-gcdはt。",
+      "evidence": [
+        "FIBERS.json",
+        "THEORY.md"
+      ]
+    },
+    {
+      "id": "P08",
+      "status": "成立",
+      "reason": "16根の有理箱・全実根数・非重複を確認。許容hの10根を含め全候補でt=r=0となり正性に反する。",
+      "evidence": [
+        "FIBERS.json",
+        "CONTROLS.json"
+      ]
+    }
+  ]
+}

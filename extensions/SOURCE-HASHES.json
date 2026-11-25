@@ -1,0 +1,195 @@
+[
+  {
+    "source_sha256": "83d50e8d37ba1fad91062063b686f65537d8f84c8b80ed942668403092b14c5c",
+    "public_path": "extensions/u42/certificate42.json",
+    "public_sha256": "83d50e8d37ba1fad91062063b686f65537d8f84c8b80ed942668403092b14c5c",
+    "bytes": 290028,
+    "adapted": false
+  },
+  {
+    "source_sha256": "f5a780124f794bc87a7b4d85873aa7bcf09d62deefb564e54187a5cd36fa19fb",
+    "public_path": "extensions/u42/projection42.json",
+    "public_sha256": "f5a780124f794bc87a7b4d85873aa7bcf09d62deefb564e54187a5cd36fa19fb",
+    "bytes": 450727,
+    "adapted": false
+  },
+  {
+    "source_sha256": "914079fda8c2b399823092571ade196b62aa06ac3d39f81102516736aa012258",
+    "public_path": "extensions/u42/alternate42.json",
+    "public_sha256": "914079fda8c2b399823092571ade196b62aa06ac3d39f81102516736aa012258",
+    "bytes": 417686,
+    "adapted": false
+  },
+  {
+    "source_sha256": "93ed16dce0a1bab5f89c28cce0a67b38f946a0ad1ae4029e87cfa8a5a2a80fef",
+    "public_path": "extensions/u42/check42.py",
+    "public_sha256": "93ed16dce0a1bab5f89c28cce0a67b38f946a0ad1ae4029e87cfa8a5a2a80fef",
+    "bytes": 9361,
+    "adapted": false
+  },
+  {
+    "source_sha256": "8522df3cd6b77f013aaa25c0add0a2c3af86eac67fce85d0108c1a2e2ad9ea82",
+    "public_path": "extensions/u42/check_projection42.py",
+    "public_sha256": "8522df3cd6b77f013aaa25c0add0a2c3af86eac67fce85d0108c1a2e2ad9ea82",
+    "bytes": 4067,
+    "adapted": false
+  },
+  {
+    "source_sha256": "80dc98378db14ee61e81287f2349db194bc9a709fb4b80fff539e08acca087be",
+    "public_path": "extensions/u42/PROOF.md",
+    "public_sha256": "b50667077aab969750735242744b24d8b8b55aba0698c7c5c9d410197f9b4412",
+    "bytes": 11515,
+    "adapted": true
+  },
+  {
+    "source_sha256": "9783b9fb21f5f3b67651b408c7809f0fa1b8307001ee23110a694351a3b292db",
+    "public_path": "extensions/l18/INPUT.json",
+    "public_sha256": "3e8c9e4d5247650fbece3681834925069a745653699b919d01ddb8fa8b7216c6",
+    "bytes": 2229,
+    "adapted": true,
+    "distribution_kind": "public-derived-version",
+    "change_type": "Remove only the study metadata field; all remaining JSON values are unchanged."
+  },
+  {
+    "source_sha256": "9e68a52db275b1aa4f0b42ee1ebcc6a523b3fa80930508d98ce3e7af39ec5c10",
+    "public_path": "extensions/l18/CANDIDATE.json",
+    "public_sha256": "9e68a52db275b1aa4f0b42ee1ebcc6a523b3fa80930508d98ce3e7af39ec5c10",
+    "bytes": 1493,
+    "adapted": false
+  },
+  {
+    "source_sha256": "ff85a8ef542edf824a1ad517a69c3f99a152307e68e0ceb0b9997eb70ea002b4",
+    "public_path": "extensions/l18/independent.py",
+    "public_sha256": "3be86a82792b9af49755fccf5949dba0bfc13db899836a2e5f24791261794786",
+    "bytes": 9585,
+    "adapted": true,
+    "distribution_kind": "public-derived-version",
+    "change_type": "Use the bundled input directory and its metadata-adjusted INPUT hash; reduce address-space limit from 8 to 6 GiB and CPU limit from 7200 to 7000 seconds. Arithmetic is unchanged."
+  },
+  {
+    "source_sha256": "c182c60151f867131162c6629aab736bab55ce61c5e4405dcfeb0df49d56d0f5",
+    "public_path": "extensions/l18/STAGE1.md",
+    "public_sha256": "b7bf90422a02ae45068b22316b6c5580626c46f484ca4a65a0844ea553f69ceb",
+    "bytes": 7539,
+    "adapted": true
+  },
+  {
+    "source_sha256": "cc36b9758baf044ebdc68aea00b25c11708c8d5c4241f4eb989c0286087612ae",
+    "public_path": "extensions/b22data/lower_PAIR10.json",
+    "public_sha256": "cc36b9758baf044ebdc68aea00b25c11708c8d5c4241f4eb989c0286087612ae",
+    "bytes": 2520,
+    "adapted": false
+  },
+  {
+    "source_sha256": "047a14753cb2c107056c753856dc35aa1b55d594e8c035becf7a313cf332d3a5",
+    "public_path": "extensions/b22data/lower_system_u.json",
+    "public_sha256": "047a14753cb2c107056c753856dc35aa1b55d594e8c035becf7a313cf332d3a5",
+    "bytes": 213059,
+    "adapted": false
+  },
+  {
+    "source_sha256": "ce45b4765054b511c308a3d28c7fe7d0d763a459c1ee0a7b11eb401e05dc3f5a",
+    "public_path": "extensions/b22data/upper_degree8.json",
+    "public_sha256": "ce45b4765054b511c308a3d28c7fe7d0d763a459c1ee0a7b11eb401e05dc3f5a",
+    "bytes": 47234,
+    "adapted": false
+  },
+  {
+    "source_sha256": "9d0aac6f8d74371bb07657317cd6be37c75c8354b9748385352055ca4442f172",
+    "public_path": "extensions/b22data/upper_degree8_resultant.json",
+    "public_sha256": "9d0aac6f8d74371bb07657317cd6be37c75c8354b9748385352055ca4442f172",
+    "bytes": 174376,
+    "adapted": false
+  },
+  {
+    "source_sha256": "f45dc496544d707b6e27fdf5178f813b045c459572d596b269c91531b5cc32aa",
+    "public_path": "extensions/b22data/upper_degree8_verify.json",
+    "public_sha256": "f45dc496544d707b6e27fdf5178f813b045c459572d596b269c91531b5cc32aa",
+    "bytes": 23377,
+    "adapted": false
+  },
+  {
+    "source_sha256": "92e56839d47a5576a9cc37245f104485c93dc4a3b4fab9ea1e5a06954f26451a",
+    "public_path": "extensions/l22/check.py",
+    "public_sha256": "58a2aab4eb23b032bb192f14d44b1e7bbeff79f9da29c9587fa260a10dfea01a",
+    "bytes": 15380,
+    "adapted": true,
+    "distribution_kind": "public-derived-version",
+    "change_type": "Replace the historical proof name with PROOF.md and use the bundled b22data input directory. Arithmetic is unchanged."
+  },
+  {
+    "source_sha256": "2234c5044b1eabd62ead1a4b0752de9e2856068a30733f429df18fcb231c2d39",
+    "public_path": "extensions/l22/PROOF.md",
+    "public_sha256": "64591e263ad2edd3573eea83514f0de67a47d1939bf4d57e9c991c5a27de5cb8",
+    "bytes": 6933,
+    "adapted": true
+  },
+  {
+    "source_sha256": "a19d5f841c24197a9be7c820514b031101d6ab88360de06e7cf149bf6a7156b9",
+    "public_path": "extensions/u22/check.py",
+    "public_sha256": "a19d5f841c24197a9be7c820514b031101d6ab88360de06e7cf149bf6a7156b9",
+    "bytes": 5925,
+    "adapted": false
+  },
+  {
+    "source_sha256": "7d81590131e7a93c5596da21b361a541e5c8313cf71747382b8eb19be84d142b",
+    "public_path": "extensions/u22/algebra.py",
+    "public_sha256": "51a11a3c587d0832215e868b10e39bb23a1ee1e156f02abb49260bb8661d98af",
+    "bytes": 7867,
+    "adapted": true,
+    "distribution_kind": "public-derived-version",
+    "change_type": "Use the bundled b22data input directory. Arithmetic is unchanged."
+  },
+  {
+    "source_sha256": "f749fd11adb90a4cc560622d59e0ed53388e71a51e73c88d1d296d94f20fdcd9",
+    "public_path": "extensions/u22/eliminate.py",
+    "public_sha256": "d39582376abc701e65e335de9f0fc662b42524d6e2193a17061f106cfb67d158",
+    "bytes": 6627,
+    "adapted": true,
+    "distribution_kind": "public-derived-version",
+    "change_type": "Use the bundled b22data input directory. Arithmetic is unchanged."
+  },
+  {
+    "source_sha256": "b185bd4950f12abfe60d988aaf850153a3dd58f8c109496efae35a8cee60a2f4",
+    "public_path": "extensions/u22/ANALYTIC.md",
+    "public_sha256": "eeef756d246a60b68081e9aa6975535c50d3fc15ab2b1579e281cbd7848a36da",
+    "bytes": 5668,
+    "adapted": true
+  },
+  {
+    "source_sha256": "67cf677c0f280e9c9013a370981000e3d1af71fad005e0ab537f8375e60faeb7",
+    "public_path": "extensions/u22/PROOF.md",
+    "public_sha256": "3ae27deeeafa12f073d83ce555fa7e5706176348aed0256b8eb7f2b5628865fe",
+    "bytes": 7958,
+    "adapted": true
+  },
+  {
+    "source_sha256": "4886622db3c7bae2ea016dae0ca1c0d7a52a59cba6bcb551942bca46db1cc7c5",
+    "public_path": "extensions/u22/STRUCTURE77.md",
+    "public_sha256": "f8aae470fbf532d3054131732d8882315ca4d7bcf56815251ac13d579f810ede",
+    "bytes": 8285,
+    "adapted": true,
+    "change_type": "Retain existing public proof adaptation; delete the out-of-scope common-S0 optimal-8 sentence."
+  },
+  {
+    "source_sha256": "b704c33f051930c499fd1353571e68726322619c38c852f38748bdda6bfa9a03",
+    "public_path": "extensions/u22/STRUCTURE84.md",
+    "public_sha256": "fa27acc43f9fb45f8cd2b4f02311aa984f49a2068044b43298a3a84aadb5754c",
+    "bytes": 7608,
+    "adapted": true
+  },
+  {
+    "source_sha256": "ddbc0ff464c183ba5da53dc52fdbaf29f447cffe653a8fc9e52bbe870e90d6f1",
+    "public_path": "extensions/u23/checker.py",
+    "public_sha256": "ddbc0ff464c183ba5da53dc52fdbaf29f447cffe653a8fc9e52bbe870e90d6f1",
+    "bytes": 11365,
+    "adapted": false
+  },
+  {
+    "source_sha256": "0b6dc916ee7cc7443e7ccd004aeb84308ce4a72c4dbc17157b5cffcacd945764",
+    "public_path": "extensions/u23/PROOF.md",
+    "public_sha256": "ca219384387e74562088118071f2009c0055459b7a4f212b6f5add3d9e04319c",
+    "bytes": 10523,
+    "adapted": true
+  }
+]

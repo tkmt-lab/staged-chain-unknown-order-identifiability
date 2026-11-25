@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "prime": 32003,
+  "candidate_degree": 289,
+  "R02_degree_preserved": 6155,
+  "known_R02_boundary_divisor": "h^90*(h+1)^98",
+  "H_divisibility_basis": "exact integer RUR substitution into G27,H02; H squarefree and denominator coprime",
+  "modular_quotient_degree": 5678,
+  "quotient_gcd_with_radial_resultant": "1",
+  "H_occurs_once_in_R02": true,
+  "G27_k_leading_coefficient_coprime_H": true,
+  "unique_finite_k_over_each_H_root": true,
+  "conclusion": "Every physical nine-contact candidate has h a root of H289; exact radial resultant is unnecessary."
+}

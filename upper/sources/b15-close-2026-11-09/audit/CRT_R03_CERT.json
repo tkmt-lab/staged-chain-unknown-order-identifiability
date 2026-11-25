@@ -1,0 +1,1745 @@
+{
+  "pair": "03",
+  "status": "PASS",
+  "primes": [
+    1073741827,
+    1073741831,
+    1073741833,
+    1073741839,
+    1073741843,
+    1073741857,
+    1073741891,
+    1073741909,
+    1073741939,
+    1073741953,
+    1073741969,
+    1073741971,
+    1073741987,
+    1073741993,
+    1073742037,
+    1073742053,
+    1073742073,
+    1073742077,
+    1073742091,
+    1073742113,
+    1073742169,
+    1073742203,
+    1073742209,
+    1073742223,
+    1073742233,
+    1073742259,
+    1073742277,
+    1073742289,
+    1073742343,
+    1073742353,
+    1073742361,
+    1073742391,
+    1073742403,
+    1073742463,
+    1073742493,
+    1073742517,
+    1073742583,
+    1073742623,
+    1073742653,
+    1073742667,
+    1073742671,
+    1073742673,
+    1073742707,
+    1073742713,
+    1073742721,
+    1073742731,
+    1073742767,
+    1073742773,
+    1073742811,
+    1073742851,
+    1073742853,
+    1073742881,
+    1073742889,
+    1073742913,
+    1073742931,
+    1073742937,
+    1073742959,
+    1073742983,
+    1073743007,
+    1073743037,
+    1073743049,
+    1073743051,
+    1073743079,
+    1073743091,
+    1073743093,
+    1073743123
+  ],
+  "product": "109498528828941012106847842745918078117503299964957596247114654385769790227784369059551777945566263196545780702746827816008938434770840888648783573086926163879814504089118626979473795051659013770034777624900906844915128521089913459826928758066740582986788351398425964769966650471933299996214739940059605960377938120700193105201903873329489320227660136734084937165211849948024965151118493580054897590254138681080557458966824580899105413246170120308406325458929374116590521534159627989784530041498382933283610125302821813054333217858389989389209616203002010505285170654929973253124929886969900859643",
+  "product_bits": 1981,
+  "B": "849481141063148468872040662065362809206142170106759440253676856857752373432294567585007424034901490484607451676955260779455682093933337950298890030953125529732409719151722299890573162926640845666140895314911149307648765703905632199458905009582988911747470758218795779559756393650934281873747785202957827830167166874047298059660313264793251694357499476615727337600020752236345105514177639261618989996451634645462533103284091482188330629844271790711750509390440929784663588219364633040093603428379987622274034629601695159089385249093213908339601879456530327744839847747703685660478846514405310464",
+  "candidate_raw_max_coefficient": "408254114017605801666104325434815233624742213744245702351976358911694138631188988838597392871930973327395996392294685746527455611146994324016453483294406884317388265295623183017218338536710721983203881442147563168670422375941031945459029018169350531959984989218864972080326797334431170668908007359585294233000904706355205094208700009487648087483913209714294164836941968654759002798266456482288272924307968984895618927082718665926855705921422649701283026120749431398898378572556116331426089923510272000000",
+  "strict_product_gt_B_plus_C": true,
+  "candidate_rechecked_against_all_saved_prime_coefficients": true,
+  "records": [
+    {
+      "pair": "03",
+      "prime": 1073741827,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.48182534900002,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126016,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073741827.json.gz",
+      "residue_sha256": "3e0df2b6d02f76b454841de5259a2324752a8da6ee9eb5c16c94e58ac42adca8",
+      "residue_bytes": 525205
+    },
+    {
+      "pair": "03",
+      "prime": 1073741831,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.538671027999953,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 125816,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073741831.json.gz",
+      "residue_sha256": "06675e69626ba7d47fd00216b6ee7ea684d319bdd49361151313607b2534363b",
+      "residue_bytes": 525365
+    },
+    {
+      "pair": "03",
+      "prime": 1073741833,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 14.621128160000126,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 125944,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073741833.json.gz",
+      "residue_sha256": "8ff43d65c9f15c0f7a3ed27e460dfd86a6360e6ee372921f440b647430afd390",
+      "residue_bytes": 525293
+    },
+    {
+      "pair": "03",
+      "prime": 1073741839,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.94783533499981,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 125836,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073741839.json.gz",
+      "residue_sha256": "454eeef8e517cd5018353b3be00b7bd984f00a42bec771b6f88e6bf368a07b44",
+      "residue_bytes": 525234
+    },
+    {
+      "pair": "03",
+      "prime": 1073741843,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.099646228999973,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 125860,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073741843.json.gz",
+      "residue_sha256": "986d1cbfd0105d64859372ad6643d42f8868d3ed3719cd93ba0f15267b3b7dca",
+      "residue_bytes": 525139
+    },
+    {
+      "pair": "03",
+      "prime": 1073741857,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.303054370000154,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 125836,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073741857.json.gz",
+      "residue_sha256": "aa20773c0053d85a44e01aa28dc719bc5018c668f0c9607a1d238534bd8c61b7",
+      "residue_bytes": 525240
+    },
+    {
+      "pair": "03",
+      "prime": 1073741891,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 14.780395335999856,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 125976,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073741891.json.gz",
+      "residue_sha256": "2c7c03247c832b9e933b81c1b36995a90c6c316bd29be1c48fff963452d9cfbe",
+      "residue_bytes": 525332
+    },
+    {
+      "pair": "03",
+      "prime": 1073741909,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 14.55442158599999,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 125628,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073741909.json.gz",
+      "residue_sha256": "e09af44b9cdd93f7fd55c1ab8e5b24d2cb95772f020108ea361bb6f2e30a5cc6",
+      "residue_bytes": 525185
+    },
+    {
+      "pair": "03",
+      "prime": 1073741939,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 17.691747553999903,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 125840,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073741939.json.gz",
+      "residue_sha256": "f12b44628f8efb51469d8b89974bd7fc81ccf910e9d3e34b1fd2b3576f9d061b",
+      "residue_bytes": 525263
+    },
+    {
+      "pair": "03",
+      "prime": 1073741953,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.13233530699995,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 128116,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073741953.json.gz",
+      "residue_sha256": "6c220e163a457e102392d1a06c7ba9e912dd14d8ac637e13f6ff8a041a2c2977",
+      "residue_bytes": 525125
+    },
+    {
+      "pair": "03",
+      "prime": 1073741969,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.01508759300009,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 127888,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073741969.json.gz",
+      "residue_sha256": "b8260016fa979a06677193060a22822d49076c3d8951c95214d790c1be301367",
+      "residue_bytes": 525104
+    },
+    {
+      "pair": "03",
+      "prime": 1073741971,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.68627203699998,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126552,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073741971.json.gz",
+      "residue_sha256": "bc7ec8d3825167af8b7ad0fa370dd5f7fa3cc84e101b2bdbfe00d0bbebff6782",
+      "residue_bytes": 525237
+    },
+    {
+      "pair": "03",
+      "prime": 1073741987,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.100137668999878,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126708,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073741987.json.gz",
+      "residue_sha256": "66c61aa9e8bd62bf09a59d3e4dd888bb98807bd06fa6353e8bb18b11332b52d7",
+      "residue_bytes": 525244
+    },
+    {
+      "pair": "03",
+      "prime": 1073741993,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 14.512312217000044,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126816,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073741993.json.gz",
+      "residue_sha256": "e0a5a4a2b535fd3f3d619e9306e85812a4ddb23687da79ccecbaa83e7f878af3",
+      "residue_bytes": 525148
+    },
+    {
+      "pair": "03",
+      "prime": 1073742037,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.174491836000016,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126748,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742037.json.gz",
+      "residue_sha256": "cfb208efc06ff1d2f638178b9ed91046389b55fd45578a0e8de2d820cfcb5e1f",
+      "residue_bytes": 525173
+    },
+    {
+      "pair": "03",
+      "prime": 1073742053,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.256377655000051,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126708,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742053.json.gz",
+      "residue_sha256": "b4b3a92899f1234426706f0a4e6d53ef5cf1c0f2d355357e1706519e4401983a",
+      "residue_bytes": 525113
+    },
+    {
+      "pair": "03",
+      "prime": 1073742073,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.163890754000022,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126640,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742073.json.gz",
+      "residue_sha256": "a3b32bee35840fc097f6b3c40868a8cc7367c286e72fa7d063821546e7eff258",
+      "residue_bytes": 525262
+    },
+    {
+      "pair": "03",
+      "prime": 1073742077,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.934988591000092,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126648,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742077.json.gz",
+      "residue_sha256": "e793fe742e8bce5e8ee2db569016248a849687ee576fb3ac4dbc4ee8d7049262",
+      "residue_bytes": 525387
+    },
+    {
+      "pair": "03",
+      "prime": 1073742091,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 17.12604045000012,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126672,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742091.json.gz",
+      "residue_sha256": "d4cb9a40db516e4efdc565f3168c659870126a74689b6856c871009b83f77211",
+      "residue_bytes": 524975
+    },
+    {
+      "pair": "03",
+      "prime": 1073742113,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.763392735000025,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126816,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742113.json.gz",
+      "residue_sha256": "b12f07a8094ec697ee693c956d207dc45326c301601745a504083844ff8c5d52",
+      "residue_bytes": 525147
+    },
+    {
+      "pair": "03",
+      "prime": 1073742169,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.603696019999916,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126924,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742169.json.gz",
+      "residue_sha256": "0e3286bdab8df262d77eaadb77c5da15d2f858b0a6bf044e41b50e1f5838bb48",
+      "residue_bytes": 525084
+    },
+    {
+      "pair": "03",
+      "prime": 1073742203,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 17.60963222500004,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126652,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742203.json.gz",
+      "residue_sha256": "c8d9b3776c3a60d438ec9c530d307e6ee24cd4a93f4afba479c1a4e2c288516e",
+      "residue_bytes": 524705
+    },
+    {
+      "pair": "03",
+      "prime": 1073742209,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.488579684999877,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126584,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742209.json.gz",
+      "residue_sha256": "a9eb30a235de2ea603a0c0597d36b82d80be2d7a90a796aa770f341bcd4c3afb",
+      "residue_bytes": 524927
+    },
+    {
+      "pair": "03",
+      "prime": 1073742223,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.239275338000198,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126732,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742223.json.gz",
+      "residue_sha256": "bb39060fee4cd4b0b6b4c1f1fb512655c2dd879924df06ab27f3a4ad7c28934c",
+      "residue_bytes": 525189
+    },
+    {
+      "pair": "03",
+      "prime": 1073742233,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 17.53946115000008,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126780,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742233.json.gz",
+      "residue_sha256": "c173774daba75ebe461797fba0331d6ec7f8bfff27fd6f4201cbd801e9858160",
+      "residue_bytes": 525464
+    },
+    {
+      "pair": "03",
+      "prime": 1073742259,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 17.21068056399986,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126672,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742259.json.gz",
+      "residue_sha256": "90c1f393c56e29b0b5f43a44ca403f633632eb14e264ac9dfa71452767add4bd",
+      "residue_bytes": 525094
+    },
+    {
+      "pair": "03",
+      "prime": 1073742277,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 14.549565396000162,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126708,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742277.json.gz",
+      "residue_sha256": "8f99ce2abf005664744b9def066af6bec3fff2d5e466c92920a655cb26919cf6",
+      "residue_bytes": 525149
+    },
+    {
+      "pair": "03",
+      "prime": 1073742289,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.79815110000004,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126836,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742289.json.gz",
+      "residue_sha256": "b19beccacf4b83c7d7d31b239c22e18c0ec359eefd3134bcbadb657eaebcf29e",
+      "residue_bytes": 525140
+    },
+    {
+      "pair": "03",
+      "prime": 1073742343,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 14.173398668000118,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126592,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742343.json.gz",
+      "residue_sha256": "8840e6ab2f3f2241bc72b7a8853e63fa946a2a167dfb593e98d88734593d6c3b",
+      "residue_bytes": 525414
+    },
+    {
+      "pair": "03",
+      "prime": 1073742353,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 14.61243867600001,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126712,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742353.json.gz",
+      "residue_sha256": "2f65a9eb47d4e406909fec1af5262279a254472b8d248fe928a087d14078960d",
+      "residue_bytes": 524870
+    },
+    {
+      "pair": "03",
+      "prime": 1073742361,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.967081485000108,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126860,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742361.json.gz",
+      "residue_sha256": "cae2c2003d7066aa780bb494475b17efb0c649f15f89b483fbd3b641536f4e7e",
+      "residue_bytes": 525022
+    },
+    {
+      "pair": "03",
+      "prime": 1073742391,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.66695408999999,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126580,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742391.json.gz",
+      "residue_sha256": "39ac3caa80cf236e6a1489af33c69fbdaa49488c1f4a9e0585a289b55e11f004",
+      "residue_bytes": 524813
+    },
+    {
+      "pair": "03",
+      "prime": 1073742403,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.94638846099997,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126736,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742403.json.gz",
+      "residue_sha256": "fc95c4c60b4eabb88ed3aa3ccf69718aa9eba103e61740bfcc87ce6b19cb7733",
+      "residue_bytes": 525080
+    },
+    {
+      "pair": "03",
+      "prime": 1073742463,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.792281825000146,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126784,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742463.json.gz",
+      "residue_sha256": "a6089e0c67bb60362d750c1ae9e63976db7d892bcc622c575596e7068ead62b6",
+      "residue_bytes": 525046
+    },
+    {
+      "pair": "03",
+      "prime": 1073742493,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.016845705999913,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126704,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742493.json.gz",
+      "residue_sha256": "684c3e47dc087839bec902f3737fb5cc4b4dca4f4e23283d6d288a61e5f85975",
+      "residue_bytes": 525435
+    },
+    {
+      "pair": "03",
+      "prime": 1073742517,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 14.743486961000144,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126768,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742517.json.gz",
+      "residue_sha256": "a239dd5d79cc934fa2b5269500adcb2927652c617c99568a2af611c64b190f98",
+      "residue_bytes": 525293
+    },
+    {
+      "pair": "03",
+      "prime": 1073742583,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.31679343399992,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126696,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742583.json.gz",
+      "residue_sha256": "a97dcece0f449aedf16a6859aa76990d7e7ef610f6f1f60d2adc1e02c1c11c31",
+      "residue_bytes": 524882
+    },
+    {
+      "pair": "03",
+      "prime": 1073742623,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.02419312799998,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126464,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742623.json.gz",
+      "residue_sha256": "4c33a797870be5d1f453505248a55b6caf13d2a096720480ba2692863ecff75e",
+      "residue_bytes": 525074
+    },
+    {
+      "pair": "03",
+      "prime": 1073742653,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 14.826531212999953,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126716,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742653.json.gz",
+      "residue_sha256": "713274bb768a4d1d18c4f258574777cec502a36c25daafbaec70e3ba47543b1a",
+      "residue_bytes": 525093
+    },
+    {
+      "pair": "03",
+      "prime": 1073742667,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.366561544999968,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126708,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742667.json.gz",
+      "residue_sha256": "de85de486d951934c11fd75c3a09fa9c9730396854859feef2535938a9fa63a3",
+      "residue_bytes": 525319
+    },
+    {
+      "pair": "03",
+      "prime": 1073742671,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.148688021999988,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126840,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742671.json.gz",
+      "residue_sha256": "1b0209fa5477389bd28169c6d73188d1137b8b00dd7a8a10d4fe4cd8bfad5d13",
+      "residue_bytes": 524941
+    },
+    {
+      "pair": "03",
+      "prime": 1073742673,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 17.91363610999997,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126712,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742673.json.gz",
+      "residue_sha256": "cfe4fc6f92dd38e691639fabee93ac50ac7d6335aca0590fa98d0590876c1140",
+      "residue_bytes": 525268
+    },
+    {
+      "pair": "03",
+      "prime": 1073742707,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.794661203000032,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126452,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742707.json.gz",
+      "residue_sha256": "9c06b03e44e6007bc329b53f84fb9928fc4d41493286ce70657f438e0e0e932a",
+      "residue_bytes": 525086
+    },
+    {
+      "pair": "03",
+      "prime": 1073742713,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.493741360000058,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126536,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742713.json.gz",
+      "residue_sha256": "25325c3a551930f47c5a450869656e41acf1bdc00d4f50e851ac77383ab29405",
+      "residue_bytes": 525427
+    },
+    {
+      "pair": "03",
+      "prime": 1073742721,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.259547273999942,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126736,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742721.json.gz",
+      "residue_sha256": "fb3a5ee26f0411f15b34a3ce0ac576a0821674739a4fff378b7b5260db97b928",
+      "residue_bytes": 524929
+    },
+    {
+      "pair": "03",
+      "prime": 1073742731,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 14.66344740999989,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126568,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742731.json.gz",
+      "residue_sha256": "3123fc0b6685f23bc23802992bb817df641d26fe64777dff890c94eeb7d85989",
+      "residue_bytes": 525336
+    },
+    {
+      "pair": "03",
+      "prime": 1073742767,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 14.076297040999862,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126460,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742767.json.gz",
+      "residue_sha256": "a45882ed4631dc32940119666ca934a4703fa3ca202e31b5c5cdf236f0422f34",
+      "residue_bytes": 524933
+    },
+    {
+      "pair": "03",
+      "prime": 1073742773,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.71078155600003,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126848,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742773.json.gz",
+      "residue_sha256": "2e386beb34b082dbb536bdad93b455e61f6e75aa9b377f2f171c92c1e7ec1f7c",
+      "residue_bytes": 525213
+    },
+    {
+      "pair": "03",
+      "prime": 1073742811,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.666555136999932,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126780,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742811.json.gz",
+      "residue_sha256": "c3191f7b74deadb39d23718056d16131feb649efaf4377794d0802fe08e9b113",
+      "residue_bytes": 525557
+    },
+    {
+      "pair": "03",
+      "prime": 1073742851,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.514277536999998,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126564,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742851.json.gz",
+      "residue_sha256": "15857eabb857c86a6a38c4553af10c21cf02d60be3b9ee2cda0c6b0deecd5054",
+      "residue_bytes": 525134
+    },
+    {
+      "pair": "03",
+      "prime": 1073742853,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 14.581394766999892,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126800,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742853.json.gz",
+      "residue_sha256": "51bfa446ed67eb239183e2449e30f7f468dd782320840a892e434c4e5257eb21",
+      "residue_bytes": 525537
+    },
+    {
+      "pair": "03",
+      "prime": 1073742881,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 17.267794643999878,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126784,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742881.json.gz",
+      "residue_sha256": "5527679d1469e24f349bd0b0e3c9b5614b10755bb6e8f2b1d16caa0a571427f5",
+      "residue_bytes": 525277
+    },
+    {
+      "pair": "03",
+      "prime": 1073742889,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.010215373999927,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126792,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742889.json.gz",
+      "residue_sha256": "3e91734f9b6dd9eaa9aa002d1b0d13fe4802309ab8e036b96f42aa964b78836d",
+      "residue_bytes": 525073
+    },
+    {
+      "pair": "03",
+      "prime": 1073742913,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.978872923000154,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126696,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742913.json.gz",
+      "residue_sha256": "7a098fef73a17982dd498849f0af0a314f6af264d57f2ccc919e688a41a1b5ed",
+      "residue_bytes": 525085
+    },
+    {
+      "pair": "03",
+      "prime": 1073742931,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 14.439215103999913,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126932,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742931.json.gz",
+      "residue_sha256": "04fbfac93e60e71c48efed535fac32dd170a5b8952bb727e3e407bc59e8e072a",
+      "residue_bytes": 525035
+    },
+    {
+      "pair": "03",
+      "prime": 1073742937,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.594015708999905,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126648,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742937.json.gz",
+      "residue_sha256": "e108067374cecba0a46752f74d6d2413959bdd1d398208f99faa5ad9d3a30070",
+      "residue_bytes": 525505
+    },
+    {
+      "pair": "03",
+      "prime": 1073742959,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 15.661148314000002,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126912,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742959.json.gz",
+      "residue_sha256": "7675fc5fc80df5dffaf1a7a56cd6ef97bfd11ae6f673291df8bd82204b5b44f5",
+      "residue_bytes": 525119
+    },
+    {
+      "pair": "03",
+      "prime": 1073742983,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 14.921831949999842,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126920,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073742983.json.gz",
+      "residue_sha256": "3712f3de679b703220c0b5185a4363c5c3929e91cdf4d681e2c19456fad87a09",
+      "residue_bytes": 525213
+    },
+    {
+      "pair": "03",
+      "prime": 1073743007,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 13.949112129000014,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126856,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073743007.json.gz",
+      "residue_sha256": "e049f866759b40d5dae59d6a709a2e291703f2e4adf865203015d336bb2bf98d",
+      "residue_bytes": 525132
+    },
+    {
+      "pair": "03",
+      "prime": 1073743037,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.531199061000052,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126836,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073743037.json.gz",
+      "residue_sha256": "16b2a510da051d603df73a1731333e86d3650d764820f69259d0ffc5c6bc6c00",
+      "residue_bytes": 525356
+    },
+    {
+      "pair": "03",
+      "prime": 1073743049,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 17.506560575000094,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126696,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073743049.json.gz",
+      "residue_sha256": "fdd37b2eb6d5d1f7de9f9904a1399a413bde82ce0e18295bedc222a26707b1ac",
+      "residue_bytes": 525388
+    },
+    {
+      "pair": "03",
+      "prime": 1073743051,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 17.651418279000154,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126764,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073743051.json.gz",
+      "residue_sha256": "027044ae2675b8b4c1c7a911e9ff683d49573b883836ba046527bf29909d666d",
+      "residue_bytes": 525276
+    },
+    {
+      "pair": "03",
+      "prime": 1073743079,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 17.780916038999976,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126708,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073743079.json.gz",
+      "residue_sha256": "55f6b7e4800e6c168c0f541840bba768b72650af594eb2bb12a94b5fbc95a7aa",
+      "residue_bytes": 525326
+    },
+    {
+      "pair": "03",
+      "prime": 1073743091,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.6702027419999,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126832,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073743091.json.gz",
+      "residue_sha256": "93d5667c75fdec94f22d1f8e44ecac43f3e15273b1fa1d6e1d834fd474da0e11",
+      "residue_bytes": 525083
+    },
+    {
+      "pair": "03",
+      "prime": 1073743093,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 16.25063116399997,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126580,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073743093.json.gz",
+      "residue_sha256": "15162d290eb373f7e8455489e51c8319c79603cc1009ee83bd3c0095009d9651",
+      "residue_bytes": 525001
+    },
+    {
+      "pair": "03",
+      "prime": 1073743123,
+      "input_t_degrees": [
+        12,
+        12
+      ],
+      "seconds": 17.031002847999844,
+      "terms": 68809,
+      "raw_degrees": [
+        611,
+        238,
+        0
+      ],
+      "quotient_degrees": [
+        415,
+        181,
+        0
+      ],
+      "rss_KiB": 126672,
+      "checked_modular_quotient_multiplication": true,
+      "residue_file": "crt_primes_03/1073743123.json.gz",
+      "residue_sha256": "bd4f61e240e9b3588744593ad6821b2c0ade83ec40a81ecd9a1765db275b7360",
+      "residue_bytes": 525009
+    }
+  ],
+  "merge_elapsed_s": 31.270988275000036,
+  "maxrss_KiB": 168036,
+  "rejection_control": {
+    "mutation": "candidate_Q + CRT_product (all modular residues unchanged)",
+    "mutated_raw_max_coefficient": "629874978332716942039576457525694441619880187846315423739896650455320330715629199221602321934297691992747545129975855619157889015249758136431898600043316859636912785059446519709539204797593157632027650945482763353459545689300395325881549179865529822952684390004906905891176577604354556713024418299075011890221188843242215433534836550279967801461996798025865123509890430195286047017765818333337018375587699986304757053752306714521110530358375253781657157995537555891173847843396726689875719933017675192697867952432396118937416549643467651567925212604177258280581948771554048503002345858957474941074344280247920954036746413823777815343235557092247000",
+    "bound_rejects": true
+  },
+  "reconstructed_content": "482702992401869209771088911345922013488008396800000",
+  "primitive_coefficient_max_bits": 1330,
+  "primitive_degrees": [
+    415,
+    181
+  ],
+  "primitive_terms": 68809,
+  "logical_json_sha256": "398c147ee82de84878320197171be378207b1a14726c4fe5c0350f6b759c5e1e"
+}

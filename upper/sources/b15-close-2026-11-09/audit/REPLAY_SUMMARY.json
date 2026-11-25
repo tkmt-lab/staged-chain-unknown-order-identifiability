@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "status": "PASS",
+      "prime": 104729,
+      "branch": 82,
+      "pair": "02",
+      "new_QQ_inputs": [
+        "G82.json.gz",
+        "CRT_R02.json.gz"
+      ],
+      "new_input_sha256": {
+        "G82.json.gz": "99872b93167ccd30b9cb9779491c98fdce62ffa3fd1e417ee421ece114994a7a",
+        "CRT_R02.json.gz": "1b1c70383ea024f9dac8110df8a191d31de7713411557041e35e0e0dd12cb988"
+      },
+      "old_quotient_logical_path": "studies/R044/b14-pilot-2026-11-09/upper/104729/interp_branch82_H01_02_quotient.json",
+      "all_quotient_coefficients_equal_up_to_unit": true,
+      "full_coefficient_support_equal": true,
+      "quotient_degree_h": 54144,
+      "degrees_and_valuation_bounds": {
+        "degree": 55479,
+        "h": 856,
+        "q": 47,
+        "quotient_degree_upper_bound": 54576
+      },
+      "seconds": 28.49826881199988,
+      "rss_KiB": 84012
+    },
+    {
+      "status": "PASS",
+      "prime": 104729,
+      "branch": 82,
+      "pair": "03",
+      "new_QQ_inputs": [
+        "G82.json.gz",
+        "CRT_R03.json.gz"
+      ],
+      "new_input_sha256": {
+        "G82.json.gz": "99872b93167ccd30b9cb9779491c98fdce62ffa3fd1e417ee421ece114994a7a",
+        "CRT_R03.json.gz": "9f075f691b1780f14e726ae89db12c57013ae69dbcd2bde6201ee4527a29d9de"
+      },
+      "old_quotient_logical_path": "studies/R044/b14-pilot-2026-11-09/upper/104729/interp_branch82_H01_03_quotient.json",
+      "all_quotient_coefficients_equal_up_to_unit": true,
+      "full_coefficient_support_equal": true,
+      "quotient_degree_h": 55128,
+      "degrees_and_valuation_bounds": {
+        "degree": 56463,
+        "h": 856,
+        "q": 47,
+        "quotient_degree_upper_bound": 55560
+      },
+      "seconds": 29.070961463000003,
+      "rss_KiB": 89980
+    },
+    {
+      "status": "PASS",
+      "prime": 104729,
+      "branch": 99,
+      "pair": "02",
+      "new_QQ_inputs": [
+        "G99.json.gz",
+        "CRT_R02.json.gz"
+      ],
+      "new_input_sha256": {
+        "G99.json.gz": "8e3afa838696810f1fd55e82bf62477bf1494ad16b3d4f5899bcedda8d2adcfd",
+        "CRT_R02.json.gz": "1b1c70383ea024f9dac8110df8a191d31de7713411557041e35e0e0dd12cb988"
+      },
+      "old_quotient_logical_path": "studies/R044/b14-pilot-2026-11-09/upper/104729/interp_branch99_H01_02_quotient.json",
+      "all_quotient_coefficients_equal_up_to_unit": true,
+      "full_coefficient_support_equal": true,
+      "quotient_degree_h": 75168,
+      "degrees_and_valuation_bounds": {
+        "degree": 76816,
+        "h": 1148,
+        "q": 96,
+        "quotient_degree_upper_bound": 75572
+      },
+      "seconds": 43.02932288300008,
+      "rss_KiB": 101428
+    },
+    {
+      "status": "PASS",
+      "prime": 104729,
+      "branch": 99,
+      "pair": "03",
+      "new_QQ_inputs": [
+        "G99.json.gz",
+        "CRT_R03.json.gz"
+      ],
+      "new_input_sha256": {
+        "G99.json.gz": "8e3afa838696810f1fd55e82bf62477bf1494ad16b3d4f5899bcedda8d2adcfd",
+        "CRT_R03.json.gz": "9f075f691b1780f14e726ae89db12c57013ae69dbcd2bde6201ee4527a29d9de"
+      },
+      "old_quotient_logical_path": "studies/R044/b14-pilot-2026-11-09/upper/104729/interp_branch99_H01_03_quotient.json",
+      "all_quotient_coefficients_equal_up_to_unit": true,
+      "full_coefficient_support_equal": true,
+      "quotient_degree_h": 76356,
+      "degrees_and_valuation_bounds": {
+        "degree": 78004,
+        "h": 1148,
+        "q": 96,
+        "quotient_degree_upper_bound": 76760
+      },
+      "seconds": 44.85645824799985,
+      "rss_KiB": 103232
+    }
+  ],
+  "sum_reported_job_seconds": 145.4550114059998,
+  "max_checkpoint_RSS_KiB": 103232,
+  "scope": "Four full finite-field interpolation replays from CRT-certified QQ inputs; this does not by itself certify the QQ h+1 valuations."
+}

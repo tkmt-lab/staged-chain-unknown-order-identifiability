@@ -1,0 +1,590 @@
+{
+  "status": "PASS",
+  "method": "integer homogeneous Mobius transforms, Descartes variations, rational bisection and exact power-of-two global root bound",
+  "root_count_above_minus_one": 28,
+  "global_absolute_root_bound": "65536",
+  "bound_M": 32768,
+  "trace": [
+    {
+      "lo": "-1",
+      "hi": "-40/41",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-40/41",
+      "hi": "-39/40",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "-39/40",
+      "hi": "-38/47",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-38/47",
+      "hi": "-59/73",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "-59/73",
+      "hi": "-21/26",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "-21/26",
+      "hi": "-25/62",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-25/62",
+      "hi": "-27/67",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "-27/67",
+      "hi": "-9/43",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-9/43",
+      "hi": "-5/24",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "-5/24",
+      "hi": "-31/154",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-31/154",
+      "hi": "-32/159",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "-32/159",
+      "hi": "-19/360",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-19/360",
+      "hi": "-1/19",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "-1/19",
+      "hi": "-2/39",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-2/39",
+      "hi": "-3/59",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "-3/59",
+      "hi": "0",
+      "variations": 8,
+      "kind": "gap",
+      "mid_sign": 1
+    },
+    {
+      "lo": "-3/59",
+      "hi": "-3/118",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-3/118",
+      "hi": "0",
+      "variations": 2,
+      "kind": "gap",
+      "mid_sign": 1
+    },
+    {
+      "lo": "-3/118",
+      "hi": "-3/236",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-3/236",
+      "hi": "0",
+      "variations": 2,
+      "kind": "gap",
+      "mid_sign": 1
+    },
+    {
+      "lo": "-3/236",
+      "hi": "-3/472",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-3/472",
+      "hi": "0",
+      "variations": 2,
+      "kind": "gap",
+      "mid_sign": 1
+    },
+    {
+      "lo": "-3/472",
+      "hi": "-3/944",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-3/944",
+      "hi": "0",
+      "variations": 2,
+      "kind": "gap",
+      "mid_sign": 1
+    },
+    {
+      "lo": "-3/944",
+      "hi": "-3/1888",
+      "variations": 2,
+      "kind": "gap",
+      "mid_sign": 1
+    },
+    {
+      "lo": "-3/944",
+      "hi": "-9/3776",
+      "variations": 2,
+      "kind": "gap",
+      "mid_sign": 1
+    },
+    {
+      "lo": "-3/944",
+      "hi": "-21/7552",
+      "variations": 2,
+      "kind": "gap",
+      "mid_sign": 1
+    },
+    {
+      "lo": "-3/944",
+      "hi": "-45/15104",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-45/15104",
+      "hi": "-21/7552",
+      "variations": 2,
+      "kind": "gap",
+      "mid_sign": 1
+    },
+    {
+      "lo": "-45/15104",
+      "hi": "-87/30208",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-87/30208",
+      "hi": "-21/7552",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-21/7552",
+      "hi": "-9/3776",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-9/3776",
+      "hi": "-3/1888",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "-3/1888",
+      "hi": "0",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "0",
+      "hi": "1/2704",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "1/2704",
+      "hi": "1/655",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "1/655",
+      "hi": "1/654",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "1/654",
+      "hi": "1/615",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "1/615",
+      "hi": "1/614",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "1/614",
+      "hi": "1/121",
+      "variations": 2,
+      "kind": "gap",
+      "mid_sign": -1
+    },
+    {
+      "lo": "1/614",
+      "hi": "735/148588",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "735/148588",
+      "hi": "1/121",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "1/121",
+      "hi": "1/120",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "1/120",
+      "hi": "2/33",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "2/33",
+      "hi": "3/49",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "3/49",
+      "hi": "3/34",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "3/34",
+      "hi": "4/45",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "4/45",
+      "hi": "13/29",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "13/29",
+      "hi": "22/49",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "22/49",
+      "hi": "10/7",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "10/7",
+      "hi": "1303/912",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "1303/912",
+      "hi": "226/151",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "226/151",
+      "hi": "229/153",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "229/153",
+      "hi": "153/61",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "153/61",
+      "hi": "148/59",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "148/59",
+      "hi": "66/25",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "66/25",
+      "hi": "433/164",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "433/164",
+      "hi": "151/45",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "151/45",
+      "hi": "198/59",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "198/59",
+      "hi": "25/4",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "25/4",
+      "hi": "1669/267",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "1669/267",
+      "hi": "556/57",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "556/57",
+      "hi": "517/53",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "517/53",
+      "hi": "157/9",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "157/9",
+      "hi": "2076/119",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "2076/119",
+      "hi": "1132/59",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "1132/59",
+      "hi": "1439/75",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "1439/75",
+      "hi": "258/11",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "258/11",
+      "hi": "4691/200",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "4691/200",
+      "hi": "1416/7",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "1416/7",
+      "hi": "38839/192",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "38839/192",
+      "hi": "1516438/171",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "1516438/171",
+      "hi": "150757/17",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "150757/17",
+      "hi": "426456/35",
+      "variations": 0,
+      "kind": "gap"
+    },
+    {
+      "lo": "426456/35",
+      "hi": "718883/59",
+      "variations": 1,
+      "kind": "root"
+    },
+    {
+      "lo": "718883/59",
+      "hi": "65536",
+      "variations": 0,
+      "kind": "tail"
+    }
+  ],
+  "isolated_root_intervals": [
+    [
+      "-40/41",
+      "-39/40"
+    ],
+    [
+      "-38/47",
+      "-59/73"
+    ],
+    [
+      "-59/73",
+      "-21/26"
+    ],
+    [
+      "-25/62",
+      "-27/67"
+    ],
+    [
+      "-9/43",
+      "-5/24"
+    ],
+    [
+      "-31/154",
+      "-32/159"
+    ],
+    [
+      "-19/360",
+      "-1/19"
+    ],
+    [
+      "-2/39",
+      "-3/59"
+    ],
+    [
+      "0",
+      "1/2704"
+    ],
+    [
+      "1/655",
+      "1/654"
+    ],
+    [
+      "1/615",
+      "1/614"
+    ],
+    [
+      "1/121",
+      "1/120"
+    ],
+    [
+      "2/33",
+      "3/49"
+    ],
+    [
+      "3/34",
+      "4/45"
+    ],
+    [
+      "13/29",
+      "22/49"
+    ],
+    [
+      "10/7",
+      "1303/912"
+    ],
+    [
+      "226/151",
+      "229/153"
+    ],
+    [
+      "153/61",
+      "148/59"
+    ],
+    [
+      "66/25",
+      "433/164"
+    ],
+    [
+      "151/45",
+      "198/59"
+    ],
+    [
+      "25/4",
+      "1669/267"
+    ],
+    [
+      "556/57",
+      "517/53"
+    ],
+    [
+      "157/9",
+      "2076/119"
+    ],
+    [
+      "1132/59",
+      "1439/75"
+    ],
+    [
+      "258/11",
+      "4691/200"
+    ],
+    [
+      "1416/7",
+      "38839/192"
+    ],
+    [
+      "1516438/171",
+      "150757/17"
+    ],
+    [
+      "426456/35",
+      "718883/59"
+    ]
+  ],
+  "seconds": 2.57255033200002
+}

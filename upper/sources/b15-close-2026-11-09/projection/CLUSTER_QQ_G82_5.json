@@ -1,0 +1,195 @@
+{
+  "schema": "r044-qadic-euclid-v1",
+  "field": "QQ",
+  "prime": null,
+  "point_h": 0,
+  "precision": 10,
+  "target": 147,
+  "trace": [
+    {
+      "degrees": [
+        21,
+        20
+      ],
+      "content_valuations": [
+        0,
+        5
+      ],
+      "lower_bound": 105,
+      "precision_before": 10
+    },
+    {
+      "degrees": [
+        21,
+        20
+      ],
+      "mobius_c": null,
+      "remainder_nominal_degree": 19,
+      "precision": 5,
+      "lower_bound": 105
+    },
+    {
+      "degrees": [
+        20,
+        19
+      ],
+      "mobius_c": null,
+      "remainder_nominal_degree": 18,
+      "precision": 5,
+      "lower_bound": 105
+    },
+    {
+      "degrees": [
+        19,
+        18
+      ],
+      "mobius_c": null,
+      "remainder_nominal_degree": 17,
+      "precision": 5,
+      "lower_bound": 105
+    },
+    {
+      "degrees": [
+        18,
+        17
+      ],
+      "mobius_c": null,
+      "remainder_nominal_degree": 16,
+      "precision": 5,
+      "lower_bound": 105
+    },
+    {
+      "degrees": [
+        17,
+        16
+      ],
+      "mobius_c": null,
+      "remainder_nominal_degree": 15,
+      "precision": 5,
+      "lower_bound": 105
+    },
+    {
+      "degrees": [
+        16,
+        15
+      ],
+      "mobius_c": null,
+      "remainder_nominal_degree": 14,
+      "precision": 5,
+      "lower_bound": 105
+    },
+    {
+      "degrees": [
+        15,
+        14
+      ],
+      "mobius_c": null,
+      "remainder_nominal_degree": 13,
+      "precision": 5,
+      "lower_bound": 105
+    },
+    {
+      "degrees": [
+        14,
+        13
+      ],
+      "content_valuations": [
+        0,
+        2
+      ],
+      "lower_bound": 133,
+      "precision_before": 5
+    },
+    {
+      "degrees": [
+        14,
+        13
+      ],
+      "mobius_c": null,
+      "remainder_nominal_degree": 12,
+      "precision": 3,
+      "lower_bound": 133
+    },
+    {
+      "degrees": [
+        13,
+        12
+      ],
+      "mobius_c": null,
+      "remainder_nominal_degree": 11,
+      "precision": 3,
+      "lower_bound": 133
+    },
+    {
+      "degrees": [
+        12,
+        11
+      ],
+      "mobius_c": null,
+      "remainder_nominal_degree": 10,
+      "precision": 3,
+      "lower_bound": 133
+    },
+    {
+      "degrees": [
+        11,
+        10
+      ],
+      "mobius_c": null,
+      "remainder_nominal_degree": 9,
+      "precision": 3,
+      "lower_bound": 133
+    },
+    {
+      "degrees": [
+        10,
+        9
+      ],
+      "mobius_c": null,
+      "remainder_nominal_degree": 8,
+      "precision": 3,
+      "lower_bound": 133
+    },
+    {
+      "degrees": [
+        9,
+        8
+      ],
+      "mobius_c": null,
+      "remainder_nominal_degree": 7,
+      "precision": 3,
+      "lower_bound": 133
+    },
+    {
+      "degrees": [
+        8,
+        7
+      ],
+      "mobius_c": null,
+      "remainder_nominal_degree": 6,
+      "precision": 3,
+      "lower_bound": 133
+    },
+    {
+      "degrees": [
+        7,
+        6
+      ],
+      "content_valuations": [
+        0,
+        2
+      ],
+      "lower_bound": 147,
+      "precision_before": 3
+    }
+  ],
+  "input_sha256": {
+    "upper/sources/b15-close-2026-11-09/projection/cluster_G82_5_F.json": "a83d7d255e73a5c48093c4b54d8b0c74bd4e23ef301986334ff53df232a7d409",
+    "upper/sources/b15-close-2026-11-09/projection/cluster_G82_5_G.json": "98081ef1c838ad18d57048c9e019eb98866211bcccaf84e75d5b28932a75ab3a"
+  },
+  "determinant_valuation_lower_bound": 147,
+  "seconds": 3.3112043019996236,
+  "maxrss_KiB": 29040,
+  "passed": true,
+  "status": "PASS"
+}

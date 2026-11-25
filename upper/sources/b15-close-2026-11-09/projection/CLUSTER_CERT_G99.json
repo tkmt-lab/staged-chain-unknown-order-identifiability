@@ -1,0 +1,75 @@
+{
+  "schema": "r044-QQ-cluster-valuation-certificate-v1",
+  "label": "G99",
+  "required": 500,
+  "lower_bound": 500,
+  "passed": true,
+  "input_cluster_setup": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_G99.json",
+  "cluster_setup_sha256": "6d7937fde4859a14edec9fe5865351597db730cfb56fa3e78933475fb39557f9",
+  "cluster_values": [
+    {
+      "index": 0,
+      "precision": 11,
+      "lower_bound": 28,
+      "seconds": 0.01126781499988283,
+      "maxrss_KiB": 25112,
+      "output": "historical-output:CLUSTER_QQ_G99_0.json",
+      "sha256": "986447d0280eb9a5f4362ad495ea6f5cff827d353039fa08e49d0a73f28f1752"
+    },
+    {
+      "index": 1,
+      "precision": 2,
+      "lower_bound": 9,
+      "seconds": 0.07676370500030316,
+      "maxrss_KiB": 28624,
+      "output": "historical-output:CLUSTER_QQ_G99_1.json",
+      "sha256": "36bf809a97424c5540facab13ff437e0b2d9054521dafe041122bc88fb6669af"
+    },
+    {
+      "index": 2,
+      "precision": 2,
+      "lower_bound": 10,
+      "seconds": 0.04458185500016043,
+      "maxrss_KiB": 26760,
+      "output": "historical-output:CLUSTER_QQ_G99_2.json",
+      "sha256": "bfcb6965e263e64fa717adb3480859e1e65508998af0ab0785d30c7b9268fb8f"
+    },
+    {
+      "index": 3,
+      "precision": 5,
+      "lower_bound": 54,
+      "seconds": 1.8000179510004273,
+      "maxrss_KiB": 35532,
+      "output": "historical-output:CLUSTER_QQ_G99_3.json",
+      "sha256": "26393b040456032bd7ef78050a6024ccb84a38745c07116eeac1ec71ef15f000"
+    },
+    {
+      "index": 4,
+      "precision": 38,
+      "lower_bound": 68,
+      "seconds": 0.013007671000195842,
+      "maxrss_KiB": 25200,
+      "output": "historical-output:CLUSTER_QQ_G99_4.json",
+      "sha256": "7160b9346ce8b7b2cb9b4780f1fd7c4912b08f3b93c91150d029a71a03ae275c"
+    },
+    {
+      "index": 5,
+      "precision": 8,
+      "lower_bound": 135,
+      "seconds": 6.971146879000116,
+      "maxrss_KiB": 37264,
+      "output": "historical-output:CLUSTER_QQ_G99_5.json",
+      "sha256": "0623859e28e9270c4421eec5426210c32a3b5fa651918276b3e82cd9779884d9"
+    },
+    {
+      "index": 6,
+      "precision": 11,
+      "lower_bound": 196,
+      "seconds": 8.435287999000138,
+      "maxrss_KiB": 35328,
+      "output": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_QQ_G99_6.json",
+      "sha256": "98ae98535bf05501186ca41358016d4938f3570c5b74da0d8cec847ed7eba880"
+    }
+  ],
+  "seconds": 18.120273491000262
+}

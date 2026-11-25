@@ -1,0 +1,1139 @@
+{
+  "status": "PASS",
+  "method": "monic modular factor CRT candidate, exact integer product certification",
+  "used_primes": [
+    1073741827,
+    1073741831,
+    1073741833,
+    1073741839,
+    1073741843,
+    1073741857,
+    1073741891,
+    1073741909,
+    1073741939,
+    1073741953,
+    1073741969,
+    1073741971,
+    1073741987,
+    1073741993,
+    1073742037,
+    1073742053,
+    1073742073,
+    1073742077,
+    1073742091,
+    1073742113,
+    1073742169,
+    1073742203,
+    1073742209,
+    1073742223,
+    1073742233,
+    1073742259,
+    1073742277,
+    1073742289,
+    1073742343,
+    1073742353,
+    1073742361,
+    1073742391,
+    1073742403,
+    1073742463,
+    1073742493,
+    1073742517,
+    1073742583,
+    1073742623,
+    1073742653,
+    1073742667,
+    1073742671,
+    1073742673,
+    1073742707,
+    1073742713
+  ],
+  "product_bits": 1321,
+  "unit": 1,
+  "exact_product_equals_certified_R01": true,
+  "degrees": {
+    "82": [
+      151,
+      82
+    ],
+    "99": [
+      240,
+      99
+    ]
+  },
+  "terms": {
+    "82": 11292,
+    "99": 21787
+  },
+  "records": [
+    {
+      "prime": 1073741827,
+      "factor_seconds": 2.3442664200001673,
+      "shapes": [
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ],
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "24f2a7b45b6d7715d87a81bb71f48c64c94d6a16eaf4c257415ebbe51925d10e"
+    },
+    {
+      "prime": 1073741831,
+      "factor_seconds": 3.331011311000111,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "88e8ddc33df2d1426a52c62b0379f949438053ce9fa58eb609f7cc8332327379"
+    },
+    {
+      "prime": 1073741833,
+      "factor_seconds": 2.3407909580000705,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "16b1b979aced8cf8067b2f435397a95bff130700fdcc51aa04cafbedbcbcbc17"
+    },
+    {
+      "prime": 1073741839,
+      "factor_seconds": 1.0515023450002445,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "1c3b5eff45262738839592586866355791a9996f7f8b6fb578a4c8541460ce0e"
+    },
+    {
+      "prime": 1073741843,
+      "factor_seconds": 2.7938133080001535,
+      "shapes": [
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ],
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "98784e8242998cfcbde8cae860f5d47066777b5d6006901550d4d58c09d2e5fc"
+    },
+    {
+      "prime": 1073741857,
+      "factor_seconds": 1.1524973989999125,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "4c3a0c8155c9b80bb8b62fb3eb947e7cf54d70f7440bc4d63d7bdd1e8a67fa3a"
+    },
+    {
+      "prime": 1073741891,
+      "factor_seconds": 2.0812626349998027,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "024379dd945c3944398a313be950b544de9a49242bbc6194030a5ac0e43b7ec9"
+    },
+    {
+      "prime": 1073741909,
+      "factor_seconds": 2.647656907000055,
+      "shapes": [
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ],
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "0e147a93036be17dd5ada4ecb5c6c6677122683e47ad62632a0248683aa2455a"
+    },
+    {
+      "prime": 1073741939,
+      "factor_seconds": 1.9861604729999272,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "eb41903717310aa19bb13e49dc62084907c027b52c22340260486322e042d813"
+    },
+    {
+      "prime": 1073741953,
+      "factor_seconds": 2.6724486799998886,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "459e86adb06fec6669ef89bbc322bc975967a3d5c6ea61485cbfcca2a5fd47e1"
+    },
+    {
+      "prime": 1073741969,
+      "factor_seconds": 2.1948657769999045,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "6124f5f008041b212005b440860d498eed83d218393dcecd8b472342b668c023"
+    },
+    {
+      "prime": 1073741971,
+      "factor_seconds": 2.434995214999617,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "7419442d7c41725b39cd251a450e4f9d4b8edd6f13b2ba92d81dbcf349d610cc"
+    },
+    {
+      "prime": 1073741987,
+      "factor_seconds": 2.320472589000019,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "ccf10c4384a59e980bb0e8a2d9dd58ae0d1f795dbca57f1249d43241813ec473"
+    },
+    {
+      "prime": 1073741993,
+      "factor_seconds": 1.782060526999885,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "6e83d0c7c3618b80474c7e184c2fa353b1ef2b78418371341ec8160fab968939"
+    },
+    {
+      "prime": 1073742037,
+      "factor_seconds": 2.4385704060000535,
+      "shapes": [
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ],
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "3e38da69157a10ab3f1d3d85c3af3e204087e1303f0a3db7fbbd64cc0637ce0c"
+    },
+    {
+      "prime": 1073742053,
+      "factor_seconds": 2.368466098999761,
+      "shapes": [
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ],
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "942d5578d91753da4d79e78995c0ccda18f82dc23b0ff53075335014cc188949"
+    },
+    {
+      "prime": 1073742073,
+      "factor_seconds": 2.2114606630002527,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "24114423bca4b21ac1520f4d8d25f047903ad0f050d66099634ce27ab20ae18d"
+    },
+    {
+      "prime": 1073742077,
+      "factor_seconds": 1.4084163739998985,
+      "shapes": [
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ],
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "a54fdac1bf650cf7eec136def8f8739304948c064b8b5f07543ac79385a36b37"
+    },
+    {
+      "prime": 1073742091,
+      "factor_seconds": 2.3105153229998905,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "6ac6fda7ac8d3d3300227e5cb0db7f577871f3a62834c161f619dc263c00ebc7"
+    },
+    {
+      "prime": 1073742113,
+      "factor_seconds": 2.107315369999924,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "f1abda1ebf8813dcd102fce82c5912d7299b3f2f460b7a74cfe7f8ab9a4497f4"
+    },
+    {
+      "prime": 1073742169,
+      "factor_seconds": 1.8190212959998462,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "fa094860ef14e03af2a24cf27ba183c6fe5a175ac716d82ae424682028fc77eb"
+    },
+    {
+      "prime": 1073742203,
+      "factor_seconds": 1.832648258000063,
+      "shapes": [
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ],
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "ac26e76c0300ac9e949e229aa748ef531f8626c6056a6abb6e561369f911e9e5"
+    },
+    {
+      "prime": 1073742209,
+      "factor_seconds": 2.62909479200016,
+      "shapes": [
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ],
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "b2b71b7bd772f92b17b1481cde534f1908d7d32feb86a354e312b0227621337c"
+    },
+    {
+      "prime": 1073742223,
+      "factor_seconds": 2.212301993999972,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "9408af22d715e160bebf76aad87d5e0eb78ab901f77f582b22ab4fe8f233ed65"
+    },
+    {
+      "prime": 1073742233,
+      "factor_seconds": 2.5811357380002846,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "05bbefaabc2831ab10bd1b37def3920810b3777609ad74890b742c53e7ced401"
+    },
+    {
+      "prime": 1073742259,
+      "factor_seconds": 2.3946544059999724,
+      "shapes": [
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ],
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "bd7962dbf12e58ac7a1ee7f26546a0cb703b8fb087501034b698f70757ae8164"
+    },
+    {
+      "prime": 1073742277,
+      "factor_seconds": 2.103822442999899,
+      "shapes": [
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ],
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "4b401f97e04f5b6c97306863cd60ebe564f0e14a215c6904423501a7c2cbfb21"
+    },
+    {
+      "prime": 1073742289,
+      "factor_seconds": 1.9476773619999221,
+      "shapes": [
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ],
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "c4667bc4594715a135bb25d867f711dc796eed74785a6d8000ab64e71ad85cbe"
+    },
+    {
+      "prime": 1073742343,
+      "factor_seconds": 2.2752537149999625,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "88fa901b8aeb589206e4c471c14a0a9d94fcd0806c0f4950829698aba45ffcdd"
+    },
+    {
+      "prime": 1073742353,
+      "factor_seconds": 3.2852291839999452,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "752f87a974c47360af5b5a32bd30b5692e4d242f124311e7bff5f9328f5a5cda"
+    },
+    {
+      "prime": 1073742361,
+      "factor_seconds": 1.8749112800001058,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "fb775ee24246d325909a1bacdd52f9eded7993aaa982ab88bcd1cc92a7e89758"
+    },
+    {
+      "prime": 1073742391,
+      "factor_seconds": 0.98276413900021,
+      "shapes": [
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ],
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "0d0a014db6f2f79ce8433e05f8c0996c474729171a5d3c3ba274dc5a74e8d1ff"
+    },
+    {
+      "prime": 1073742403,
+      "factor_seconds": 1.8588507790000222,
+      "shapes": [
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ],
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "3dfc0498299ec87198c1a253dc939b276c1d2f2635ab2fe087c1a7a26394c604"
+    },
+    {
+      "prime": 1073742463,
+      "factor_seconds": 2.2191933130002326,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "8531afb86cb48cda10fca939abe7f53d300e8ae7d1708e9bbf24c6a026fec59c"
+    },
+    {
+      "prime": 1073742493,
+      "factor_seconds": 1.8529195579999396,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "d94aacc510b5cc980ffac39da546dac095736bd49071ec816320d78afbce565b"
+    },
+    {
+      "prime": 1073742517,
+      "factor_seconds": 2.520083524000256,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "1635469839a55e07d3059f95048fbc44723b1ed03de20f1e6347b6261d3acb1d"
+    },
+    {
+      "prime": 1073742583,
+      "factor_seconds": 2.031932382999912,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "f19d83e55fbca4d26b7ab25d1659c5005cab17decb2f46748196cb7dc63615d0"
+    },
+    {
+      "prime": 1073742623,
+      "factor_seconds": 1.9602266300003066,
+      "shapes": [
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ],
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "51db2a8e7bf84d7cbc743702fc895562b2a09a3d6aae735898b5ce54012087c1"
+    },
+    {
+      "prime": 1073742653,
+      "factor_seconds": 2.2049848309998197,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "0184530e8e422ac275e79b08e5472ce782d3e54d821c8b902a8c94cad9c4e202"
+    },
+    {
+      "prime": 1073742667,
+      "factor_seconds": 2.3301203910000368,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "b90a9ed1a67454407f5e4b11adad91768fbf65f59bdd63c0ab86be5b4ff4275e"
+    },
+    {
+      "prime": 1073742671,
+      "factor_seconds": 2.5646806559998367,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "77797a5bad358f5eb9ebd262370d8371cb19e31b8ba9303df695ca93bc342d2c"
+    },
+    {
+      "prime": 1073742673,
+      "factor_seconds": 2.5895085180000024,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "6d69afb89fe18b366350bc5450c8e07cfd253f5c09e84cfd34b88ba9dee6ca5c"
+    },
+    {
+      "prime": 1073742707,
+      "factor_seconds": 2.405920263000098,
+      "shapes": [
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ],
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "4468143680d282c06bf4676131a660fd3b026091c53a2d56899e614c587237f7"
+    },
+    {
+      "prime": 1073742713,
+      "factor_seconds": 3.0873293350000495,
+      "shapes": [
+        [
+          [
+            151,
+            82
+          ],
+          1
+        ],
+        [
+          [
+            240,
+            99
+          ],
+          1
+        ]
+      ],
+      "residue_sha256": "59a23a5dbfa50174dd0cbe91a69378e8f0c9eb28da9ca11d1ec07a6a625f3e4e"
+    }
+  ],
+  "attempts": [
+    {
+      "primes": 8,
+      "product_bits": 241,
+      "first_failed_reconstruction": [
+        [
+          82,
+          [
+            132,
+            39
+          ]
+        ]
+      ],
+      "exact_product_equal": false,
+      "seconds": 0.00010993600017172867
+    },
+    {
+      "primes": 12,
+      "product_bits": 361,
+      "first_failed_reconstruction": [
+        [
+          82,
+          [
+            90,
+            42
+          ]
+        ]
+      ],
+      "exact_product_equal": false,
+      "seconds": 0.00028269900030863937
+    },
+    {
+      "primes": 16,
+      "product_bits": 481,
+      "first_failed_reconstruction": [
+        [
+          82,
+          [
+            113,
+            26
+          ]
+        ]
+      ],
+      "exact_product_equal": false,
+      "seconds": 4.739899986816454e-05
+    },
+    {
+      "primes": 20,
+      "product_bits": 601,
+      "first_failed_reconstruction": [
+        [
+          82,
+          [
+            71,
+            29
+          ]
+        ]
+      ],
+      "exact_product_equal": false,
+      "seconds": 6.842799984951853e-05
+    },
+    {
+      "primes": 24,
+      "product_bits": 721,
+      "first_failed_reconstruction": [
+        [
+          82,
+          [
+            71,
+            29
+          ]
+        ]
+      ],
+      "exact_product_equal": false,
+      "seconds": 6.904900010340498e-05
+    },
+    {
+      "primes": 28,
+      "product_bits": 841,
+      "first_failed_reconstruction": [
+        [
+          82,
+          [
+            47,
+            24
+          ]
+        ]
+      ],
+      "exact_product_equal": false,
+      "seconds": 0.001659766000102536
+    },
+    {
+      "primes": 32,
+      "product_bits": 961,
+      "first_failed_reconstruction": [
+        [
+          99,
+          [
+            90,
+            42
+          ]
+        ]
+      ],
+      "exact_product_equal": false,
+      "seconds": 0.13052851900010864
+    },
+    {
+      "primes": 36,
+      "product_bits": 1081,
+      "first_failed_reconstruction": [
+        [
+          99,
+          [
+            44,
+            47
+          ]
+        ]
+      ],
+      "exact_product_equal": false,
+      "seconds": 0.13086583999984214
+    },
+    {
+      "primes": 40,
+      "product_bits": 1201,
+      "first_failed_reconstruction": [
+        [
+          99,
+          [
+            113,
+            26
+          ]
+        ]
+      ],
+      "exact_product_equal": false,
+      "seconds": 0.149265383999591
+    },
+    {
+      "primes": 44,
+      "product_bits": 1321,
+      "first_failed_reconstruction": [],
+      "exact_product_equal": true,
+      "seconds": 1.5063139690000753
+    }
+  ],
+  "seconds": 111.17238358899976,
+  "rss_KiB": 197380
+}

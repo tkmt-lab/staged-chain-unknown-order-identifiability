@@ -3,7 +3,7 @@
   "type": "software",
   "message": "Cite the article and exact supporting-code version.",
   "title": "Identifying infection stages, infectivity weights, and initial states from incidence",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "authors": [
     {
       "family-names": "Takimoto",
@@ -21,13 +21,13 @@
         "given-names": "Tatsuhiko"
       }
     ],
-    "version": "1.0.0",
+    "version": "1.1.0",
     "license": "CC-BY-4.0",
-    "date-released": "2026-11-16",
+    "date-released": "2026-11-26",
     "year": 2026,
     "month": 11,
     "url": "https://github.com/tkmt-lab/staged-chain-unknown-order-identifiability"
   },
-  "date-released": "2026-11-16",
+  "date-released": "2026-11-26",
   "repository-code": "https://github.com/tkmt-lab/staged-chain-unknown-order-identifiability"
 }

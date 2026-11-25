@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "H_degree": 289,
+  "H_input_sha256": "f1c0860f9a6b00ce5acafd8c0d246a4bb59a0594c230758cb1857899b015f400",
+  "candidate_path": "lower_SHAPE_BETA_CANDIDATE.json",
+  "candidate_sha256": "2044e8abf26f01898a83d1001b61a430c7bb4afc63d6326bb3e400ea4a2a79a3",
+  "A_degree": 288,
+  "B_degree": 288,
+  "coordinate_convention": "k=B/A, optionally t=T/A; A is a nonzero rational multiple of derivative of monic H",
+  "checks": {
+    "G27": {
+      "status": "PASS",
+      "numerator_degree": 7846,
+      "quotient_degree": 7557,
+      "numerator_hash": "74d6cdc9e4457b1ff0c9363573fa0e4464bb0de8ceca5d662b6060fad824f3a3",
+      "quotient_hash": "644123abb394dfd7e81bdb4bed8fb53d9e103d84911ab038a7672941ce86a8aa",
+      "hash_encoding": "coefficients low first: sign byte, 8byte big-endian absolute-byte-length, absolute big-endian bytes",
+      "seconds": 28.587583347999953
+    },
+    "H02": {
+      "status": "PASS",
+      "numerator_degree": 14228,
+      "quotient_degree": 13939,
+      "numerator_hash": "940d705ffc0570c742691eff084365ae1a5561c27b49083bb4a2f920a63bdbd2",
+      "quotient_hash": "5c604458dabe24ca8a307ef69e9afd71ad8b898b6e4ebda7156f66b33d3e1d05",
+      "hash_encoding": "coefficients low first: sign byte, 8byte big-endian absolute-byte-length, absolute big-endian bytes",
+      "seconds": 161.96129351400032
+    },
+    "E_G27": {
+      "status": "PASS",
+      "numerator_degree": 7846,
+      "quotient_degree": 7557,
+      "numerator_hash": "0e0f64dfb415783862ce35c73f219121b4caa9e729b1876bad50f23b76ec9ac2",
+      "quotient_hash": "ce14792e7039f47ae3d6f4c41550f9798b72d617be61cca414e90727e0e2d41b",
+      "hash_encoding": "coefficients low first: sign byte, 8byte big-endian absolute-byte-length, absolute big-endian bytes",
+      "seconds": 183.418731708
+    }
+  },
+  "seconds": 183.42745869100008
+}

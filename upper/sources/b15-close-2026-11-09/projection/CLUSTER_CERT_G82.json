@@ -1,0 +1,111 @@
+{
+  "schema": "r044-QQ-cluster-valuation-certificate-v1",
+  "label": "G82",
+  "required": 479,
+  "lower_bound": 479,
+  "passed": true,
+  "input_cluster_setup": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_G82.json",
+  "cluster_setup_sha256": "fa9e9bc5d3d8a4501d6475d9207e830148d34c7c9282a81685b8cdb6c6a5f9e9",
+  "cluster_values": [
+    {
+      "index": 0,
+      "precision": 10,
+      "lower_bound": 21,
+      "seconds": 0.00767553300011059,
+      "maxrss_KiB": 24608,
+      "output": "historical-output:CLUSTER_QQ_G82_0.json",
+      "sha256": "0a348089d228dba2bae05181ba027cf114135ed8bd1ea15f094a6035cb52de75"
+    },
+    {
+      "index": 1,
+      "precision": 27,
+      "lower_bound": 26,
+      "seconds": 0.005229085999872041,
+      "maxrss_KiB": 23220,
+      "output": "historical-output:CLUSTER_QQ_G82_1.json",
+      "sha256": "2ffd25a86ddd05e0075460d970254bdc006bf9319df43c1011116bc0ac445989"
+    },
+    {
+      "index": 2,
+      "precision": 2,
+      "lower_bound": 2,
+      "seconds": 0.007047306999993452,
+      "maxrss_KiB": 23540,
+      "output": "historical-output:CLUSTER_QQ_G82_2.json",
+      "sha256": "ed9fb97850e5a2b84866ee944de847fe2f23a7e3a7df34d2b59827c6f255c031"
+    },
+    {
+      "index": 3,
+      "precision": 4,
+      "lower_bound": 27,
+      "seconds": 0.03457208300005732,
+      "maxrss_KiB": 25376,
+      "output": "historical-output:CLUSTER_QQ_G82_3.json",
+      "sha256": "21a2a8544371f99594cabd4c8470d6c9f1968d1f1a6371a812c2c292618e0e1a"
+    },
+    {
+      "index": 4,
+      "precision": 7,
+      "lower_bound": 90,
+      "seconds": 1.493928744999721,
+      "maxrss_KiB": 28928,
+      "output": "historical-output:CLUSTER_QQ_G82_4.json",
+      "sha256": "188f87ff107268cb03ff5ab7e3a94aa5032824f7d394bfcde649b2832c5e1a76"
+    },
+    {
+      "index": 5,
+      "precision": 10,
+      "lower_bound": 147,
+      "seconds": 3.3112043019996236,
+      "maxrss_KiB": 29040,
+      "output": "upper/sources/b15-close-2026-11-09/projection/CLUSTER_QQ_G82_5.json",
+      "sha256": "4cdf88213a4e304f7e2500f43d079684489c6d63726c2c179125c759edb07135"
+    },
+    {
+      "index": 6,
+      "precision": 8,
+      "lower_bound": 16,
+      "seconds": 0.011343335000219668,
+      "maxrss_KiB": 25136,
+      "output": "historical-output:CLUSTER_QQ_G82_6.json",
+      "sha256": "9890c43c79758e227f56b8179e9b025611ed44c1f700d00b7cab52a4fe5af31e"
+    },
+    {
+      "index": 7,
+      "precision": 8,
+      "lower_bound": 32,
+      "seconds": 0.06951257600030658,
+      "maxrss_KiB": 25472,
+      "output": "historical-output:CLUSTER_QQ_G82_7.json",
+      "sha256": "e6ed72430c1a764d0b12918b21000c2accb51ea6d6e372441bef9063fb044ba0"
+    },
+    {
+      "index": 8,
+      "precision": 15,
+      "lower_bound": 37,
+      "seconds": 0.015840110999761237,
+      "maxrss_KiB": 24960,
+      "output": "historical-output:CLUSTER_QQ_G82_8.json",
+      "sha256": "9dc23309ab1d52c75c7b9c6b7602ed219d2a7851740148541a132c676265757f"
+    },
+    {
+      "index": 9,
+      "precision": 15,
+      "lower_bound": 37,
+      "seconds": 0.018050015999961033,
+      "maxrss_KiB": 25280,
+      "output": "historical-output:CLUSTER_QQ_G82_9.json",
+      "sha256": "01142db8570954a62027eec617711a3fb41cb1300bd2f76bb681c9a4085013ce"
+    },
+    {
+      "index": 10,
+      "precision": 14,
+      "lower_bound": 44,
+      "seconds": 0.019309784000142827,
+      "maxrss_KiB": 24980,
+      "output": "historical-output:CLUSTER_QQ_G82_10.json",
+      "sha256": "e7823ba9015da9c4cca451017855216a323f690ba82a9205beb948495b343ef5"
+    }
+  ],
+  "seconds": 6.088013110000247
+}

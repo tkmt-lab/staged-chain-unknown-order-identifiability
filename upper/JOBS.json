@@ -1,0 +1,246 @@
+[
+  {
+    "id": "u8-general",
+    "argv": [
+      "sources/next16-upper8/check/general.py"
+    ]
+  },
+  {
+    "id": "u8-exception",
+    "argv": [
+      "sources/next16-upper8/check/exception.py"
+    ]
+  },
+  {
+    "id": "u8-classify_exact",
+    "argv": [
+      "sources/next16-upper8/check/classify_exact.py"
+    ]
+  },
+  {
+    "id": "u11-recompute_reduction",
+    "argv": [
+      "sources/verify-b13-blind-2026-11-09/stage2/reduction/recompute_reduction.py"
+    ]
+  },
+  {
+    "id": "u11-recompute_determinant",
+    "argv": [
+      "sources/verify-b13-blind-2026-11-09/stage2/reduction/recompute_determinant.py"
+    ]
+  },
+  {
+    "id": "u11-lower_projection_check",
+    "argv": [
+      "sources/b13-close-2026-11-07/lower_projection_check.py"
+    ]
+  },
+  {
+    "id": "u11-upper_contact_rank",
+    "argv": [
+      "sources/b13-close-2026-11-07/upper_contact_rank.py"
+    ]
+  },
+  {
+    "id": "u11-lower_degree_certificate",
+    "argv": [
+      "sources/b13-close-2026-11-07/lower_degree_certificate.py"
+    ]
+  },
+  {
+    "id": "u11-lower_qadic_certificate",
+    "argv": [
+      "sources/b13-close-2026-11-07/lower_qadic_certificate.py"
+    ]
+  },
+  {
+    "id": "u11-contact10_specialize",
+    "argv": [
+      "sources/b13-close-2026-11-07/contact10_specialize.py"
+    ]
+  },
+  {
+    "id": "u11-contact10_tangent",
+    "argv": [
+      "sources/b13-close-2026-11-07/contact10_tangent.py"
+    ]
+  },
+  {
+    "id": "u11-structure_contact10_H2",
+    "argv": [
+      "sources/b13-close-2026-11-07/structure_contact10_H2.py"
+    ]
+  },
+  {
+    "id": "u11-upper_contact10_lift",
+    "argv": [
+      "sources/b13-close-2026-11-07/upper_contact10_lift.py"
+    ]
+  },
+  {
+    "id": "u11-review_B12_certificate",
+    "argv": [
+      "sources/b13-close-2026-11-07/review_B12_certificate.py"
+    ]
+  },
+  {
+    "id": "u11-upper_nine_subres",
+    "argv": [
+      "sources/b13-close-2026-11-07/upper_nine_subres.py"
+    ]
+  },
+  {
+    "id": "u11-upper_nine_linear",
+    "argv": [
+      "sources/b13-close-2026-11-07/upper_nine_linear.py"
+    ]
+  },
+  {
+    "id": "u11-structure_G22_A",
+    "argv": [
+      "sources/b13-close-2026-11-07/structure_G22_A.py"
+    ]
+  },
+  {
+    "id": "u11-structure_G22_geometry",
+    "argv": [
+      "sources/b13-close-2026-11-07/structure_G22_geometry.py"
+    ]
+  },
+  {
+    "id": "u11-lower_linear_certificate",
+    "argv": [
+      "sources/b13-close-2026-11-07/lower_linear_certificate.py"
+    ]
+  },
+  {
+    "id": "u11-upper_rur_verify",
+    "argv": [
+      "sources/b13-close-2026-11-07/upper_rur_verify.py"
+    ]
+  },
+  {
+    "id": "u11-upper_rur_contact_verify",
+    "argv": [
+      "sources/b13-close-2026-11-07/upper_rur_contact_verify.py"
+    ]
+  },
+  {
+    "id": "u11-upper_nine_coverage",
+    "argv": [
+      "sources/b13-close-2026-11-07/upper_nine_coverage.py"
+    ]
+  },
+  {
+    "id": "u11-independent_bridge",
+    "argv": [
+      "sources/verify-b13-blind-2026-11-09/stage2/coverage/independent_bridge.py"
+    ]
+  },
+  {
+    "id": "u11-independent_prime",
+    "argv": [
+      "sources/verify-b13-blind-2026-11-09/stage2/coverage/independent_prime.py"
+    ]
+  },
+  {
+    "id": "u11-audit_real_roots",
+    "argv": [
+      "sources/verify-b13-blind-2026-11-09/stage2/roots/audit_real_roots.py"
+    ]
+  },
+  {
+    "id": "u11-structure_H289_signs",
+    "argv": [
+      "sources/verify-b13-blind-2026-11-09/stage2/roots/structure_H289_signs.py"
+    ]
+  },
+  {
+    "id": "u11-independent_derivatives",
+    "argv": [
+      "sources/verify-b13-blind-2026-11-09/stage2/roots/independent_derivatives.py"
+    ]
+  },
+  {
+    "id": "u11-structure_TAYLOR_AUDIT",
+    "argv": [
+      "sources/verify-b13-blind-2026-11-09/stage2/roots/structure_TAYLOR_AUDIT.py"
+    ]
+  },
+  {
+    "id": "u15-determinant",
+    "argv": [
+      "sources/verify-b15-2026-11-09/independent.py"
+    ]
+  },
+  {
+    "id": "u15-crt1",
+    "argv": [
+      "sources/verify-b15-2026-11-09/independent.py",
+      "crt",
+      "1"
+    ]
+  },
+  {
+    "id": "u15-crt2",
+    "argv": [
+      "sources/verify-b15-2026-11-09/independent.py",
+      "crt",
+      "2"
+    ]
+  },
+  {
+    "id": "u15-crt3",
+    "argv": [
+      "sources/verify-b15-2026-11-09/independent.py",
+      "crt",
+      "3"
+    ]
+  },
+  {
+    "id": "u15-fibers",
+    "argv": [
+      "sources/verify-b15-2026-11-09/fibers.py"
+    ]
+  },
+  {
+    "id": "u15-local82",
+    "argv": [
+      "sources/verify-b15-2026-11-09/local.py",
+      "82"
+    ]
+  },
+  {
+    "id": "u15-local99",
+    "argv": [
+      "sources/verify-b15-2026-11-09/local.py",
+      "99"
+    ]
+  },
+  {
+    "id": "u15-projection82",
+    "argv": [
+      "sources/verify-b15-2026-11-09/projection_eval.py",
+      "82"
+    ]
+  },
+  {
+    "id": "u15-projection99",
+    "argv": [
+      "sources/verify-b15-2026-11-09/projection_eval.py",
+      "99"
+    ]
+  },
+  {
+    "id": "u15-degenerate",
+    "argv": [
+      "sources/verify-b15-2026-11-09/degenerate.py"
+    ]
+  },
+  {
+    "id": "u15-controls",
+    "argv": [
+      "sources/verify-b15-2026-11-09/controls.py"
+    ]
+  }
+]
